@@ -19,7 +19,7 @@
             android:id="@+id/textView10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cadastro dos Alunos"
+            android:text="@string/cadastro_dos_alunos"
             android:textSize="20sp"
             android:textStyle="bold"
             android:gravity="center"/>
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:hint="Login" />
+            android:hint="@string/log_in" />
 
         <EditText
             android:id="@+id/editText6"
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:hint="Nome" />
+            android:hint="@string/nome" />
 
         <EditText
             android:id="@+id/editText10"
@@ -47,14 +47,14 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textEmailAddress"
-            android:hint="Email"/>
+            android:hint="@string/email"/>
 
         <EditText
             android:layout_width="353dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:hint="Curso" />
+            android:hint="@string/curso" />
 
         <EditText
             android:id="@+id/editText7"
@@ -62,7 +62,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPassword"
-            android:hint="Senha"/>
+            android:hint="@string/senha"/>
 
         <EditText
             android:id="@+id/editText8"
@@ -70,14 +70,15 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPassword"
-            android:hint="Repetir Senha"/>
+            android:hint="@string/repetir_senha"/>
 
         <Button
+            android:id="@+id/button_cad_alun"
             style="@style/Button_style"
             android:layout_width="207dp"
             android:layout_height="40dp"
             android:layout_marginTop="30dp"
-            android:text="Cadastre-se"/>
+            android:text="@string/cadastre_Se" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

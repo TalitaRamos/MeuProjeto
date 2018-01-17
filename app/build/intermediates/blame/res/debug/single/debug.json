@@ -1368,6 +1368,10 @@
         "source": "C:\\Users\\Talit\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d0bf966dc7134a334c7a0ad165b48b72\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
+        "merged": "C:\\Users\\Talit\\AndroidStudioProjects\\MeuProjeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_cadastro_projeto.xml.flat",
+        "source": "C:\\Users\\Talit\\AndroidStudioProjects\\MeuProjeto\\app\\src\\main\\res\\layout\\activity_cadastro_projeto.xml"
+    },
+    {
         "merged": "C:\\Users\\Talit\\AndroidStudioProjects\\MeuProjeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "C:\\Users\\Talit\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d0bf966dc7134a334c7a0ad165b48b72\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
     },

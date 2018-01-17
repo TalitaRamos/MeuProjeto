@@ -13,11 +13,13 @@ public class cadastro extends AppCompatActivity {
         setContentView(R.layout.activity_cadastro);
     }
 
+    //NAVEGAR PRA TELA DE CADASTRO DE PROFESSORES
     public void cadProf(View v){
         Intent intent=new Intent(this,cadastroProfessor.class);
         startActivity(intent);
     }
 
+    //NAVEGAR PRA TELA DE CADASTRO DE ALUNOS
     public void cadAlun(View c){
         Intent inte = new Intent(this,cadastroAluno.class);
         startActivity(inte);

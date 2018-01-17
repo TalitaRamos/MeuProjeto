@@ -22,7 +22,7 @@
             android:layout_width="258dp"
             android:layout_height="294dp"
             android:layout_gravity="center"
-            android:src="@drawable/lamp" />
+            android:src="@drawable/lamp" android:contentDescription="@string/tod_o" />
 
         <TextView
             android:id="@+id/tv"
@@ -30,9 +30,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:text="Meu Projeto"
+            android:text="@string/meu_Projeto"
             android:textColor="@color/white"
-            android:textSize="40dp"
+            android:textSize="40sp"
             android:textStyle="bold" />
 
     </LinearLayout>

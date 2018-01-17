@@ -15,4 +15,32 @@
     <string name="os_alunos_solicitam_a_participa_o">Os alunos solicitam a participação</string>
     <string name="alunos">Alunos</string>
     <string name="professores">Professores</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="status">Status</string>
+    <string name="descri_o">Descrição</string>
+    <string name="nome_do_projeto">Nome do projeto</string>
+    <string name="cadastro_de_projetos">Cadastro de Projetos</string>
+    <string name="cadastre_Se">Cadastre-se</string>
+    <string name="repetir_senha">Repetir Senha</string>
+    <string name="Senha">Senha</string>
+    <string name="curso">Curso</string>
+    <string name="nome">Nome</string>
+    <string name="email">Email</string>
+    <string name="cadastro_dos_alunos">Cadastro dos Alunos</string>
+    <string name="log_in">Login</string>
+    <string name="cadastro_dos_professores">Cadastro dos Professores</string>
+    <string name="lo_gin">Login</string>
+    <string name="nom_e">Nome</string>
+    <string name="e_mail">Email</string>
+    <string name="area">Área</string>
+    <string name="senh">Senha</string>
+    <string name="repetirSenha">Repetir Senha</string>
+    <string name="cadastre">Cadastre-se</string>
+    <string name="meu_Projeto">Meu Projeto</string>
+    <string name="tod_o">TODO</string>
+
+    <string-array name="status_spinner">
+        <item>Proj. Alocado</item>
+        <item>Proj. Não Alocado</item>
+    </string-array>
 </resources>

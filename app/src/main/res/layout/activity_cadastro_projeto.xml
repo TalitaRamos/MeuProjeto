@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.meuprojeto.cadastroProjeto">
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="643dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cadastro_de_projetos"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/nomeProj"
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="@string/nome_do_projeto"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/descrProj"
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/descri_o"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
+            android:text="@string/status"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            />
+
+        <Spinner
+            android:id="@+id/Status_spinner"
+            android:layout_width="355dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/status_spinner" />
+
+        <Button
+            android:id="@+id/cadaProjec"
+            style="@style/Button_style"
+            android:layout_width="207dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/cadastrar" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

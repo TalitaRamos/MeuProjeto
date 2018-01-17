@@ -19,7 +19,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".cadastro" />
         <activity android:name=".cadastroAluno" />
-        <activity android:name=".cadastroProfessor"></activity>
+        <activity android:name=".cadastroProfessor" />
+        <activity android:name=".cadastroProjeto"></activity>
     </application>
 
 </manifest>
