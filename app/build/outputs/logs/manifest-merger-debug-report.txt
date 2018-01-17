@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-22:12
+ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-23:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\d0bf966dc7134a334c7a0ad165b48b72\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\c2abaea76b2dee375324cf032af29ce0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\d7d39b639af00d489e1e35ae43261318\AndroidManifest.xml:17:1-28:12
@@ -15,25 +15,25 @@ MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Talit\.grad
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\d8a8b2e45589194850d8c625a797e7e1\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\85dc8f0fa95db34965666a88ec85fa43\AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\59fb129c949e5cada76280340b019af2\AndroidManifest.xml:17:1-30:12
-INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-23:12
 	package
 		ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-22:12
+		ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-23:12
 		INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-22:12
+		ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-23:12
 		INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:5:5-20:19
+ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:5:5-21:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\d0bf966dc7134a334c7a0ad165b48b72\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\d0bf966dc7134a334c7a0ad165b48b72\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\c2abaea76b2dee375324cf032af29ce0\AndroidManifest.xml:9:5-20
@@ -83,9 +83,13 @@ ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidM
 	android:name
 		ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:16:27-74
 activity#com.example.meuprojeto.MainActivity
-ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:19:9-59
+ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:19:9-50
 	android:name
 		ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:19:19-47
+activity#com.example.meuprojeto.cadastro
+ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:20:9-55
+	android:name
+		ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:20:19-43
 uses-sdk
 INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml

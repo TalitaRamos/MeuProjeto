@@ -6,4 +6,13 @@
     <string name="ainda_n_o_cadastrado">Ainda não é cadastrado?</string>
     <string name="senha">Senha</string>
     <string name="login">Login</string>
+    <string name="e_assim_todos_ganham">E assim, todos ganham!!</string>
+    <string name="os_alunos_solicitam_a_participa_o_no_projeto">Os alunos solicitam a participação no projeto</string>
+    <string name="projetos_academicos">projetos academicos!</string>
+    <string name="podem_interagir_na_escolha_de">podem interagir na escolha de</string>
+    <string name="os_professores_adicionam_seus_projetos">Os professores adicionam seus projetos</string>
+    <string name="no_meu_projeto_alunos_e_professores">No Meu Projeto Alunos e Professores</string>
+    <string name="os_alunos_solicitam_a_participa_o">Os alunos solicitam a participação</string>
+    <string name="alunos">Alunos</string>
+    <string name="professores">Professores</string>
 </resources>

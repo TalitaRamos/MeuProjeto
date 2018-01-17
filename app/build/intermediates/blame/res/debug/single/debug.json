@@ -104,6 +104,10 @@
         "source": "C:\\Users\\Talit\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\ecb2b7112eecc6c95a8e51b6e834ca20\\res\\layout\\notification_template_media_custom.xml"
     },
     {
+        "merged": "C:\\Users\\Talit\\AndroidStudioProjects\\MeuProjeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_cadastro.xml.flat",
+        "source": "C:\\Users\\Talit\\AndroidStudioProjects\\MeuProjeto\\app\\src\\main\\res\\layout\\activity_cadastro.xml"
+    },
+    {
         "merged": "C:\\Users\\Talit\\AndroidStudioProjects\\MeuProjeto\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_in_bottom.xml.flat",
         "source": "C:\\Users\\Talit\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d0bf966dc7134a334c7a0ad165b48b72\\res\\anim\\abc_slide_in_bottom.xml"
     },

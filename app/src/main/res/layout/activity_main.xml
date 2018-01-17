@@ -77,11 +77,10 @@
             android:layout_height="wrap_content"
             android:text="@string/cadastre_se"
             tools:layout_editor_absoluteX="163dp"
-            tools:layout_editor_absoluteY="368dp" />
+            tools:layout_editor_absoluteY="368dp"
+            android:onClick="startActivity" />
 
     </LinearLayout>
-
-
 
 
 </android.support.constraint.ConstraintLayout>

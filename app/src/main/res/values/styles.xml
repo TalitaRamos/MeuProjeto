@@ -9,7 +9,6 @@
     </style>
 
     <style name="Button_style">
-
         <item name="android:background">@drawable/button_background</item>
     </style>
 

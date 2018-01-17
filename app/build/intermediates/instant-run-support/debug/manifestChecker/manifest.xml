@@ -25,6 +25,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.meuprojeto.MainActivity" />
+        <activity android:name="com.example.meuprojeto.cadastro" />
 
         <meta-data
             android:name="android.support.VERSION"
