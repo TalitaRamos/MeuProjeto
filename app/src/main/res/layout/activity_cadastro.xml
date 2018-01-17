@@ -84,7 +84,8 @@
             android:layout_width="207dp"
             android:layout_height="40dp"
             android:layout_marginTop="60dp"
-            android:text="@string/professores" />
+            android:text="@string/professores"
+            android:onClick="cadProf"/>
 
         <Button
             android:id="@+id/button_aluno"
@@ -92,7 +93,8 @@
             android:layout_width="207dp"
             android:layout_height="40dp"
             android:layout_marginTop="30dp"
-            android:text="@string/alunos" />
+            android:text="@string/alunos"
+            android:onClick="cadAlun"/>
 
 
     </LinearLayout>

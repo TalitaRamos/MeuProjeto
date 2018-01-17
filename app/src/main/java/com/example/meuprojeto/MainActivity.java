@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    //NAVEGA PRA TELA DE CADASTRO
+    //NAVEGAR PRA TELA DE CADASTRO
     public void startActivity(View view) {
 
         Intent cadastro = new Intent(this, cadastro.class);

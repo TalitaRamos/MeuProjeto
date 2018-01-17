@@ -26,6 +26,8 @@
         </activity>
         <activity android:name="com.example.meuprojeto.MainActivity" />
         <activity android:name="com.example.meuprojeto.cadastro" />
+        <activity android:name="com.example.meuprojeto.cadastroAluno" />
+        <activity android:name="com.example.meuprojeto.cadastroProfessor" />
 
         <meta-data
             android:name="android.support.VERSION"
