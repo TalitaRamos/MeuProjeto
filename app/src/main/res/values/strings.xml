@@ -39,6 +39,7 @@
     <string name="meu_Projeto">Meu Projeto</string>
     <string name="tod_o">TODO</string>
     <string name="senhas">Senha</string>
+    <string name="email_log">Email</string>
 
     <string-array name="status_spinner">
         <item>Proj. Alocado</item>

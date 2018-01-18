@@ -25,20 +25,12 @@
             android:gravity="center"/>
 
         <EditText
-            android:id="@+id/login_Prof"
-            android:layout_width="353dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:ems="10"
-            android:hint="@string/lo_gin"
-            android:inputType="textPersonName" />
-
-        <EditText
             android:id="@+id/nome_Prof"
             android:layout_width="353dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/nom_e"
+            android:layout_marginTop="50dp"
             android:inputType="textPersonName" />
 
         <EditText
