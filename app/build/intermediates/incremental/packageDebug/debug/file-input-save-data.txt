@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jan 16 20:58:19 BRT 2018
+#Thu Jan 18 02:42:44 BRT 2018
 2.base=C\:\\Users\\Talit\\AndroidStudioProjects\\MeuProjeto\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
 5.set=DEX
 0.path=classes.dex
