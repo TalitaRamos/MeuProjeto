@@ -12,10 +12,10 @@ public class cadastroProjeto extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_projeto);
     }
-/*
+
     //NAVEGAR PRA TELA DE PROJETOS
     public void VerProject(View c){
         Intent in = new Intent(this,Project_prof.class);
         startActivity(in);
-    }*/
+    }
 }
