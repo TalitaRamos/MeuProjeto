@@ -24,10 +24,6 @@
         <activity android:name=".cadastroProfessor" />
         <activity android:name=".cadastroProjeto" />
         <activity android:name=".ProjetoProf" />
-        <activity
-            android:name=".Project_prof"
-            android:label="@string/title_activity_project_prof"
-            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

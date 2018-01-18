@@ -6,13 +6,13 @@
     density="420dpi"
     format="10"
     plugin-version="3.0.1"
-    timestamp="1516290143335"
+    timestamp="1516297627554"
     token="4256581956328106966"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="6077" />
     <task
         name="instant-run-dex"
         duration="0" />
@@ -62,7 +62,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1516290143335"
+        timestamp="1516297627554"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\outputs\apk\debug\app-debug.apk"
