@@ -51,7 +51,7 @@
             android:layout_marginTop="15dp"
             android:ems="10"
             android:inputType="textPassword"
-            android:hint="Senha"
+            android:hint="@string/senhas"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="239dp" />
 
@@ -76,7 +76,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cadastre-se"
+            android:text="@string/cadastre_se"
             tools:layout_editor_absoluteX="163dp"
             tools:layout_editor_absoluteY="368dp"
             android:onClick="startActivity" />

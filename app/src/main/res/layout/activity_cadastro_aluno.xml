@@ -25,52 +25,53 @@
             android:gravity="center"/>
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/login_Alun"
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:layout_width="353dp"
-            android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="@string/log_in" />
+            android:hint="@string/log_in"
+            android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText6"
+            android:id="@+id/nome_Alun"
             android:layout_width="353dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="@string/nome" />
+            android:hint="@string/nome"
+            android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText10"
+            android:id="@+id/email_Alun"
             android:layout_width="353dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textEmailAddress"
-            android:hint="@string/email"/>
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
 
         <EditText
+            android:id="@+id/curso_Alun"
             android:layout_width="353dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="@string/curso" />
+            android:hint="@string/curso"
+            android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText7"
+            android:id="@+id/senha_Alun"
             android:layout_width="353dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPassword"
-            android:hint="@string/senha"/>
+            android:hint="@string/senha"
+            android:inputType="textPassword" />
 
         <EditText
-            android:id="@+id/editText8"
+            android:id="@+id/repete_Alun"
             android:layout_width="353dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPassword"
-            android:hint="@string/repetir_senha"/>
+            android:hint="@string/repetir_senha"
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/button_cad_alun"

@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Talit\\AndroidStudioProjects\\MeuProjeto\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Talit\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d0bf966dc7134a334c7a0ad165b48b72\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\Talit\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\999d98cf13ba35768c34737b2c5051ea\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

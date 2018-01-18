@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Talit\\AndroidStudioProjects\\MeuProjeto\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Talit\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d0bf966dc7134a334c7a0ad165b48b72\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Talit\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\999d98cf13ba35768c34737b2c5051ea\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Talit\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\85dc8f0fa95db34965666a88ec85fa43\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Talit\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\f587c597bb805bc8c53fa1b70ae8ad8d\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
