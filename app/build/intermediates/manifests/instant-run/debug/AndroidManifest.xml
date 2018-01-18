@@ -41,6 +41,10 @@
         <activity android:name="com.example.meuprojeto.cadastroProfessor" />
         <activity android:name="com.example.meuprojeto.cadastroProjeto" />
         <activity android:name="com.example.meuprojeto.ProjetoProf" />
+        <activity
+            android:name="com.example.meuprojeto.Project_prof"
+            android:label="@string/title_activity_project_prof"
+            android:theme="@style/AppTheme" />
 
         <meta-data
             android:name="android.support.VERSION"
