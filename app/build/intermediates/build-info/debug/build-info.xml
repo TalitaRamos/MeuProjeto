@@ -6,29 +6,26 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.0.1"
-    timestamp="1516336636346"
+    timestamp="1516395755700"
     token="4256581956328106966"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="5147" />
+        duration="4173" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="898" />
+        duration="110" />
     <task
         name="verifier"
-        duration="256" />
+        duration="65" />
 
     <artifact
         location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
         type="SPLIT" />
-    <artifact
-        location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\outputs\apk\debug\app-debug.apk"
-        type="SPLIT_MAIN" />
     <artifact
         location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
         type="SPLIT" />
@@ -59,17 +56,17 @@
     <artifact
         location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
         type="SPLIT" />
+    <artifact
+        location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\outputs\apk\debug\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1516336636346"
+        timestamp="1516395755700"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
-        <artifact
-            location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\outputs\apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
         <artifact
             location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
@@ -100,6 +97,9 @@
         <artifact
             location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
+        <artifact
+            location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\outputs\apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

@@ -5,20 +5,20 @@ package com.example.meuprojeto.Model;
  */
 
 public class Projeto {
-    private int idProjeto;
+    private String idProjeto;
     private String nome;
     private String descricao;
     private String status;
-    private int IdProfessor;//fk de professor
+    private String IdProfessor;//fk de professor
 
     public Projeto() {
     }
 
-    public int getIdProjeto() {
+    public String getIdProjeto() {
         return idProjeto;
     }
 
-    public void setIdProjeto(int idProjeto) {
+    public void setIdProjeto(String idProjeto) {
         this.idProjeto = idProjeto;
     }
 
@@ -29,7 +29,6 @@ public class Projeto {
     public void setNome(String nome) {
         this.nome = nome;
     }
-
 
     public String getDescricao() {
         return descricao;
@@ -47,11 +46,11 @@ public class Projeto {
         this.status = status;
     }
 
-    public int getIdProfessor() {
+    public String getIdProfessor() {
         return IdProfessor;
     }
 
-    public void setIdProfessor(int idProfessor) {
+    public void setIdProfessor(String idProfessor) {
         IdProfessor = idProfessor;
     }
 }

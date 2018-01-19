@@ -5,20 +5,20 @@ package com.example.meuprojeto.Model;
  */
 
 public class Candidato {
-    private int IdCandidato;
+    private String IdCandidato;
     private String Data;
     private String Situacao;
-    private int IdProfessor;//fk de professor
-    private int IdAluno;//fk de aluno
+    private String IdProfessor;//fk de professor
+    private String IdAluno;//fk de aluno
 
     public Candidato() {
     }
 
-    public int getIdCandidato() {
+    public String getIdCandidato() {
         return IdCandidato;
     }
 
-    public void setIdCandidato(int idCandidato) {
+    public void setIdCandidato(String idCandidato) {
         IdCandidato = idCandidato;
     }
 
@@ -38,19 +38,19 @@ public class Candidato {
         Situacao = situacao;
     }
 
-    public int getIdProfessor() {
+    public String getIdProfessor() {
         return IdProfessor;
     }
 
-    public void setIdProfessor(int idProfessor) {
+    public void setIdProfessor(String idProfessor) {
         IdProfessor = idProfessor;
     }
 
-    public int getIdAluno() {
+    public String getIdAluno() {
         return IdAluno;
     }
 
-    public void setIdAluno(int idAluno) {
+    public void setIdAluno(String idAluno) {
         IdAluno = idAluno;
     }
 }

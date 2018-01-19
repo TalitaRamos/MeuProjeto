@@ -5,22 +5,22 @@ package com.example.meuprojeto.Model;
  */
 
 public class Aluno {
-    private int IdAluno;
+    private String IdAluno;
     private String NomeAluno;
     private String EmailAluno;
     private String CursoAluno;
-    private  int IdAcessoAluno; //fk de acesso
+    private String IdAcessoAluno; //fk de acesso
     //talvez precise se uma variavel tipo ACESSO
 
 
     public Aluno() {
     }
 
-    public int getIdAluno() {
+    public String getIdAluno() {
         return IdAluno;
     }
 
-    public void setIdAluno(int idAluno) {
+    public void setIdAluno(String idAluno) {
         IdAluno = idAluno;
     }
 
@@ -48,11 +48,11 @@ public class Aluno {
         CursoAluno = cursoAluno;
     }
 
-    public int getIdAcessoAluno() {
+    public String getIdAcessoAluno() {
         return IdAcessoAluno;
     }
 
-    public void setIdAcessoAluno(int idAcessoAluno) {
+    public void setIdAcessoAluno(String idAcessoAluno) {
         IdAcessoAluno = idAcessoAluno;
     }
 }

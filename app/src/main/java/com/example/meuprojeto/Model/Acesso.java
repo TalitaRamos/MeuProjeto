@@ -1,11 +1,18 @@
 package com.example.meuprojeto.Model;
 
+import com.example.meuprojeto.DAO.ConfiguracaoFirebase;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.Exclude;
+
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by Talit on 18/01/2018.
  */
 
 public class Acesso {
-    private int idAcesso;
+    private String idAcesso;
     private String login;
     private String senha;
     private int tipo;
@@ -15,11 +22,11 @@ public class Acesso {
     public Acesso() {
     }
 
-    public int getIdAcesso() {
+    public String getIdAcesso() {
         return idAcesso;
     }
 
-    public void setIdAcesso(int idAcesso) {
+    public void setIdAcesso(String idAcesso) {
         this.idAcesso = idAcesso;
     }
 
@@ -37,5 +44,30 @@ public class Acesso {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public int getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
+    }
+
+    //
+    public void salvar(){
+        DatabaseReference referenciaFirebase = ConfiguracaoFirebase.getFirebase();
+        referenciaFirebase.child("Acesso").child(String.valueOf(getIdAcesso())).setValue(this);
+    }
+    @Exclude
+    public Map<String, Object> toMap(){
+        HashMap<String, Object> hashMapUsuario = new HashMap<>();
+
+        hashMapUsuario.put("idAcesso",getIdAcesso());
+        hashMapUsuario.put("login",getLogin());
+        hashMapUsuario.put("senha",getSenha());
+        hashMapUsuario.put("tipo",getTipo());
+
+        return  hashMapUsuario;
     }
 }

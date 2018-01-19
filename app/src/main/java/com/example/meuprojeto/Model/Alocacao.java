@@ -6,8 +6,8 @@ package com.example.meuprojeto.Model;
 
 public class Alocacao {
     private String DataInicio;
-    private int IdProjeto; //fk de projeto
-    private int IdAluno; //fk de aluno
+    private String IdProjeto; //fk de projeto
+    private String IdAluno; //fk de aluno
 
     public Alocacao() {
     }
@@ -20,19 +20,19 @@ public class Alocacao {
         DataInicio = dataInicio;
     }
 
-    public int getIdProjeto() {
+    public String getIdProjeto() {
         return IdProjeto;
     }
 
-    public void setIdProjeto(int idProjeto) {
+    public void setIdProjeto(String idProjeto) {
         IdProjeto = idProjeto;
     }
 
-    public int getIdAluno() {
+    public String getIdAluno() {
         return IdAluno;
     }
 
-    public void setIdAluno(int idAluno) {
+    public void setIdAluno(String idAluno) {
         IdAluno = idAluno;
     }
 }
