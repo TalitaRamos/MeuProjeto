@@ -34,17 +34,13 @@ public class MainActivity extends AppCompatActivity {
         senha =(EditText)findViewById(R.id.senha);
         button = (Button)findViewById(R.id.button);
 
-        //--------NAVEGAR PRA TELA DE PROJETO
+        //--------NAVEGAR PRA TELA DE PROJETO-------
         button.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View view) {
-                //System.out.println("login1"+login.getText());
-                //System.out.println("senha1"+senha.getText());
                 if(!login.getText().toString().equals("")&& !senha.getText().toString().equals("")){
                     acesso = new Acesso();
-                    //System.out.println("login"+login.getText());
-                    //System.out.println("senha"+senha.getText());
                     acesso.setLogin(login.getText().toString());
                     acesso.setSenha(senha.getText().toString());
                     validarLogin();
@@ -61,11 +57,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
-                    System.out.println("validando");
                     abrirTelaProjeto();
                     Toast.makeText(MainActivity.this,"Login efetuado com sucesso!",Toast.LENGTH_SHORT).show();
                 }else{
-                    System.out.println("validando2");
                     Toast.makeText(MainActivity.this,"Usuário ou senha inválidos!",Toast.LENGTH_SHORT).show();
                 }
             }
@@ -76,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intentabrirTelaProjeto = new Intent(MainActivity.this, Project_prof.class);
         startActivity(intentabrirTelaProjeto);
     }
-    //-------FIM NAVEGAR PRA TELA PROJETO
+    //-------FIM NAVEGAR PRA TELA PROJETO------
 
     //NAVEGAR PRA TELA DE CADASTRO
     public void startActivity(View view) {
