@@ -4,71 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.meuprojeto.Activity.cadastroProjeto">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="6dp">
 
-    <LinearLayout
-        android:layout_width="344dp"
-        android:layout_height="551dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp"
-        android:gravity="center"
-        tools:ignore="MissingConstraints">
-
-
-        <TextView
-            android:id="@+id/textView11"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/cadastro_de_projetos"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:gravity="center"/>
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="194dp"
+            tools:layout_editor_absoluteY="0dp">
 
-        <EditText
-            android:id="@+id/nomeProj"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:ems="10"
-            android:hint="@string/nome_do_projeto"
-            android:inputType="textPersonName" />
 
-        <EditText
-            android:id="@+id/descrProj"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/descri_o"
-            android:inputType="textMultiLine" />
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/cadastro_de_projetos"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="@string/status"
-            android:layout_marginTop="20dp"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            />
+            <EditText
+                android:id="@+id/nomeProj"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="@string/nome_do_projeto"
+                android:inputType="textPersonName" />
 
-        <Spinner
-            android:id="@+id/Status_spinner"
-            android:layout_width="300dp"
-            android:layout_height="36dp"
-            android:layout_marginTop="10dp"
-            android:entries="@array/status_spinner" />
+            <EditText
+                android:id="@+id/descrProj"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/descri_o"
+                android:inputType="textMultiLine" />
 
-        <Button
-            android:id="@+id/cadaProjec"
-            style="@style/Button_style"
-            android:layout_width="207dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="30dp"
-            android:text="@string/cadastrar"
-            android:onClick="VerProject"
-            />
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/status"
+                android:textSize="18sp"
+                android:textStyle="normal" />
 
-    </LinearLayout>
+            <Spinner
+                android:id="@+id/Status_spinner"
+                android:layout_width="300dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/status_spinner" />
+
+            <Button
+                android:id="@+id/cadaProjec"
+                style="@style/Button_style"
+                android:layout_width="207dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:onClick="VerProject"
+                android:text="@string/cadastrar" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </android.support.constraint.ConstraintLayout>
