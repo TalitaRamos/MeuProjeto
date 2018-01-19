@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.meuprojeto.MainActivity">
+    tools:context="com.example.meuprojeto.Activity.MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="359dp"
         android:layout_height="653dp"
         android:gravity="center"
         android:orientation="vertical"
@@ -19,16 +19,15 @@
             android:layout_width="95dp"
             android:layout_height="143dp"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/lamp"
-            android:contentDescription="@string/todo" />
+            android:contentDescription="@string/todo"
+            android:src="@drawable/lamp" />
 
         <TextView
             android:id="@+id/acesse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:text="@string/acesse_j_sua_conta"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -37,10 +36,10 @@
             android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:ems="10"
+            android:layout_marginTop="30dp"
+            android:ems="13"
             android:hint="@string/email_log"
-            android:inputType="textPersonName"
+            android:inputType="textEmailAddress"
             tools:layout_editor_absoluteX="109dp"
             tools:layout_editor_absoluteY="239dp" />
 
@@ -48,10 +47,10 @@
             android:id="@+id/senha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:ems="10"
-            android:inputType="textPassword"
+            android:layout_marginTop="5dp"
+            android:ems="13"
             android:hint="@string/senhas"
+            android:inputType="textPassword"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="239dp" />
 
@@ -60,7 +59,7 @@
             style="@style/Button_style"
             android:layout_width="207dp"
             android:layout_height="40dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="5dp"
             android:text="@string/login" />
 
         <TextView
@@ -76,10 +75,10 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="startActivity"
             android:text="@string/cadastre_se"
             tools:layout_editor_absoluteX="163dp"
-            tools:layout_editor_absoluteY="368dp"
-            android:onClick="startActivity" />
+            tools:layout_editor_absoluteY="368dp" />
     </LinearLayout>
 
 

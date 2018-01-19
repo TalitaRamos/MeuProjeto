@@ -4,26 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.meuprojeto.cadastro">
+    tools:context="com.example.meuprojeto.Activity.cadastro">
+
 
     <LinearLayout
-        android:layout_width="425dp"
-        android:layout_height="643dp"
+        android:layout_width="344dp"
+        android:layout_height="551dp"
         android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
         android:gravity="center"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:ignore="MissingConstraints">
+
 
         <ImageView
             android:id="@+id/imageView6"
             android:layout_width="100dp"
             android:layout_height="116dp"
-            app:srcCompat="@drawable/lamp" android:contentDescription="@string/todo" />
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/lamp" />
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
@@ -83,9 +86,9 @@
             style="@style/Button_style"
             android:layout_width="207dp"
             android:layout_height="40dp"
-            android:layout_marginTop="60dp"
-            android:text="@string/professores"
-            android:onClick="cadProf"/>
+            android:layout_marginTop="30dp"
+            android:onClick="cadProf"
+            android:text="@string/professores" />
 
         <Button
             android:id="@+id/button_aluno"
@@ -93,9 +96,8 @@
             android:layout_width="207dp"
             android:layout_height="40dp"
             android:layout_marginTop="30dp"
-            android:text="@string/alunos"
-            android:onClick="cadAlun"/>
-
+            android:onClick="cadAlun"
+            android:text="@string/alunos" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

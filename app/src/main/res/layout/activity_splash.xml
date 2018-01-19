@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context="com.example.meuprojeto.Splash">
+    tools:context="com.example.meuprojeto.Activity.cadastro$Splash">
 
 
     <LinearLayout
