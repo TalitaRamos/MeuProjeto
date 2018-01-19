@@ -5,19 +5,22 @@ package com.example.meuprojeto.Model;
  */
 
 public class Acesso {
-    private String id;
+    private int idAcesso;
     private String login;
     private String senha;
+    private int tipo;
+    //TIPO 1== PROFESSOR
+    //TIPO 2==ALUNO
 
     public Acesso() {
     }
 
-    public String getId() {
-        return id;
+    public int getIdAcesso() {
+        return idAcesso;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setIdAcesso(int idAcesso) {
+        this.idAcesso = idAcesso;
     }
 
     public String getLogin() {

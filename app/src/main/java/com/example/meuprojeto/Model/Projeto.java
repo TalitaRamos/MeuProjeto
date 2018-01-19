@@ -5,17 +5,21 @@ package com.example.meuprojeto.Model;
  */
 
 public class Projeto {
-    long id;
+    private int idProjeto;
     private String nome;
     private String descricao;
     private String status;
+    private int IdProfessor;//fk de professor
 
-    public long getId() {
-        return id;
+    public Projeto() {
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public int getIdProjeto() {
+        return idProjeto;
+    }
+
+    public void setIdProjeto(int idProjeto) {
+        this.idProjeto = idProjeto;
     }
 
     public String getNome() {
@@ -41,5 +45,13 @@ public class Projeto {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public int getIdProfessor() {
+        return IdProfessor;
+    }
+
+    public void setIdProfessor(int idProfessor) {
+        IdProfessor = idProfessor;
     }
 }
