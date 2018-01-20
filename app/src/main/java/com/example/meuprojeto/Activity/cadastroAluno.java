@@ -121,7 +121,7 @@ public class cadastroAluno extends AppCompatActivity {
     }
 
     private void abrirTelaAluno(){
-        //Intent intent = new Intent(cadastroAluno.this,Aluno_projeto.class);
-        //startActivity(intent);
+        Intent intent = new Intent(cadastroAluno.this,ProjetoAluno.class);
+        startActivity(intent);
     }
 }

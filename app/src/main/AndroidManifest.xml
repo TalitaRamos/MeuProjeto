@@ -27,6 +27,10 @@
             android:name=".Activity.Project_prof"
             android:label="@string/title_activity_project_prof"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity.ProjetoAluno"
+            android:label="@string/title_activity_projeto_aluno"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
