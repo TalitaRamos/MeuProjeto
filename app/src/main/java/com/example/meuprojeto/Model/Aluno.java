@@ -1,5 +1,12 @@
 package com.example.meuprojeto.Model;
 
+import com.example.meuprojeto.DAO.ConfiguracaoFirebase;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.Exclude;
+
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by Talit on 18/01/2018.
  */
@@ -9,7 +16,7 @@ public class Aluno {
     private String NomeAluno;
     private String EmailAluno;
     private String CursoAluno;
-    private String IdAcessoAluno; //fk de acesso
+    private String fkAcessoAluno; //fk de acesso
     //talvez precise se uma variavel tipo ACESSO
 
 
@@ -48,11 +55,28 @@ public class Aluno {
         CursoAluno = cursoAluno;
     }
 
-    public String getIdAcessoAluno() {
-        return IdAcessoAluno;
+    public String getFkAcessoAluno() {
+        return fkAcessoAluno;
     }
 
-    public void setIdAcessoAluno(String idAcessoAluno) {
-        IdAcessoAluno = idAcessoAluno;
+    public void setFkAcessoAluno(String fkAcessoAluno) {
+        this.fkAcessoAluno = fkAcessoAluno;
+    }
+
+    public void salvar(){
+        DatabaseReference referenciaFirebase = ConfiguracaoFirebase.getFirebase();
+        referenciaFirebase.child("Aluno").child(String.valueOf(getIdAluno())).setValue(this);
+    }
+    @Exclude
+    public Map<String, Object> toMappin(){
+        HashMap<String, Object> hashMapUsuario = new HashMap<>();
+
+        hashMapUsuario.put("IdAluno",getIdAluno());
+        hashMapUsuario.put("NomeAluno",getNomeAluno());
+        hashMapUsuario.put("EmailAluno",getEmailAluno());
+        hashMapUsuario.put("CursoAluno",getCursoAluno());
+        hashMapUsuario.put("fkAcessoAluno;",getFkAcessoAluno());
+
+        return  hashMapUsuario;
     }
 }
