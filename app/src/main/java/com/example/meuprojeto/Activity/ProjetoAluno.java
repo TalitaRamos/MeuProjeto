@@ -16,7 +16,6 @@ import com.example.meuprojeto.R;
 
 public class ProjetoAluno extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    private int teste;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -22,8 +22,4 @@
         app:headerLayout="@layout/nav_header_projeto_aluno"
         app:menu="@menu/activity_projeto_aluno_drawer" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
 </android.support.v4.widget.DrawerLayout>
