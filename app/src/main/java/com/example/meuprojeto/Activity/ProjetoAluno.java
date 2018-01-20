@@ -16,6 +16,7 @@ import com.example.meuprojeto.R;
 
 public class ProjetoAluno extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    private int teste;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,6 +95,7 @@ public class ProjetoAluno extends AppCompatActivity
         } else if (id == R.id.nav_send) {
 
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
