@@ -29,7 +29,13 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
     private Button button;
     private FirebaseAuth autenticacao;
     private Acesso acesso;
+    List<Acesso> acessoLista;
+    DatabaseReference dataRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
         login = (EditText)findViewById(R.id.login);
         senha = (EditText)findViewById(R.id.senha);
         button = (Button)findViewById(R.id.button);
+
+
 
         //--------NAVEGAR PRA TELA DE PROJETO-------
         button.setOnClickListener(new View.OnClickListener() {
@@ -66,6 +76,10 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    private void criarLista(){
+        dataRef=FirebaseDatabase.getInstance().getReference("Acesso");
+        acessoLista=new ArrayList<>();
+    }
 
     private void validarLogin(){
         autenticacao= ConfiguracaoFirebase.getFirebaseAutenticacao();
@@ -73,41 +87,51 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
-                    /*
+
                     //INICIO Verificar tipo de conta
-                    //verificar se o usuario esta logado
-                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                    if (user != null) {
-                        System.out.println("logado");
-                        String name = user.getDisplayName();
-                        String email = user.getEmail();
-                        //Uri photoUrl = user.getPhotoUrl();
-                        System.out.println("nome"+name);
-                        System.out.println("logado"+email);
-                    } else {
-                        // No user is signed in
-                        System.out.println("nao logado");
-                    }
-                   String currentUser = autenticacao.getCurrentUser().getUid();
-                   System.out.println("referencia"+currentUser);
-                    DatabaseReference referencia = ConfiguracaoFirebase.getFirebase().child("Acesso").child(currentUser).child("tipo");
-                    referencia.addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(DataSnapshot dataSnapshot) {
-                            Acesso a = dataSnapshot.getValue(Acesso.class);
-                           // int tip= (Integer)dataSnapshot.getValue();
-                            int tip=Integer.parseInt(dataSnapshot.getValue().toString());
-                            System.out.println("tipo="+tip);
-                        }
+                    //criar lista
+                    final List<Acesso> acessoList = new ArrayList<>();
+                    FirebaseDatabase.getInstance()
+                            .getReference()
+                            .child("Acesso")
+                            .addListenerForSingleValueEvent(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(DataSnapshot dataSnapshot) {
+                                    int tip=8; String email="r";
+                                    //pegar email do usuario logado
+                                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                                    if (user != null) {
+                                        email = user.getEmail();
+                                    } else {
+                                        // No user is signed in
+                                    }
 
-                        @Override
-                        public void onCancelled(DatabaseError databaseError) {
+                                    //adicionar usuarios na lista
+                                    for (DataSnapshot snapshot : dataSnapshot.getChildren()){
+                                        Acesso acess = snapshot.getValue(Acesso.class); // this is your user
+                                        acessoList.add(acess); // add to list
+                                    }
 
-                        }
-                    });
-                    //fim verificar tipo de conta*/
+                                    //pegar tipo do usuario logado
+                                    for(int i=0;i<acessoList.size();i++){
+                                        if(acessoList.get(i).getLogin().equals(email)){
+                                            tip=acessoList.get(i).getTipo();
+                                        }
+                                    }
 
-                    abrirTelaProjetoProf();
+                                    if(tip==1){
+                                        abrirTelaProjetoProf();
+                                    }else if(tip==2){
+                                        abrirTelaProjetoAlun();
+                                    }
+                                }
+                                @Override
+                                public void onCancelled(DatabaseError databaseError) {
+
+                                }
+                            });
+                    //fim verificar tipo de conta
+                    
                     Toast.makeText(MainActivity.this,"Login efetuado com sucesso!",Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(MainActivity.this,"Usuário ou senha inválidos!",Toast.LENGTH_SHORT).show();

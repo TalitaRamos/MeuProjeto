@@ -1,4 +1,4 @@
-#Sun Jan 21 03:53:49 BRT 2018
+#Mon Jan 22 16:01:40 BRT 2018
 base.0=C\:\\Users\\Talit\\AndroidStudioProjects\\MeuProjeto\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
 path.0=classes.dex
 renamed.0=classes.dex

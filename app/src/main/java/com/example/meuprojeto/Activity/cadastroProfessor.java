@@ -23,6 +23,10 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.List;
 
 public class cadastroProfessor extends AppCompatActivity {
 
@@ -43,6 +47,7 @@ public class cadastroProfessor extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_professor);
 
+        //databaseRef= FirebaseDatabase.getInstance().getReference("Professor");
         tipo = 1; // 1 porque é professor
         //MESMO NOME DOOS CAMPOS DA ACTIVITY
         nome_Prof = (EditText)findViewById(R.id.nome_Prof);
@@ -59,12 +64,14 @@ public class cadastroProfessor extends AppCompatActivity {
                 if(senha_Prof.getText().toString().equals(repete_Prof.getText().toString())){
                     acesso = new Acesso();
                     professor = new Professor();
-                    acesso.setLogin(email_Prof.getText().toString());
-                    acesso.setSenha(senha_Prof.getText().toString());
+
+                    acesso.setLogin(email_Prof.getText().toString().trim());
+                    acesso.setSenha(senha_Prof.getText().toString().trim());
                     acesso.setTipo(tipo);
-                    professor.setNomeProf(nome_Prof.getText().toString());
-                    professor.setEmailProf(email_Prof.getText().toString());
-                    professor.setAreaProf(area_Prof.getText().toString());
+
+                    professor.setNomeProf(nome_Prof.getText().toString().trim());
+                    professor.setEmailProf(email_Prof.getText().toString().trim());
+                    professor.setAreaProf(area_Prof.getText().toString().trim());
                     cadastrarProfessor();
                 }else{
                     Toast.makeText(cadastroProfessor.this,"As senhas não correspondem!",Toast.LENGTH_SHORT).show();
@@ -87,7 +94,7 @@ public class cadastroProfessor extends AppCompatActivity {
                     professor.setIdAcessoProf(identificadorUsuario);
                     acesso.salvar();
 
-                    //---SALVAR PROFESSOR---///
+                    //---SALVAR PROFESSOR---///T
                     String identificadorProfessor= Base64custom.codificarBase64(professor.getEmailProf());
                     FirebaseUser usuarioFire = task.getResult().getUser();
                     professor.setIdProfessor(identificadorProfessor);
@@ -97,6 +104,17 @@ public class cadastroProfessor extends AppCompatActivity {
                     Preferencias preferencias = new Preferencias(cadastroProfessor.this);
                     preferencias.salvarUsuarioPreferencias(identificadorUsuario, professor.getNomeProf());
                     abrirTelaProfessor();
+
+                    //VERIFICANDO SE O USUÁRIO ESTÁ LOGADO
+                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                    if (user != null) {
+                        String email = user.getEmail();
+                        System.out.println("logado"+email);
+                    } else {
+                        // No user is signed in
+                        System.out.println("nao logado");
+                    }
+                    //FIM VERIFICANDO SE O USUUÁRIO ESTÁ LOGADO
                 }else{
                     String error = "";
                     try {

@@ -99,6 +99,17 @@ public class cadastroAluno extends AppCompatActivity {
                     Preferencias preferenciaAlun = new Preferencias(cadastroAluno.this);
                     preferenciaAlun.salvarUsuarioPreferencias(identificadorUsuario, aluno.getNomeAluno());
                     abrirTelaAluno();
+
+                    //VERIFICANDO SE O USUÁRIO ESTÁ LOGADO
+                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                    if (user != null) {
+                        String email = user.getEmail();
+                        System.out.println("logado"+email);
+                    } else {
+                        // No user is signed in
+                        System.out.println("nao logado");
+                    }
+                    //FIM VERIFICANDO SE O USUUÁRIO ESTÁ LOGADO
                 }else{
                     String error = "";
                     try {
