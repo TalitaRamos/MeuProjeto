@@ -25,6 +25,11 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -56,9 +61,11 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                     Toast.makeText(MainActivity.this, "Preencha os campos de email e senha!",Toast.LENGTH_SHORT).show();
                 }
+
             }
         });
     }
+
 
     private void validarLogin(){
         autenticacao= ConfiguracaoFirebase.getFirebaseAutenticacao();
@@ -66,7 +73,41 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
-                    abrirTelaProjeto();
+                    /*
+                    //INICIO Verificar tipo de conta
+                    //verificar se o usuario esta logado
+                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                    if (user != null) {
+                        System.out.println("logado");
+                        String name = user.getDisplayName();
+                        String email = user.getEmail();
+                        //Uri photoUrl = user.getPhotoUrl();
+                        System.out.println("nome"+name);
+                        System.out.println("logado"+email);
+                    } else {
+                        // No user is signed in
+                        System.out.println("nao logado");
+                    }
+                   String currentUser = autenticacao.getCurrentUser().getUid();
+                   System.out.println("referencia"+currentUser);
+                    DatabaseReference referencia = ConfiguracaoFirebase.getFirebase().child("Acesso").child(currentUser).child("tipo");
+                    referencia.addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(DataSnapshot dataSnapshot) {
+                            Acesso a = dataSnapshot.getValue(Acesso.class);
+                           // int tip= (Integer)dataSnapshot.getValue();
+                            int tip=Integer.parseInt(dataSnapshot.getValue().toString());
+                            System.out.println("tipo="+tip);
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+
+                        }
+                    });
+                    //fim verificar tipo de conta*/
+
+                    abrirTelaProjetoProf();
                     Toast.makeText(MainActivity.this,"Login efetuado com sucesso!",Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(MainActivity.this,"Usuário ou senha inválidos!",Toast.LENGTH_SHORT).show();
@@ -75,11 +116,18 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void abrirTelaProjeto(){
+    public void abrirTelaProjetoProf(){
         Intent intentabrirTelaProjeto = new Intent(MainActivity.this, Project_prof.class);
         startActivity(intentabrirTelaProjeto);
     }
+
+    public void abrirTelaProjetoAlun(){
+        Intent intentabrirTelaProjeto = new Intent(MainActivity.this, ProjetoAluno.class);
+        startActivity(intentabrirTelaProjeto);
+    }
+
     //-------FIM NAVEGAR PRA TELA PROJETO------
+
 
     //NAVEGAR PRA TELA DE CADASTRO
     public void startActivity(View view) {
