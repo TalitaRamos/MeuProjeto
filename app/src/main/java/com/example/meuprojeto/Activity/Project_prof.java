@@ -35,11 +35,11 @@ public class Project_prof extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                      .setAction("Action", null).show();
+               //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                      //.setAction("Action", null).show();
 
-                //Intent it = new Intent(Project_prof.this, cadastroProjeto.class);
-                //startActivity(it);
+                Intent it = new Intent(Project_prof.this, cadastroProjeto.class);
+                startActivity(it);
             }
         });
 

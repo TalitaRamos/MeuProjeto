@@ -73,7 +73,7 @@ public class cadastroProjeto extends AppCompatActivity {
                                             String id = meuProjeto.push().getKey();
                                             Projeto projeto = new Projeto(id,nome,descr,status,iden);
                                             meuProjeto.child(id).setValue(projeto);
-                                            VerProject();
+                                            VerTelaProject();
                                             Toast.makeText(cadastroProjeto.this, "Projeto Adicionado", Toast.LENGTH_LONG).show();
                                         }else{
                                             Toast.makeText(cadastroProjeto.this, "Você deve digitar um nome", Toast.LENGTH_LONG).show();
@@ -92,10 +92,17 @@ public class cadastroProjeto extends AppCompatActivity {
         });
     }
 
-
     //NAVEGAR PRA TELA DE PROJETOS
-    public void VerProject(){
+    public void VerTelaProject(){
         Intent in = new Intent(cadastroProjeto.this,Project_prof.class);
+        startActivity(in);
+    }
+
+
+
+    //NAVEGAR PRA TELA DE PROJETOS-usado pelo xml
+    public void VerProject(View c){
+        Intent in = new Intent(this,Project_prof.class);
         startActivity(in);
     }
 }
