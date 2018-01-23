@@ -8,4 +8,14 @@
     tools:context="com.example.meuprojeto.Activity.ProjetoAluno"
     tools:showIn="@layout/app_bar_projeto_aluno">
 
+
+    <ListView
+        android:id="@+id/listViewProject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        tools:ignore="UnknownId">
+
+    </ListView>
+
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_line_title"
+        tools:text="Projeto"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_line_prof"
+        tools:text="Professor"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        />
+
+    <ImageButton
+        android:id="@+id/proxima"
+        android:src="@drawable/ic_menu_send"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:background="?selectableItemBackground"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+       />
+
+
+</LinearLayout>

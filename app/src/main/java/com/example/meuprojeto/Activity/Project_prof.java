@@ -35,8 +35,11 @@ public class Project_prof extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+               Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                      .setAction("Action", null).show();
+
+                //Intent it = new Intent(Project_prof.this, cadastroProjeto.class);
+                //startActivity(it);
             }
         });
 
@@ -113,5 +116,12 @@ public class Project_prof extends AppCompatActivity
         Intent intent = new Intent(Project_prof.this, MainActivity.class);
         startActivity(intent);
         //finish();
+    }
+
+    public void abrirTelaProjeto(){
+        Intent intent = new Intent(Project_prof.this, cadastroProjeto.class);
+        System.out.println("entrei");
+        startActivity(intent);
+        System.out.println("entrei2");
     }
 }

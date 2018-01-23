@@ -102,9 +102,11 @@ public class cadastroProfessor extends AppCompatActivity {
 
                     //SALVAR USUARIO LOGADO
                     Preferencias preferencias = new Preferencias(cadastroProfessor.this);
-                    preferencias.salvarUsuarioPreferencias(identificadorUsuario, professor.getNomeProf());
-                    abrirTelaProfessor();
 
+                    preferencias.salvarUsuarioPreferencias(identificadorUsuario, professor.getNomeProf());
+                    System.out.println("paeei por aqui1");
+                    abrirTelaProfessor();
+                    System.out.println("paeei por aqui");
                     //VERIFICANDO SE O USUÁRIO ESTÁ LOGADO
                     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                     if (user != null) {

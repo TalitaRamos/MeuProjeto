@@ -56,8 +56,6 @@ public class MainActivity extends AppCompatActivity {
         senha = (EditText)findViewById(R.id.senha);
         button = (Button)findViewById(R.id.button);
 
-
-
         //--------NAVEGAR PRA TELA DE PROJETO-------
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,10 +74,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void criarLista(){
-        dataRef=FirebaseDatabase.getInstance().getReference("Acesso");
-        acessoLista=new ArrayList<>();
-    }
 
     private void validarLogin(){
         autenticacao= ConfiguracaoFirebase.getFirebaseAutenticacao();
@@ -131,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             });
                     //fim verificar tipo de conta
-                    
+
                     Toast.makeText(MainActivity.this,"Login efetuado com sucesso!",Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(MainActivity.this,"Usuário ou senha inválidos!",Toast.LENGTH_SHORT).show();

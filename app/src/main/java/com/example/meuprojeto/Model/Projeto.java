@@ -1,7 +1,7 @@
 package com.example.meuprojeto.Model;
 
 /**
- * Created by Talit on 17/01/2018.
+ * Created by Paloma on 22/01/2018.
  */
 
 public class Projeto {
@@ -12,6 +12,20 @@ public class Projeto {
     private String IdProfessor;//fk de professor
 
     public Projeto() {
+    }
+    public Projeto(String idProjeto, String nome, String  descricao,String status) {
+        this.idProjeto = idProjeto;
+        this.nome = nome;
+        this.descricao = descricao;
+        this.status = status;
+    }
+
+    public Projeto(String idProjeto, String nome, String  descricao,String status, String IdProfessor) {
+        this.idProjeto = idProjeto;
+        this.nome = nome;
+        this.descricao = descricao;
+        this.status = status;
+        this.IdProfessor=IdProfessor;
     }
 
     public String getIdProjeto() {
