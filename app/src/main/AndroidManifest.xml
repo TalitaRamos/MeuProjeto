@@ -31,7 +31,8 @@
             android:name=".Activity.ProjetoAluno"
             android:label="@string/title_activity_projeto_aluno"
             android:theme="@style/AppTheme" />
-        <activity android:name=".Activity.Info"></activity>
+        <activity android:name=".Activity.Info" />
+        <activity android:name=".Activity.ListAlunoProjeto"></activity>
     </application>
 
 </manifest>

@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.example.meuprojeto.Model.Professor;
 import com.example.meuprojeto.Model.Projeto;
 
 import java.util.List;
@@ -15,14 +16,14 @@ import java.util.List;
  * Created by Talit on 23/01/2018.
  */
 
-public class AlunoAdapter extends ArrayAdapter<Projeto> {
+public class AlunoAdapter extends ArrayAdapter<Professor> {
     private Activity context;
-    private List<Projeto> projetoList;
+    private List<Professor> profList;
 
-    public AlunoAdapter(Activity context, List<Projeto> projetoList){
-        super(context, R.layout.main_line_view,projetoList);
+    public AlunoAdapter(Activity context, List<Professor> profList){
+        super(context, R.layout.main_line_view,profList);
         this.context=context;
-        this.projetoList=projetoList;
+        this.profList=profList;
     }
 
     // método que é chamado para fornecer cada item da lista
@@ -43,12 +44,12 @@ public class AlunoAdapter extends ArrayAdapter<Projeto> {
         // a posição do projeto na lista (armazenamento) é a mesma na lista (listview)
         // então usamos esse valor (position) para acessar o objeto "Projeto" correto
         // dentro da lista projetoList
-        Projeto projeto = projetoList.get(position);
+        Professor prof = profList.get(position);
 
         // finalmente, colocamos os valores do objeto artista recuperado
         // nas views que formam nosso item da lista
-        textTitle.setText(projeto.getNome());
-        textProf.setText(projeto.getIdProfessor());
+        textTitle.setText(prof.getNomeProf());
+        textProf.setText(prof.getAreaProf());
 
         // a view está pronta! É só devolver para quem pediu
         return listViewItem;

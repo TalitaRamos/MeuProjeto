@@ -49,6 +49,7 @@
             android:label="@string/title_activity_projeto_aluno"
             android:theme="@style/AppTheme" />
         <activity android:name="com.example.meuprojeto.Activity.Info" />
+        <activity android:name="com.example.meuprojeto.Activity.ListAlunoProjeto" />
 
         <meta-data
             android:name="android.support.VERSION"

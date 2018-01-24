@@ -6,25 +6,25 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.0.1"
-    timestamp="1516749171178"
+    timestamp="1516768229222"
     token="4256581956328106966"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="1773" />
+        duration="10918" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="181" />
+        duration="1017" />
     <task
         name="verifier"
-        duration="47" />
+        duration="585" />
 
     <artifact
-        location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
@@ -36,36 +36,36 @@
         location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
         type="SPLIT" />
     <artifact
+        location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
+    <artifact
         location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\outputs\apk\debug\app-debug.apk"
+        type="SPLIT_MAIN" />
+    <artifact
+        location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-        type="SPLIT" />
-    <artifact
         location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
         type="SPLIT" />
-    <artifact
-        location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\outputs\apk\debug\app-debug.apk"
-        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1516749171178"
+        timestamp="1516768229222"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
@@ -77,29 +77,29 @@
             location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
+            location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
             location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\outputs\apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
+        <artifact
+            location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
             location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
-        <artifact
-            location="C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\build\outputs\apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

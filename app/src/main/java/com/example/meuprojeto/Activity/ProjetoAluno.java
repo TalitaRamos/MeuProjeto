@@ -13,9 +13,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.meuprojeto.AlunoAdapter;
+import com.example.meuprojeto.Model.Professor;
 import com.example.meuprojeto.Model.Projeto;
 import com.example.meuprojeto.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -33,11 +35,11 @@ public class ProjetoAluno extends AppCompatActivity
 
     DatabaseReference databaseProjetos;
     // para acessar nossa nova ListView
-    ListView listViewProjeto;
+    ListView listViewProf;
 
-    // lista para armazenar os objetos "Projeto" que leremos do banco de dados
+    // lista para armazenar os objetos "Professor" que leremos do banco de dados
     // obs: por enquanto, só a referência...
-    List<Projeto> projetoList;
+    List<Professor> profList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,22 +67,34 @@ public class ProjetoAluno extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         //apontando para o nó projeto
-        databaseProjetos= FirebaseDatabase.getInstance().getReference("Projeto");
+        databaseProjetos= FirebaseDatabase.getInstance().getReference("Professor");
         //acessando a nova LiestView no arquivo de layout
-        listViewProjeto=(ListView)findViewById(R.id.listViewProject);
+        listViewProf=(ListView)findViewById(R.id.listViewProject);
 
-        // efetivamente criando a lista que vai armazenar os artistas
-        // que leremos do banco de dados
-        projetoList = new ArrayList<>();
-        // lembrando o ciclo de vida de um app android, o primeiro método
-        // que é executado é o onCreate, geralmente para carregar os layouts
-        // e inicializar as coisas.
-        //
-        // logo a seguir, é chamado o método onStart. Este método também é chamado
-        // quando o app estava em background e volta a ter foco. Logo, colocaremos aqui
-        // o código para recuperar os dados do firebase e colocar na lista,
-        // pois pode ter havido alteração nos dados quando o app estava em background
-        // (por outra cópia em execução do nosso app, por exemplo).
+        //lista com os professores
+        profList = new ArrayList<>();
+
+        // definindo um listener para chamar a activity dos projetos, quando
+        // for clicado um Professor na lista de Professores
+
+
+        listViewProf.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                // a lista foi clicada, na posição indicada pelo parâmetro i
+                // vamos então pegar o objeto professor correspndente a esta posição
+                // na lista de professores
+                Professor professor = profList.get(i);
+                // vamos chamar a nova activity, para trabalhar com os projetos
+                Intent intent = new Intent(getApplicationContext(),ListAlunoProjeto.class);
+                // guardando o nome, id e email do professor na intent, para ser recuperada
+                // pela nova activity
+                intent.putExtra("nomeProf", professor.getNomeProf());
+                intent.putExtra("idProfessor", professor.getIdProfessor());
+                intent.putExtra("emailProf", professor.getEmailProf());
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -90,45 +104,26 @@ public class ProjetoAluno extends AppCompatActivity
         // criando um tratador de eventos relacionado com nosso
         // banco de dados Firebase
         databaseProjetos.addValueEventListener(new ValueEventListener() {
+
             // método chamado automaticamente quando houver mudança nos dados
             // armazenados no firebase
-            // lembre-se!! databaseArtist "aponta" para a chave "Projeto" no
-            // JSON dos dados no firebase. Então, se algo mudar "ali dentro",
-            // (isto é, dados de artistas), este método será chamado.
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                // se entrou aqui, é porque mudou alguma coisa nos artistas
-                // que estão no banco de dados. Então, vamos limpar a lista
-                // que armazena esses artistas, para recuperar esses dados
-                // novamente (já que não sabemos exatamente o que mudou)
-                projetoList.clear();
-                // Recebemos um objeto DataSnapshot, que tem os dados
-                // apontados por nossa referencia no firebase, isto é,
-                // os dados que estão "debaixo" da chave "Artists".
+                // se entrou aqui, é porque mudou alguma coisa nos professores do banco
+                // vamos limpar a lista
+                //  para recuperar esses dados
+                // novamente
+                profList.clear();
+
                 // Vamos então "varrer" esse objeto, pegando os dados lá dentro
                 // e criando objetos da nossa classe Artist, para colocar na lista
                 for(DataSnapshot projetoSnapShot:dataSnapshot.getChildren()){
-                    //artistSnapshot tem um dos "filhos" de "Projeto", isto é,
-                    // tem os dados de um ptojeto.
-                    // Vamos então criar um objeto artista, a partir desses dados
-                    //
-                    // ... getValue(Artist.class)
-                    //     pegue os dados, e a partir deles crie um objeto da
-                    //     classe Artist.
-                    Projeto project = projetoSnapShot.getValue(Projeto.class);
-                    // enfim, colocamos o objeto artista criado a partir dos dados lidos
-                    // na nossa lista de artistas
-                    projetoList.add(project);
+                    Professor prof = projetoSnapShot.getValue(Professor.class);
+                    profList.add(prof);
                 }
 
-                // agora que temos nossa lista de artistas atualizada,
-                // podemos criar o adapter que vai ser responsável por
-                // colocar esses dados no ListView,
-                // passando nossa lista para este adapter
-                AlunoAdapter adapter = new AlunoAdapter(ProjetoAluno.this, projetoList);
-                // finalmente, informamos ao ListView quem é o adapter que vai
-                // exibir os dados
-                listViewProjeto.setAdapter(adapter);
+                AlunoAdapter adapter = new AlunoAdapter(ProjetoAluno.this, profList);
+                listViewProf.setAdapter(adapter);
             }
 
             @Override

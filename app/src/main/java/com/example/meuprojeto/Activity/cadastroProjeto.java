@@ -37,7 +37,7 @@ public class cadastroProjeto extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_projeto);
-        meuProjeto = FirebaseDatabase.getInstance().getReference("Projeto");
+
 
         nomeProj = (EditText) findViewById(R.id.nomeProj);
         descrProj = (EditText) findViewById(R.id.descrProj);
@@ -54,23 +54,34 @@ public class cadastroProjeto extends AppCompatActivity {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
                                 String iden="f"; String email="r";
+                                //pegar email do usuario logado
                                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                                 if(user !=null){
                                     email = user.getEmail();
                                 }
+                                //adicionar professores na lista
                                 for(DataSnapshot snapshot:dataSnapshot.getChildren()){
                                     Professor prof = snapshot.getValue(Professor.class);
                                     profList.add(prof);
                                 }
+
                                 for(int i=0;i<profList.size();i++){
+                                    //se o email for igual ao email do usuario logado
+                                    //então é
                                     if(profList.get(i).getEmailProf().equals(email)){
+                                        //pegar informações do projeto
                                         iden = profList.get(i).getIdProfessor();
                                         String nome = nomeProj.getText().toString().trim();
                                         String descr = descrProj.getText().toString().trim();
                                         String status = status_spinner.getSelectedItem().toString();
 
+                                        //definir que quando o projeto for gravado vai ser gravado abaixo do id do professor
+                                        meuProjeto = FirebaseDatabase.getInstance().getReference("Projeto").child(iden);
+
                                         if(!TextUtils.isEmpty(nome)){
+                                            //produzir id
                                             String id = meuProjeto.push().getKey();
+                                            //salvar projeto
                                             Projeto projeto = new Projeto(id,nome,descr,status,iden);
                                             meuProjeto.child(id).setValue(projeto);
                                             VerTelaProject();
