@@ -4,12 +4,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <!--layout da listview dos projetos na tela do aluno-->
+
     <TextView
         android:id="@+id/textViewName"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Nome Projeto"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"/>
 
@@ -17,7 +19,7 @@
         android:id="@+id/textStatus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Status"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"/>
 

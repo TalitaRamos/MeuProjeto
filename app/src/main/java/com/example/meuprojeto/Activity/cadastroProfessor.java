@@ -30,6 +30,8 @@ import java.util.List;
 
 public class cadastroProfessor extends AppCompatActivity {
 
+    //TELA DE CADASTRO DE PROFESSOR
+
     private EditText nome_Prof;
     private EditText email_Prof;
     private EditText area_Prof;

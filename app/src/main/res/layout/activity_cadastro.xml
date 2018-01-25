@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
     tools:context="com.example.meuprojeto.Activity.cadastro">
 
+    <!--TELA DE ESCOLHA ENTRE OS TIPOS DE CADASTRO
+    //CADASTRO DE PROFESSOR OU CADASTRO DE ALUNO-->
+
     <LinearLayout
         android:layout_width="344dp"
         android:layout_height="551dp"

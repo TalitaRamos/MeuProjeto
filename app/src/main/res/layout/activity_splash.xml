@@ -7,7 +7,7 @@
     android:background="@color/colorPrimary"
     tools:context="com.example.meuprojeto.Activity.cadastro$Splash">
 
-
+<!--TELA DE INTRODUÇÃO DO APLICATIVO-->
     <LinearLayout
         android:gravity="center"
         android:layout_width="match_parent"

@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
     tools:context="com.example.meuprojeto.Activity.Project_prof">
 
+    <!--// FAZ PARTE DO CONJUNTO DE TELAS NAVIGATION DRAWE ACTIVITY (PROJECT_PROF) QUE EXIBE OS PROJETOS DO PROFESSOR
+    //PERMITE ALTERAR O CADASTRO, DELETAR A CONTA E SAIR DA CONTA-->
+
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

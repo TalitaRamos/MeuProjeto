@@ -25,6 +25,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class cadastroProjeto extends AppCompatActivity {
+
+    //TELA DE CADSTRO DE PROJETO
+
     private EditText  nomeProj;
     private EditText descrProj;
     private Spinner status_spinner;
@@ -111,7 +114,7 @@ public class cadastroProjeto extends AppCompatActivity {
 
 
 
-    //NAVEGAR PRA TELA DE PROJETOS-usado pelo xml
+    //NAVEGAR PRA TELA DE PROJETOS-usado pelo xml quando clica no TextView
     public void VerProject(View c){
         Intent in = new Intent(this,Project_prof.class);
         startActivity(in);

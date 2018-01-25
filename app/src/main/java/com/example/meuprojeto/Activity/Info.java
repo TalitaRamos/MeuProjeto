@@ -7,6 +7,8 @@ import com.example.meuprojeto.R;
 
 public class Info extends AppCompatActivity {
 
+    //TELA COM INFORMAÇÕES SOBRE O APLICATIVO CHAMADO PELA BARRA DE OPÇOES DAS TELAS NAVIGATION DRAWER
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

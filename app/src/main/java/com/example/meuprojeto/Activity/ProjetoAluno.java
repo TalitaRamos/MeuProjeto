@@ -32,6 +32,7 @@ import java.util.List;
 
 public class ProjetoAluno extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    //TELA PRINCIPAL DO ALUNO
 
     DatabaseReference databaseProjetos;
     // para acessar nossa nova ListView

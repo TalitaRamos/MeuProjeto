@@ -9,6 +9,7 @@
     tools:showIn="@layout/app_bar_projeto_aluno">
 
 
+    <!--COMPONENTE DA //TELA PRINCIPAL DO ALUNO-->
     <ListView
         android:id="@+id/listViewProject"
         android:layout_width="match_parent"

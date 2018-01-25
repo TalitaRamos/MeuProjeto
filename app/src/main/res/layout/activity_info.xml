@@ -6,4 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.meuprojeto.Activity.Info">
 
+    <!--TELA COM INFORMAÇÕES SOBRE O APLICATIVO CHAMADO PELA BARRA DE OPÇOES DAS TELAS NAVIGATION DRAWER-->
+
 </android.support.constraint.ConstraintLayout>

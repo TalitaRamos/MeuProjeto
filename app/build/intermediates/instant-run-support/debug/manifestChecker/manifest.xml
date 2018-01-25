@@ -50,6 +50,7 @@
             android:theme="@style/AppTheme" />
         <activity android:name="com.example.meuprojeto.Activity.Info" />
         <activity android:name="com.example.meuprojeto.Activity.ListAlunoProjeto" />
+        <activity android:name="com.example.meuprojeto.Activity.detalhamentoProjetoAluno" />
 
         <meta-data
             android:name="android.support.VERSION"

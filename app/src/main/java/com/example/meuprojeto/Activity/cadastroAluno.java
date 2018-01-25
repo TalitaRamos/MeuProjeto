@@ -27,6 +27,8 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class cadastroAluno extends AppCompatActivity {
 
+    //TELA DE CADASTRO DE ALUNO
+
     private EditText nome_Alun;
     private EditText email_Alun;
     private EditText curso_Alun;

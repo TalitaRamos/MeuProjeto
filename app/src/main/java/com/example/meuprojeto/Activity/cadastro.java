@@ -12,6 +12,8 @@ import android.widget.TextView;
 import com.example.meuprojeto.R;
 
 public class cadastro extends AppCompatActivity {
+    //TELA DE ESCOLHA ENTRE OS TIPOS DE CADASTRO
+    //CADASTRO DE PROFESSOR OU CADASTRO DE ALUNO
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

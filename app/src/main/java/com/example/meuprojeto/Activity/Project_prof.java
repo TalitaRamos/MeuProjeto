@@ -23,6 +23,8 @@ import java.security.acl.Group;
 
 public class Project_prof extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    //NAVIGATION DRAWE ACTIVITY QUE EXIBE OS PROJETOS DO PROFESSOR
+    //PERMITE ALTERAR O CADASTRO, DELETAR A CONTA E SAIR DA CONTA
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

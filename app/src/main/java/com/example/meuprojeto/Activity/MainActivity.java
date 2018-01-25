@@ -39,6 +39,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    //TELA DE LOGIN
+
     private EditText login; //o login é um email
     private EditText senha;
     private Button button;

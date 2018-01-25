@@ -12,6 +12,10 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
+    <!--// FAZ PARTE DO CONJUNTO DE TELAS NAVIGATION DRAWE ACTIVITY (PROJECT_PROF) QUE EXIBE OS PROJETOS DO PROFESSOR
+    //PERMITE ALTERAR O CADASTRO, DELETAR A CONTA E SAIR DA CONTA
+    -->
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
