@@ -8,10 +8,20 @@ public class Candidato {
     private String IdCandidato;
     private String Data;
     private String Situacao;
-    private String IdProfessor;//fk de professor
+    private String IdProjeto;//fk de projeto
     private String IdAluno;//fk de aluno
+    private String EmailAluno;
 
     public Candidato() {
+    }
+
+    public Candidato(String idCandidato, String data, String situacao, String idProjeto, String idAluno, String emailAluno) {
+        IdCandidato = idCandidato;
+        Data = data;
+        Situacao = situacao;
+        IdProjeto = idProjeto;
+        IdAluno = idAluno;
+        EmailAluno = emailAluno;
     }
 
     public String getIdCandidato() {
@@ -38,19 +48,27 @@ public class Candidato {
         Situacao = situacao;
     }
 
-    public String getIdProfessor() {
-        return IdProfessor;
-    }
-
-    public void setIdProfessor(String idProfessor) {
-        IdProfessor = idProfessor;
-    }
-
     public String getIdAluno() {
         return IdAluno;
     }
 
     public void setIdAluno(String idAluno) {
         IdAluno = idAluno;
+    }
+
+    public String getIdProjeto() {
+        return IdProjeto;
+    }
+
+    public void setIdProjeto(String idProjeto) {
+        IdProjeto = idProjeto;
+    }
+
+    public String getEmailAluno() {
+        return EmailAluno;
+    }
+
+    public void setEmailAluno(String emailAluno) {
+        EmailAluno = emailAluno;
     }
 }

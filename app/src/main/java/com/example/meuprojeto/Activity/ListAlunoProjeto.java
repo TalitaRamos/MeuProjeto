@@ -65,8 +65,9 @@ public class ListAlunoProjeto extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(),detalhamentoProjetoAluno.class);
                 intent.putExtra("nome",project.getNome());
                 intent.putExtra("descricao",project.getDescricao());
-                intent.putExtra("idProjeto",project.getIdProfessor());
+                intent.putExtra("idProjeto",project.getIdProjeto());
                 intent.putExtra("idProfessor",project.getIdProfessor());
+                intent.putExtra("status",project.getStatus());
                 //intent.putExtra("");
                 //intent.putExtra("emailProf",email);
                 startActivity(intent);

@@ -15,7 +15,7 @@
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_add_alert_black_24dp"
-            android:title="Notificações" />
+            android:title="Solicitações" />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_info_outline_black_24dp"

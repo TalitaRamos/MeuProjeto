@@ -1,12 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.meuprojeto.Activity.detalhamentoProjetoAluno">
 
     <!--Mostra os detalhes do projeto quando o aluno seleciona um
     //atraves dessa tela o aluno também pode enviar uma solicitação para o professor-->
 
-</android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_proje"
+        tools:text="Nome Projeto"
+        android:gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+       />
+
+    <!--android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp
+    android:textSize="20sp"
+    android:textStyle="bold"-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/desc_proje"
+        tools:text="Descrição"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/status_proje"
+        tools:text="Status:"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/button_candidatar"
+        style="@style/Button_style"
+        android:layout_width="207dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Candidatar-se"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
