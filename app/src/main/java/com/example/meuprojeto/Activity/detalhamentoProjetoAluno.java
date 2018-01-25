@@ -68,92 +68,60 @@ public class detalhamentoProjetoAluno extends AppCompatActivity {
                     Toast.makeText(detalhamentoProjetoAluno.this,"Impossível realizar solicitação. O projeto já está alocado.",Toast.LENGTH_SHORT).show();
 
                 }else {
-                    //CHECAR SE O ALUNO JÁ SOLICITOU
-                  /*  final List<Candidato> candList = new ArrayList<>();
-                    FirebaseDatabase.getInstance().getReference().child("Candidato")
-                            .addListenerForSingleValueEvent(new ValueEventListener() {
+                    //INICIO ALOCAR O ALUNO COM SITUAÇÃO "SOLICITADO"
+                    final List<Aluno> alunoLista = new ArrayList<>();
+                    FirebaseDatabase.getInstance().getReference().child("Aluno")
+                            .addListenerForSingleValueEvent(new ValueEventListener(){
                                 @Override
                                 public void onDataChange(DataSnapshot dataSnapshot) {
-                                    String email="e";
+                                    String identi="f"; String email="f";
+
                                     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                                    if(user !=null){
-                                        email = user.getEmail();
-                                    }
-                                    //adicionar professores na lista
-                                    for(DataSnapshot snapshot:dataSnapshot.getChildren()){
-                                        Candidato prof = snapshot.getValue(Candidato.class);
-                                        candList.add(prof);
+                                    if(user!=null){
+                                        email=user.getEmail();
+                                        // System.out.println("email"+email);
                                     }
 
-                                    for(int i=0;i<candList.size();i++) {
-                                        //se o email for igual ao email do usuario logado
-                                        //então é
-                                        if (candList.get(i).getEmailAluno().equals(email)) {
-                                            Toast.makeText(detalhamentoProjetoAluno.this,"Você já fez a solicitação",Toast.LENGTH_SHORT).show();
-                                        }else{*/
-                                            //INICIO ALOCAR O ALUNO COM SITUAÇÃO "SOLICITADO"
-                                            final List<Aluno> alunoLista = new ArrayList<>();
-                                            FirebaseDatabase.getInstance().getReference().child("Aluno")
-                                                    .addListenerForSingleValueEvent(new ValueEventListener() {
-                                                        @Override
-                                                        public void onDataChange(DataSnapshot dataSnapshot) {
-                                                            String identi="f"; String email="f";
+                                    for(DataSnapshot snapshot : dataSnapshot.getChildren()){
+                                        Aluno alun = snapshot.getValue(Aluno.class);
+                                        alunoLista.add(alun);
+                                    }
 
-                                                            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                                                            if(user!=null){
-                                                                email=user.getEmail();
-                                                                // System.out.println("email"+email);
-                                                            }
+                                    for(int i=0; i<alunoLista.size();i++){
+                                        //System.out.println("emails"+alunoLista.get(i).getEmailAluno());
+                                        if(alunoLista.get(i).getEmailAluno().equals(email)){
+                                            // System.out.println("entrei2");
+                                            identi = alunoLista.get(i).getIdAluno();
+                                            //System.out.println("testantoid"+identi);
 
-                                                            for(DataSnapshot snapshot : dataSnapshot.getChildren()){
-                                                                Aluno alun = snapshot.getValue(Aluno.class);
-                                                                alunoLista.add(alun);
-                                                            }
+                                            Intent intent = getIntent();
+                                            String idProj = intent.getStringExtra("idProjeto");
+                                            // System.out.println("testantoid"+idProj);
+                                            database = FirebaseDatabase.getInstance().getReference("Candidato").child(idProj);
+                                            String id=database.push().getKey();
+                                            String situacao = "Solicitado";
 
-                                                            for(int i=0; i<alunoLista.size();i++){
-                                                                //System.out.println("emails"+alunoLista.get(i).getEmailAluno());
-                                                                if(alunoLista.get(i).getEmailAluno().equals(email)){
-                                                                    // System.out.println("entrei2");
-                                                                    identi = alunoLista.get(i).getIdAluno();
-                                                                    //System.out.println("testantoid"+identi);
+                                            long date = System.currentTimeMillis();
+                                            SimpleDateFormat sdf = new SimpleDateFormat("d/MM/yyyy");
+                                            String data = sdf.format(date);
+                                            //System.out.println("testanto"+data +"projeto"+idProj);
 
-                                                                    Intent intent = getIntent();
-                                                                    String idProj = intent.getStringExtra("idProjeto");
-                                                                    // System.out.println("testantoid"+idProj);
-                                                                    database = FirebaseDatabase.getInstance().getReference("Candidato").child(idProj);
-                                                                    String id=database.push().getKey();
-                                                                    String situacao = "Solicitado";
+                                            Candidato candidato = new Candidato(id,data,situacao,idProj,identi,email);
+                                            database.child(id).setValue(candidato);
+                                            Toast.makeText(detalhamentoProjetoAluno.this,"Você se candidatou ao projeto!",Toast.LENGTH_SHORT).show();
 
-                                                                    long date = System.currentTimeMillis();
-                                                                    SimpleDateFormat sdf = new SimpleDateFormat("d/MM/yyyy");
-                                                                    String data = sdf.format(date);
-                                                                    //System.out.println("testanto"+data +"projeto"+idProj);
+                                            //FIM ADICIONAR O ALUNO
+                                        }else{
+                                            Toast.makeText(detalhamentoProjetoAluno.this,"Email inválido",Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+                                }
 
-                                                                    Candidato candidato = new Candidato(id,data,situacao,idProj,identi,email);
-                                                                    database.child(id).setValue(candidato);
-                                                                    Toast.makeText(detalhamentoProjetoAluno.this,"Você se candidatou ao projeto!",Toast.LENGTH_SHORT).show();
+                                @Override
+                                public void onCancelled(DatabaseError databaseError) {
 
-                                                                    //FIM ADICIONAR O ALUNO
-                                                                }else{
-                                                                    Toast.makeText(detalhamentoProjetoAluno.this,"Email inválido",Toast.LENGTH_SHORT).show();
-                                                                }
-                                                            }
-                                                        }
-
-                                                        @Override
-                                                        public void onCancelled(DatabaseError databaseError) {
-
-                                                        }
-                                                    });
-                                       // }
-                                   // }
-                                //}
-
-                                //@Override
-                               // public void onCancelled(DatabaseError databaseError) {
-
-                                //}
-                           // });
+                                }
+                            });
                 }
             }
         });
