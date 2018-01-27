@@ -51,7 +51,7 @@ public class ListAlunoProjeto extends AppCompatActivity {
         String email= intent.getStringExtra("emailProf");
 
         //colocando o nome na interface
-        nameP.setText(name);
+        nameP.setText("Professor: "+name);
 
         database = FirebaseDatabase.getInstance().getReference("Projeto").child(id);
 

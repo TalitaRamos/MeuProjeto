@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.meuprojeto.Activity.SolicitacaoAluno"
+    android:orientation="vertical">
+
+    <!--COMPONENTE DA //TELA PRINCIPAL DO ALUNO-->
+    <TextView
+        android:id="@+id/name_proje"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        tools:text="Solicitações" />
+
+    <ListView
+
+        android:id="@+id/listViewSolicitacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        tools:ignore="UnknownId"
+        android:layout_marginTop="30dp">
+
+    </ListView>
+
+</LinearLayout>

@@ -15,12 +15,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.example.meuprojeto.AlunoAdapter;
 import com.example.meuprojeto.Model.Professor;
 import com.example.meuprojeto.Model.Projeto;
 import com.example.meuprojeto.R;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -66,6 +68,15 @@ public class ProjetoAluno extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        //navigationView.
+
+       /* FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        String email="e";
+        if(user !=null){
+            email = user.getEmail();
+        }
+        TextView textView = (TextView) findViewById(R.id.textView);
+        textView.setText(email);*/
 
         //apontando para o nó projeto
         databaseProjetos= FirebaseDatabase.getInstance().getReference("Professor");
@@ -93,9 +104,12 @@ public class ProjetoAluno extends AppCompatActivity
                 intent.putExtra("nomeProf", professor.getNomeProf());
                 intent.putExtra("idProfessor", professor.getIdProfessor());
                 intent.putExtra("emailProf", professor.getEmailProf());
+
                 startActivity(intent);
             }
         });
+
+
     }
 
     @Override
@@ -122,7 +136,6 @@ public class ProjetoAluno extends AppCompatActivity
                     Professor prof = projetoSnapShot.getValue(Professor.class);
                     profList.add(prof);
                 }
-
                 AlunoAdapter adapter = new AlunoAdapter(ProjetoAluno.this, profList);
                 listViewProf.setAdapter(adapter);
             }
@@ -177,7 +190,8 @@ public class ProjetoAluno extends AppCompatActivity
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
-
+            System.out.println("entrei");
+            alunoSoli();
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
@@ -195,6 +209,14 @@ public class ProjetoAluno extends AppCompatActivity
 
     public void sair(){
         Intent intent = new Intent(ProjetoAluno.this, MainActivity.class);
+        startActivity(intent);
+        //finish();
+    }
+
+    public void alunoSoli(){
+
+        Intent intent = new Intent(ProjetoAluno.this, SolicitacaoAluno.class);
+
         startActivity(intent);
         //finish();
     }

@@ -51,6 +51,7 @@
         <activity android:name="com.example.meuprojeto.Activity.Info" />
         <activity android:name="com.example.meuprojeto.Activity.ListAlunoProjeto" />
         <activity android:name="com.example.meuprojeto.Activity.detalhamentoProjetoAluno" />
+        <activity android:name="com.example.meuprojeto.Activity.SolicitacaoAluno" />
 
         <meta-data
             android:name="android.support.VERSION"

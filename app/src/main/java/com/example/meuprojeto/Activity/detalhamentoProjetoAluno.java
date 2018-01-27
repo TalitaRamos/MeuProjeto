@@ -55,7 +55,7 @@ public class detalhamentoProjetoAluno extends AppCompatActivity {
         String idProf = intent.getStringExtra("idProfessor");
         final String status = intent.getStringExtra("status");
 
-        name_proje.setText(nomeProj);
+        name_proje.setText("Projeto: "+nomeProj);
         desc_proje.setText(desc);
         status_proje.setText("Status: "+status);
 
@@ -74,7 +74,7 @@ public class detalhamentoProjetoAluno extends AppCompatActivity {
                             .addListenerForSingleValueEvent(new ValueEventListener(){
                                 @Override
                                 public void onDataChange(DataSnapshot dataSnapshot) {
-                                    String identi="f"; String email="f";
+                                    String identiAlun="f"; String email="f";
 
                                     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                                     if(user!=null){
@@ -91,13 +91,15 @@ public class detalhamentoProjetoAluno extends AppCompatActivity {
                                         //System.out.println("emails"+alunoLista.get(i).getEmailAluno());
                                         if(alunoLista.get(i).getEmailAluno().equals(email)){
                                             // System.out.println("entrei2");
-                                            identi = alunoLista.get(i).getIdAluno();
+                                            identiAlun = alunoLista.get(i).getIdAluno();
                                             //System.out.println("testantoid"+identi);
 
                                             Intent intent = getIntent();
                                             String idProj = intent.getStringExtra("idProjeto");
+                                            String idProf = intent.getStringExtra("idProfessor");
                                             // System.out.println("testantoid"+idProj);
-                                            database = FirebaseDatabase.getInstance().getReference("Candidato").child(idProj);
+                                            database = FirebaseDatabase.getInstance().getReference("Candidato");
+                                            //.child(identi);
                                             String id=database.push().getKey();
                                             String situacao = "Solicitado";
 
@@ -106,7 +108,7 @@ public class detalhamentoProjetoAluno extends AppCompatActivity {
                                             String data = sdf.format(date);
                                             //System.out.println("testanto"+data +"projeto"+idProj);
 
-                                            Candidato candidato = new Candidato(id,data,situacao,idProj,identi,email);
+                                            Candidato candidato = new Candidato(id,data,situacao,idProj,identiAlun,email,idProf);
                                             database.child(id).setValue(candidato);
                                             Toast.makeText(detalhamentoProjetoAluno.this,"Você se candidatou ao projeto!",Toast.LENGTH_SHORT).show();
 

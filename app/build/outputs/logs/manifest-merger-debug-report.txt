@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-39:12
+ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-40:12
 MERGED from [com.google.firebase:firebase-database:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-database-11.0.4.aar\ecc73575b0de428113e0f80b59f01df0\AndroidManifest.xml:2:1-4:12
 MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\a29461cada491f229dd13ba064c17436\AndroidManifest.xml:16:1-21:12
 MERGED from [com.android.support:design:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\198cfcf4aa36abc4cfb3fdf55d00510f\AndroidManifest.xml:17:1-31:12
@@ -30,20 +30,20 @@ MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Talit\.gr
 MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\19402eea6b47050744dccf083940bd4d\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\f587c597bb805bc8c53fa1b70ae8ad8d\AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\b7d52f52fa7819e47a8eafa2fcee4c94\AndroidManifest.xml:17:1-30:12
-INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-40:12
 	package
 		ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-40:12
 		INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-40:12
 		INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:11-69
@@ -58,7 +58,7 @@ MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\cac
 	android:name
 		ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:7:5-37:19
+ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:7:5-38:19
 MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\a29461cada491f229dd13ba064c17436\AndroidManifest.xml:19:5-20:19
 MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\a29461cada491f229dd13ba064c17436\AndroidManifest.xml:19:5-20:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\198cfcf4aa36abc4cfb3fdf55d00510f\AndroidManifest.xml:25:5-29:19
@@ -178,9 +178,13 @@ ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidM
 	android:name
 		ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:35:19-60
 activity#com.example.meuprojeto.Activity.detalhamentoProjetoAluno
-ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:36:9-80
+ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:36:9-71
 	android:name
 		ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:36:19-68
+activity#com.example.meuprojeto.Activity.SolicitacaoAluno
+ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:37:9-72
+	android:name
+		ADDED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:37:19-60
 uses-sdk
 INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Talit\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml

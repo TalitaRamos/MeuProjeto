@@ -11,17 +11,19 @@ public class Candidato {
     private String IdProjeto;//fk de projeto
     private String IdAluno;//fk de aluno
     private String EmailAluno;
+    private String IdProfessor;
 
     public Candidato() {
     }
 
-    public Candidato(String idCandidato, String data, String situacao, String idProjeto, String idAluno, String emailAluno) {
-        IdCandidato = idCandidato;
-        Data = data;
-        Situacao = situacao;
-        IdProjeto = idProjeto;
-        IdAluno = idAluno;
-        EmailAluno = emailAluno;
+    public Candidato(String idCandidato, String data, String situacao, String idProjeto, String idAluno, String emailAluno, String idProfessor) {
+        this.IdCandidato = idCandidato;
+        this.Data = data;
+        this.Situacao = situacao;
+        this.IdProjeto = idProjeto;
+        this.IdAluno = idAluno;
+        this.EmailAluno = emailAluno;
+        this.IdProfessor = idProfessor;
     }
 
     public String getIdCandidato() {
@@ -70,5 +72,13 @@ public class Candidato {
 
     public void setEmailAluno(String emailAluno) {
         EmailAluno = emailAluno;
+    }
+
+    public String getIdProfessor() {
+        return IdProfessor;
+    }
+
+    public void setIdProfessor(String idProfessor) {
+        IdProfessor = idProfessor;
     }
 }
