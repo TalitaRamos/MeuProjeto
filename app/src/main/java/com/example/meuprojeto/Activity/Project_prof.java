@@ -96,7 +96,7 @@ public class Project_prof extends AppCompatActivity
         if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
-
+            abrirSolicitacao();
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
@@ -122,8 +122,15 @@ public class Project_prof extends AppCompatActivity
 
     public void abrirTelaProjeto(){
         Intent intent = new Intent(Project_prof.this, cadastroProjeto.class);
-        System.out.println("entrei");
+        //System.out.println("entrei");
         startActivity(intent);
-        System.out.println("entrei2");
+        //System.out.println("entrei2");
+    }
+
+    public void abrirSolicitacao(){
+        Intent intent = new Intent(Project_prof.this, SolicitacaoProfessor.class);
+        //System.out.println("entrei");
+        startActivity(intent);
+        //System.out.println("entrei2");
     }
 }

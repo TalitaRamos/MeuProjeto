@@ -34,7 +34,8 @@
         <activity android:name=".Activity.Info" />
         <activity android:name=".Activity.ListAlunoProjeto" />
         <activity android:name=".Activity.detalhamentoProjetoAluno" />
-        <activity android:name=".Activity.SolicitacaoAluno"></activity>
+        <activity android:name=".Activity.SolicitacaoAluno" />
+        <activity android:name=".Activity.SolicitacaoProfessor"></activity>
     </application>
 
 </manifest>

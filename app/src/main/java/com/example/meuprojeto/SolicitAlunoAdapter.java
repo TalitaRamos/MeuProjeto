@@ -34,32 +34,6 @@ public class SolicitAlunoAdapter extends ArrayAdapter<Candidato>{
         this.candidatoList=candidatoList;
     }
 
-   /* private void retorna(){
-        final List<Projeto> projList = new ArrayList<>();
-        FirebaseDatabase.getInstance().getReference().child("Projeto")
-                .addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        for(DataSnapshot snapshot:dataSnapshot.getChildren()){
-                            Projeto j = snapshot.getValue(Projeto.class);
-                            projList.add(j);
-                        }
-
-                        for(int i=0;i<projList.size();i++){
-                            if(projList.get(i).getIdProjeto().equals(idProj)){
-                                System.out.println("info"+projList.get(i).getNome());
-                                identifica=projList.get(i).getNome();
-                            }
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
-
-                    }
-                });
-        System.out.println("retorna"+identifica+"proj"+idProj);
-    }*/
     @Override
     public View getView( int position, View convertView, ViewGroup parent){
 
