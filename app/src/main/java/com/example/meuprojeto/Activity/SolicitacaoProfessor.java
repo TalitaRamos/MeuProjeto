@@ -1,7 +1,10 @@
 package com.example.meuprojeto.Activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -72,6 +75,22 @@ public class SolicitacaoProfessor extends AppCompatActivity {
 
                     }
                 });
+
+        listSolicitacaoProf.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Candidato candidato =canditList.get(position);
+                Intent intent = new Intent(getApplicationContext(),detalhamentoSolicitacaoProf.class);
+                intent.putExtra("data",candidato.getData());
+                intent.putExtra("emailAluno",candidato.getEmailAluno());
+                intent.putExtra("idAluno",candidato.getIdAluno());
+                intent.putExtra("idCandidato",candidato.getIdCandidato());
+                intent.putExtra("idProfessor",candidato.getIdProfessor());
+                intent.putExtra("idProjeto",candidato.getIdProjeto());
+                intent.putExtra("situacao",candidato.getSituacao());
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
