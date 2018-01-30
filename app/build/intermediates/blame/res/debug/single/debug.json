@@ -2780,6 +2780,10 @@
         "source": "C:\\Users\\Talit\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\31e3ddafd6ea7fcc3a1a423174ff5ec4\\res\\layout\\notification_template_media.xml"
     },
     {
+        "merged": "C:\\Users\\Talit\\AndroidStudioProjects\\MeuProjeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_update_soli_candidato.xml.flat",
+        "source": "C:\\Users\\Talit\\AndroidStudioProjects\\MeuProjeto\\app\\src\\main\\res\\layout\\update_soli_candidato.xml"
+    },
+    {
         "merged": "C:\\Users\\Talit\\AndroidStudioProjects\\MeuProjeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_solicitacao_professor.xml.flat",
         "source": "C:\\Users\\Talit\\AndroidStudioProjects\\MeuProjeto\\app\\src\\main\\res\\layout\\activity_solicitacao_professor.xml"
     },

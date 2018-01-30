@@ -17,7 +17,9 @@
         android:gravity="center"
         android:text="Nome Professor"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="#184B6C"
+        android:layout_marginTop="30dp"/>
 
     <!--<SeekBar
         android:id="@+id/seekBarRating"

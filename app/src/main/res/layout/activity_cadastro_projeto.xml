@@ -34,7 +34,8 @@
                 android:gravity="center"
                 android:text="@string/cadastro_de_projetos"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="#184B6C"/>
 
             <EditText
                 android:id="@+id/nomeProj"
@@ -86,7 +87,8 @@
                 tools:layout_editor_absoluteX="151dp"
                 tools:layout_editor_absoluteY="388dp"
                 android:layout_marginTop="30dp"
-                android:onClick="VerProject"/>
+                android:onClick="VerProject"
+               />
 
         </LinearLayout>
     </ScrollView>

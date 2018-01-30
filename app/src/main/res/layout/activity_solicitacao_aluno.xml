@@ -17,7 +17,9 @@
         android:layout_marginTop="30dp"
         android:gravity="center"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        tools:text="Solicitações" />
+        tools:text="Solicitações"
+        android:textColor="#184B6C"
+        android:textStyle="bold"/>
 
     <ListView
 

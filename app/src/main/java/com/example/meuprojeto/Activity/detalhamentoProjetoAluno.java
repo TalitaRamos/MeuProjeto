@@ -56,7 +56,7 @@ public class detalhamentoProjetoAluno extends AppCompatActivity {
         final String status = intent.getStringExtra("status");
 
         name_proje.setText("Projeto: "+nomeProj);
-        desc_proje.setText(desc);
+        desc_proje.setText("Descrição: "+desc);
         status_proje.setText("Status: "+status);
 
 

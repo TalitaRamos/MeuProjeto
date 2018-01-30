@@ -34,7 +34,8 @@
             android:gravity="center"
             android:text="@string/no_meu_projeto_alunos_e_professores"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#184B6C"/>
 
         <TextView
             android:id="@+id/textView4"
@@ -43,7 +44,8 @@
             android:gravity="center"
             android:text="@string/podem_interagir_na_escolha_de"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#184B6C"/>
 
         <TextView
             android:id="@+id/textView5"
@@ -52,7 +54,8 @@
             android:gravity="center"
             android:text="@string/projetos_academicos"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#184B6C"/>
 
         <TextView
             android:id="@+id/textView6"
@@ -62,7 +65,8 @@
             android:gravity="center"
             android:text="@string/os_professores_adicionam_seus_projetos"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#184B6C"/>
 
         <TextView
             android:id="@+id/textView7"
@@ -71,7 +75,8 @@
             android:gravity="center"
             android:text="@string/os_alunos_solicitam_a_participa_o"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#184B6C"/>
 
         <TextView
             android:id="@+id/textView8"
@@ -81,7 +86,8 @@
             android:gravity="center"
             android:text="@string/e_assim_todos_ganham"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#184B6C"/>
 
         <Button
             android:id="@+id/button_prof"

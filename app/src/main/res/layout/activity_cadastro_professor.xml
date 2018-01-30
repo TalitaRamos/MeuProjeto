@@ -30,7 +30,8 @@
                 android:gravity="center"
                 android:text="@string/cadastro_dos_professores"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="#184B6C"/>
 
             <EditText
                 android:id="@+id/nome_Prof"

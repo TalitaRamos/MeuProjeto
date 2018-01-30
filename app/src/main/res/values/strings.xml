@@ -45,6 +45,11 @@
         <item>Proj. Alocado</item>
         <item>Proj. Não Alocado</item>
     </string-array>
+
+    <string-array name="status_spinner_soli">
+        <item>Requerido</item>
+        <item>Indeferido</item>
+    </string-array>
     <string name="title_activity_tela_teste">telaTeste</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -53,4 +58,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_project_prof">Project_prof</string>
     <string name="title_activity_projeto_aluno">ProjetoAluno</string>
+    <string name="mudar_o_status_do_candidato">Mudar o status do candidato?</string>
+    <string name="atualizar">Atualizar</string>
 </resources>
