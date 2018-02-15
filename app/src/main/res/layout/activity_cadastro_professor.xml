@@ -51,6 +51,14 @@
                 android:inputType="textEmailAddress" />
 
             <EditText
+                android:id="@+id/matric_Prof"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/matr_culaprof"
+                android:inputType="text" />
+
+            <EditText
                 android:id="@+id/area_Prof"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
