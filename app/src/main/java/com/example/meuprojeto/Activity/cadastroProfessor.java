@@ -37,6 +37,7 @@ public class cadastroProfessor extends AppCompatActivity {
     private EditText area_Prof;
     private EditText senha_Prof;
     private EditText repete_Prof;
+    private EditText matric_Prof;
     private Button button2;
     private int tipo;
 
@@ -58,12 +59,15 @@ public class cadastroProfessor extends AppCompatActivity {
         senha_Prof = (EditText)findViewById(R.id.senha_Prof);
         repete_Prof = (EditText)findViewById(R.id.repete_Prof);
         button2 = (Button) findViewById(R.id.button2);
+        matric_Prof = (EditText)findViewById(R.id.matric_Prof);
 
         //AÇÃO DO BUTTON
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(senha_Prof.getText().toString().equals(repete_Prof.getText().toString())){
+                    String ema=email_Prof.getText().toString().trim();
+                    String email= ema.toLowerCase();
                     acesso = new Acesso();
                     professor = new Professor();
 
@@ -72,8 +76,9 @@ public class cadastroProfessor extends AppCompatActivity {
                     acesso.setTipo(tipo);
 
                     professor.setNomeProf(nome_Prof.getText().toString().trim());
-                    professor.setEmailProf(email_Prof.getText().toString().trim());
+                    professor.setEmailProf(email);
                     professor.setAreaProf(area_Prof.getText().toString().trim());
+                    professor.setMatricula(matric_Prof.getText().toString().trim());
                     cadastrarProfessor();
                 }else{
                     Toast.makeText(cadastroProfessor.this,"As senhas não correspondem!",Toast.LENGTH_SHORT).show();
@@ -96,7 +101,7 @@ public class cadastroProfessor extends AppCompatActivity {
                     professor.setIdAcessoProf(identificadorUsuario);
                     acesso.salvar();
 
-                    //---SALVAR PROFESSOR---///T
+                    //---SALVAR PROFESSOR---///
                     String identificadorProfessor= Base64custom.codificarBase64(professor.getEmailProf());
                     FirebaseUser usuarioFire = task.getResult().getUser();
                     professor.setIdProfessor(identificadorProfessor);
@@ -106,9 +111,7 @@ public class cadastroProfessor extends AppCompatActivity {
                     Preferencias preferencias = new Preferencias(cadastroProfessor.this);
 
                     preferencias.salvarUsuarioPreferencias(identificadorUsuario, professor.getNomeProf());
-                    System.out.println("paeei por aqui1");
                     abrirTelaProfessor();
-                    System.out.println("paeei por aqui");
                     //VERIFICANDO SE O USUÁRIO ESTÁ LOGADO
                     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                     if (user != null) {
@@ -116,7 +119,7 @@ public class cadastroProfessor extends AppCompatActivity {
                         System.out.println("logado"+email);
                     } else {
                         // No user is signed in
-                        System.out.println("nao logado");
+                             System.out.println("nao logado");
                     }
                     //FIM VERIFICANDO SE O USUUÁRIO ESTÁ LOGADO
                 }else{
@@ -124,7 +127,7 @@ public class cadastroProfessor extends AppCompatActivity {
                     try {
                         throw  task.getException();
                     }catch (FirebaseAuthWeakPasswordException e){
-                        error = "Digite uma senha mais forte com no mínimo 8 caracteres de letras e números";
+                        error = "Digite uma senha mais forte com no mínimo 6 caracteres de letras e números";
                     }catch (FirebaseAuthInvalidCredentialsException e){
                         error = "O email digitado é inválido";
                     }catch (FirebaseAuthUserCollisionException e){
