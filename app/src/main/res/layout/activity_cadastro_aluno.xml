@@ -44,12 +44,20 @@
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/email_Alun"
+            android:id="@+id/email_Alun"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/matric_Alun"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="@string/email"
-                android:inputType="textEmailAddress" />
+                android:hint="@string/matr_cula"
+                android:inputType="text" />
 
             <EditText
                 android:id="@+id/curso_Alun"
