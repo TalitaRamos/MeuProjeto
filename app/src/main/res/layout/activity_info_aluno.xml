@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.meuprojeto.Activity.InfoAluno">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView70"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:gravity="center"
+            android:text="No MeuProjeto você, Aluno, pode solicitar a participação em um projeto"
+            android:textColor="#184B6C"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView71"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:gravity="center"
+            android:text="Como fazer isso?! É muito fácil!"
+            android:textColor="#184B6C"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView72"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="clip_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="1: Na tela inicial estão todos os professoresw cadastrados no sistema."
+            android:textSize="17sp"
+            android:textColor="#184B6C"/>
+
+        <TextView
+            android:id="@+id/textView73"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="clip_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="2: Para ver os projetos cadastrados por esse professor basta clicar no professor da sua preferência."
+            android:textSize="17sp"
+            android:textColor="#184B6C"/>
+
+        <TextView
+            android:id="@+id/textView74"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:gravity="center"
+            android:text="Solicitando a participação em um projeto"
+            android:textColor="#184B6C"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView75"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="clip_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="1: Ao clicar em um projeto todos os detalhes do mesmo serão listados"
+            android:textSize="17sp"
+            android:textColor="#184B6C"/>
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="clip_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="2: Quando o projeto estiver com o status ALOCADO, significa que o professor já encerrou as inscrições para aquele projeto."
+            android:textSize="17sp"
+            android:textColor="#184B6C"/>
+
+        <TextView
+            android:id="@+id/textView76"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="clip_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="3: Se for do seu desejo se candidatar basta clicar em CANDIDATAR-SE"
+            android:textSize="17sp"
+            android:textColor="#184B6C"/>
+
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:gravity="center"
+            android:text="Resultados"
+            android:textColor="#184B6C"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="clip_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="1: Em SOLICITAÇÕES todos os projetos que você solicitou a participação serão listados"
+            android:textSize="17sp"
+            android:textColor="#184B6C"/>
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="clip_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="2: O resultado estará logo abaixo do nome do projeto"
+            android:textSize="17sp"
+            android:textColor="#184B6C"/>
+
+        <TextView
+            android:id="@+id/textView82"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:gravity="center"
+            android:text="Status"
+            android:textColor="#184B6C"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView80"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="clip_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="1: O status de uma solicitação será SOLICITADO quando o professor ainda não analisou"
+            android:textSize="17sp"
+            android:textColor="#184B6C"/>
+
+        <TextView
+            android:id="@+id/textView83"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="clip_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="2: REQUERIDO se você foi aceito no projeto"
+            android:textSize="17sp"
+            android:textColor="#184B6C"/>
+
+        <TextView
+            android:id="@+id/textView84"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="clip_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="3: INDEFERIDO se você não passou :("
+            android:textSize="17sp"
+            android:textColor="#184B6C"/>
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Isso é tudo!"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#184B6C"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher_aund" />
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:gravity="center"
+            android:text="Esse aplicativo foi feito pelos jovens cientistas do projeto de Iniciação Cientifíca - MDD(UNEB) sobre a monitoria da professora Ana Patrícia."
+            android:textColor="#184B6C"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>
