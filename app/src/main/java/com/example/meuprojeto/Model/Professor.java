@@ -17,6 +17,7 @@ public class Professor {
     private String EmailProf;
     private String AreaProf;
     private String IdAcessoProf; //fk de acesso
+    private String matricula;
 
     //talvez precise se uma variavel tipo ACESSO
 
@@ -63,6 +64,14 @@ public class Professor {
         IdAcessoProf = idAcessoProf;
     }
 
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
     public void salvar(){
         DatabaseReference referenciaFirebase = ConfiguracaoFirebase.getFirebase();
         referenciaFirebase.child("Professor").child(String.valueOf(getIdProfessor())).setValue(this);
@@ -76,7 +85,7 @@ public class Professor {
         hashMapUsuario.put("EmailProf",getEmailProf());
         hashMapUsuario.put("AreaProf",getAreaProf());
         hashMapUsuario.put("fkAcessoProf",getIdAcessoProf());
-
+        hashMapUsuario.put("matricula",getMatricula());
         return  hashMapUsuario;
     }
 }
