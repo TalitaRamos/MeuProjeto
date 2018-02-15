@@ -190,11 +190,12 @@ public class ProjetoAluno extends AppCompatActivity
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
-            System.out.println("entrei");
+           // System.out.println("entrei");
             alunoSoli();
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
+            info();
 
         } else if (id == R.id.nav_send) {
             //CHECAR SE ESTÁ FUNCIONANDO
@@ -219,5 +220,12 @@ public class ProjetoAluno extends AppCompatActivity
 
         startActivity(intent);
         //finish();
+    }
+
+    public void info(){
+        Intent intent = new Intent(ProjetoAluno.this, InfoAluno.class);
+        //System.out.println("entrei");
+        startActivity(intent);
+        //System.out.println("entrei2");
     }
 }
