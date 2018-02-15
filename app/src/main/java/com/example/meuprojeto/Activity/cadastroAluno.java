@@ -34,6 +34,7 @@ public class cadastroAluno extends AppCompatActivity {
     private EditText curso_Alun;
     private EditText senha_Alun;
     private EditText repete_Alun;
+    private EditText matric_Alun;
     private Button button_cad_alun;
     private int tipo;
 
@@ -54,6 +55,7 @@ public class cadastroAluno extends AppCompatActivity {
         senha_Alun = (EditText)findViewById(R.id.senha_Alun);
         repete_Alun = (EditText)findViewById(R.id.repete_Alun);
         button_cad_alun = (Button) findViewById(R.id.button_cad_alun);
+        matric_Alun = (EditText)findViewById(R.id.matric_Alun);
 
         //AÇÃO DO BUTTON
 
@@ -61,14 +63,18 @@ public class cadastroAluno extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (senha_Alun.getText().toString().equals(repete_Alun.getText().toString())){
+                    String ema=email_Alun.getText().toString().trim();
+                    String email= ema.toLowerCase();
+
                     acesso = new Acesso();
                     aluno = new Aluno();
-                    acesso.setLogin(email_Alun.getText().toString());
-                    acesso.setSenha(senha_Alun.getText().toString());
+                    acesso.setLogin(email_Alun.getText().toString().trim());
+                    acesso.setSenha(senha_Alun.getText().toString().trim());
                     acesso.setTipo(tipo);
-                    aluno.setNomeAluno(nome_Alun.getText().toString());
-                    aluno.setEmailAluno(email_Alun.getText().toString());
-                    aluno.setCursoAluno(curso_Alun.getText().toString());
+                    aluno.setNomeAluno(nome_Alun.getText().toString().trim());
+                    aluno.setEmailAluno(email);
+                    aluno.setCursoAluno(curso_Alun.getText().toString().trim());
+                    aluno.setMatricula(matric_Alun.getText().toString().trim());
                     cadastrarAluno();
                 }else{
                     Toast.makeText(cadastroAluno.this,"As senhas não correspondem!",Toast.LENGTH_SHORT).show();
@@ -117,7 +123,7 @@ public class cadastroAluno extends AppCompatActivity {
                     try {
                         throw  task.getException();
                     }catch (FirebaseAuthWeakPasswordException e){
-                        error = "Digite uma senha mais forte com no mínimo 8 caracteres de letras e números";
+                        error = "Digite uma senha mais forte com no mínimo 6 caracteres de letras e números";
                     }catch (FirebaseAuthInvalidCredentialsException e){
                         error = "O email digitado é inválido";
                     }catch (FirebaseAuthUserCollisionException e){
