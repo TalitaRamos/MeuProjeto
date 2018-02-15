@@ -10,16 +10,18 @@ public class Alocacao {
     private String IdProjeto; //fk de projeto
     private String IdAluno; //fk de aluno
     private String IdProfessor; //fk de professor
+    private String IdCandidato;
 
     public Alocacao() {
     }
 
-    public Alocacao(String idAlocacao, String dataInicio, String idProjeto, String idAluno, String idProfessor) {
+    public Alocacao(String idAlocacao, String dataInicio, String idProjeto, String idAluno, String idProfessor,String idCandidato ) {
         this.idAlocacao = idAlocacao;
-        DataInicio = dataInicio;
-        IdProjeto = idProjeto;
-        IdAluno = idAluno;
-        IdProfessor = idProfessor;
+        this.DataInicio = dataInicio;
+        this.IdProjeto = idProjeto;
+        this.IdAluno = idAluno;
+        this.IdProfessor = idProfessor;
+        this.IdCandidato=idCandidato;
     }
 
     public String getDataInicio() {
@@ -60,5 +62,13 @@ public class Alocacao {
 
     public void setIdAlocacao(String idAlocacao) {
         this.idAlocacao = idAlocacao;
+    }
+
+    public String getIdCandidato() {
+        return IdCandidato;
+    }
+
+    public void setIdCandidato(String idCandidato) {
+        IdCandidato = idCandidato;
     }
 }
