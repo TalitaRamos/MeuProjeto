@@ -60,4 +60,7 @@
     <string name="title_activity_projeto_aluno">ProjetoAluno</string>
     <string name="mudar_o_status_do_candidato">Mudar o status do candidato?</string>
     <string name="atualizar">Atualizar</string>
+    <string name="candidatar_se">Candidatar-se</string>
+    <string name="matr_cula">Matrícula</string>
+    <string name="matr_culaprof">Matrícula</string>
 </resources>
