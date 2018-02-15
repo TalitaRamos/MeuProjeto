@@ -17,6 +17,7 @@ public class Aluno {
     private String EmailAluno;
     private String CursoAluno;
     private String fkAcessoAluno; //fk de acesso
+    private String matricula;
     //talvez precise se uma variavel tipo ACESSO
 
 
@@ -63,6 +64,14 @@ public class Aluno {
         this.fkAcessoAluno = fkAcessoAluno;
     }
 
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
     public void salvar(){
         DatabaseReference referenciaFirebase = ConfiguracaoFirebase.getFirebase();
         referenciaFirebase.child("Aluno").child(String.valueOf(getIdAluno())).setValue(this);
@@ -75,8 +84,8 @@ public class Aluno {
         hashMapUsuario.put("NomeAluno",getNomeAluno());
         hashMapUsuario.put("EmailAluno",getEmailAluno());
         hashMapUsuario.put("CursoAluno",getCursoAluno());
-        hashMapUsuario.put("fkAcessoAluno;",getFkAcessoAluno());
-
+        hashMapUsuario.put("fkAcessoAluno",getFkAcessoAluno());
+        hashMapUsuario.put("matricula",getMatricula());
         return  hashMapUsuario;
     }
 }
