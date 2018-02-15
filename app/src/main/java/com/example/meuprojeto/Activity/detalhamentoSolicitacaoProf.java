@@ -154,14 +154,14 @@ public class detalhamentoSolicitacaoProf extends AppCompatActivity {
         database.setValue(candi);
 
         if(situ.equals("Requerido")){
-            salvarAlocado(idProj,idAl,idPro);
+            salvarAlocado(idProj,idAl,idPro, idCandi);
         }else{
             Toast.makeText(detalhamentoSolicitacaoProf.this, "Status atualizado", Toast.LENGTH_LONG).show();
         }
         return  true;
     }
 
-    private boolean salvarAlocado(String idProj, String idAlun, String idProf){
+    private boolean salvarAlocado(String idProj, String idAlun, String idProf, String idCandi){
         if(!TextUtils.isEmpty(idProj)&&!TextUtils.isEmpty(idAlun)&&!TextUtils.isEmpty(idProf)){
 
             long date = System.currentTimeMillis();
@@ -170,7 +170,7 @@ public class detalhamentoSolicitacaoProf extends AppCompatActivity {
             DatabaseReference alocacao = FirebaseDatabase.getInstance().getReference("Alocacao");
             String idAlocacao = alocacao.push().getKey();
 
-            Alocacao aloca = new Alocacao(idAlocacao,data, idProj,idAlun,idProf);
+            Alocacao aloca = new Alocacao(idAlocacao,data, idProj,idAlun,idProf,idCandi);
             alocacao.child(idAlocacao).setValue(aloca);
             Toast.makeText(detalhamentoSolicitacaoProf.this, "O candidato foi alocado ao projeto!", Toast.LENGTH_LONG).show();
 
@@ -197,13 +197,12 @@ public class detalhamentoSolicitacaoProf extends AppCompatActivity {
         button_update_soli.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("entrei");
 
                 String status = Status_soli_spinner.getSelectedItem().toString();
-                System.out.println("candi3"+iCandidato);
-                System.out.println("status"+status);
+                //System.out.println("candi3"+iCandidato);
+               // System.out.println("status"+status);
                 if(!TextUtils.isEmpty(status)){
-                    System.out.println("candi1"+iCandidato);
+                    //System.out.println("candi1"+iCandidato);
                     updateCandidato(iCandidato,status);
                     b.dismiss();
                 }
