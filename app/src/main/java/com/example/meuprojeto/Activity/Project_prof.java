@@ -230,6 +230,23 @@ public class Project_prof extends AppCompatActivity
         return true;
     }
 
+    private boolean deleteProj(String id, String name, String descr, String status, String idProf) {
+        //Pegando a referencia de projeto
+        DatabaseReference dR = FirebaseDatabase.getInstance().getReference("Projeto").child(idProf).child(id);
+
+        //removing projeto
+        dR.removeValue();
+
+        //pegando ref pra candidatodo projeto
+        DatabaseReference drTracks = FirebaseDatabase.getInstance().getReference("Candidato").child(idProf).child(id);
+
+        //removing all tracks
+        drTracks.removeValue();
+        Toast.makeText(getApplicationContext(), "Projeto Deletado!", Toast.LENGTH_LONG).show();
+
+        return true;
+    }
+
     private void showUpdateDeleteDialog(final String projetoId, String projetoName, final String isProfessor,String status, String descricao) {
 
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
@@ -280,10 +297,15 @@ public class Project_prof extends AppCompatActivity
         buttonDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String name = editTextName.getText().toString().trim();
+                String descr = editTextDescr.getText().toString().trim();
 
-                /*
-                * we will code this method to delete the artist
-                * */
+                String status = spinner_status.getSelectedItem().toString();
+                if (!TextUtils.isEmpty(name)) {
+
+                    deleteProj(projetoId, name, descr, status, isProfessor);
+                    b.dismiss();
+                }
 
             }
         });
