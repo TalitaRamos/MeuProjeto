@@ -3,8 +3,10 @@ package com.example.meuprojeto.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.text.Editable;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,11 +26,15 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.meuprojeto.Model.Acesso;
 import com.example.meuprojeto.Model.Professor;
 import com.example.meuprojeto.Model.Projeto;
 import com.example.meuprojeto.ProfessorAdapter;
 import com.example.meuprojeto.ProfessorProjetoAdapter;
 import com.example.meuprojeto.R;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -62,7 +68,6 @@ public class Project_prof extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_project_prof);
 
-        System.out.println("aqui1");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -86,7 +91,6 @@ public class Project_prof extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        System.out.println("aqui2");
 
         databaseProjetos = FirebaseDatabase.getInstance().getReference("Projeto");
 
@@ -101,7 +105,6 @@ public class Project_prof extends AppCompatActivity
 
         //lista com os professores
         projetoList = new ArrayList<>();
-
 
 
         listViewProf.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -156,27 +159,9 @@ public class Project_prof extends AppCompatActivity
                                     @Override
                                     public void onDataChange(DataSnapshot dataSnapshot) {
 
-                                        // se entrou aqui, é porque mudou alguma coisa nas trilhas
-                                        // que estão no banco de dados. Então, vamos limpar a lista
-                                        // que armazena essas trilhas, para recuperar esses dados
-                                        // novamente (já que não sabemos exatamente o que mudou)
                                         projetoList.clear();
 
-                                        // Recebemos um objeto DataSnapshot, que tem os dados
-                                        // apontados por nossa referencia no firebase, isto é,
-                                        // os dados que estão "debaixo" da chave "id" do artista selecionado,
-                                        // debaixo da chave "Tracks".
-                                        // Vamos então "varrer" esse objeto, pegando os dados lá dentro
-                                        // e criando objetos da nossa classe Track, para colocar na lista
                                         for(DataSnapshot projetoSnapShot : dataSnapshot.getChildren()) {
-
-                                            // trackSnapshot tem um dos "filhos" de "Tracks", isto é,
-                                            // tem os dados de uma trilha.
-                                            // Vamos então criar um objeto trilha, a partir desses dados
-                                            //
-                                            // ... getValue(Track.class)
-                                            //     pegue os dados, e a partir deles crie um objeto da
-                                            //     classe Track.
                                             Projeto proj = projetoSnapShot.getValue(Projeto.class);
 
                                             // enfim, colocamos o objeto trilha criado a partir dos dados lidos
@@ -184,10 +169,6 @@ public class Project_prof extends AppCompatActivity
                                             projetoList.add(proj);
                                         }
 
-                                        // agora que temos nossa lista de trilhas atualizada,
-                                        // podemos criar o adapter que vai ser responsável por
-                                        // colocar esses dados no ListView,
-                                        // passando nossa lista para este adapter
                                         ProfessorProjetoAdapter adapter = new ProfessorProjetoAdapter(Project_prof.this,projetoList);
 
                                         // finalmente, informamos ao ListView quem é o adapter que vai
@@ -210,15 +191,11 @@ public class Project_prof extends AppCompatActivity
                     }
                 });
 
-        System.out.println("identif2"+iden);
+        //System.out.println("identif2"+iden);
 
 
     }
 
-
-
-    //SEMPRE PASSAR TODOS OS ELEMENTOS DA CLASSE POIS A ATUALIZAÇÃO VAI EXCLUIR OQ NÃO FOI ENVIADO
-    //ADD IDPROFESSOR E NESSE CASO cCHO Q TEM Q SER .CHILD(IDPROFESSOR).CHILD(IDpROJETO)
     private boolean updateProjeto(String id, String name, String descr, String status, String idProf) {
         //pegando a referncia de projeto
         DatabaseReference dR = FirebaseDatabase.getInstance().getReference("Projeto").child(idProf).child(id);
@@ -267,8 +244,6 @@ public class Project_prof extends AppCompatActivity
             spinner_status.setSelection(1);
         }
 
-
-
         ///----------------------------------
 
         final Button buttonUpdate = (Button) dialogView.findViewById(R.id.buttonUpdateArtist);
@@ -311,9 +286,126 @@ public class Project_prof extends AppCompatActivity
         });
     }
 
+    private boolean updateProfCad(String idProfessor, String nomeProf, String emailProf, String areaProf, String idAcessoProf, String matricula, String senha){
+        DatabaseReference database= FirebaseDatabase.getInstance().getReference("Professor").child(idProfessor);
+        Professor prof = new Professor(idProfessor, nomeProf,emailProf,areaProf,idAcessoProf,matricula);
+        database.setValue(prof);
+
+        DatabaseReference data= FirebaseDatabase.getInstance().getReference("Acesso").child(idAcessoProf);
+        Acesso acesso = new Acesso(idAcessoProf, emailProf,senha, 1);
+        data.setValue(acesso);
+
+        //FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        user.updateEmail(emailProf);
+        user.sendEmailVerification();
+        user.updatePassword(senha);
+
+        return true;
+    }
+
+
+    private void showUpdateProf(){
+        final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+        LayoutInflater inflater = getLayoutInflater();
+        final View dialogView = inflater.inflate(R.layout.updat_cad_prof,null);
+        dialogBuilder.setView(dialogView);
+
+        final EditText nome_Prof_alt= (EditText)dialogView.findViewById(R.id.nome_Prof_alt);
+        final EditText email_Prof_alt = (EditText) dialogView.findViewById(R.id.email_Prof_alt);
+        final EditText matric_Prof_alt = (EditText) dialogView.findViewById(R.id.matric_Prof_alt);
+        final EditText area_Prof_alt = (EditText) dialogView.findViewById(R.id.area_Prof_alt);
+        final EditText senha_Prof_alt = (EditText) dialogView.findViewById(R.id.senha_Prof_alt);
+        final EditText repete_Prof_alt = (EditText)dialogView.findViewById(R.id.repete_Prof_alt);
+        final Button button_up_prof = (Button) dialogView.findViewById(R.id.button_up_prof);
+
+        final List<Professor> profLista = new ArrayList<>();
+        FirebaseDatabase.getInstance().getReference().child("Professor")
+                .addListenerForSingleValueEvent(new ValueEventListener(){
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        String email="f";
+
+                        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                        if(user!=null){
+                            email=user.getEmail();
+                            System.out.println("email"+email);
+
+                        }
+
+                        for(DataSnapshot snapshot : dataSnapshot.getChildren()){
+                            Professor prof = snapshot.getValue(Professor.class);
+                            profLista.add(prof);
+                        }
+
+                        for(int i=0; i<profLista.size();i++){
+                            //
+                            //System.out.println("emails--"+profLista.get(i).getEmailProf()+"--email--"+email);
+                            if(profLista.get(i).getEmailProf().equals(email)){
+                               // System.out.println("entrei if");
+                                nome_Prof_alt.setText(profLista.get(i).getNomeProf());
+                                email_Prof_alt.setText(email);
+                                matric_Prof_alt.setText(profLista.get(i).getMatricula());
+                                area_Prof_alt.setText(profLista.get(i).getAreaProf());
+
+                                final String idpr = profLista.get(i).getIdProfessor();
+                                final String idAces = profLista.get(i).getIdAcessoProf();
+
+                                dialogBuilder.setTitle("Alterar cadastro");
+                                final AlertDialog b = dialogBuilder.create();
+                                b.show();
+
+                                button_up_prof.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+
+                                        String name = nome_Prof_alt.getText().toString().trim();
+                                        String ema = email_Prof_alt.getText().toString().trim();
+                                        String mat = matric_Prof_alt.getText().toString().trim();
+                                        String area = area_Prof_alt.getText().toString().trim();
+                                        String senh = senha_Prof_alt.getText().toString().trim();
+                                        String repete = repete_Prof_alt.getText().toString().trim();
+                                        if (senh.equals(repete)) {
+                                            updateProfCad(idpr, name, ema, area, idAces, mat, senh);
+                                            b.dismiss();
+                                            Toast.makeText(Project_prof.this,"Cadastro atualizado",Toast.LENGTH_SHORT).show();
+                                        }else{
+                                            Toast.makeText(Project_prof.this,"As senhas não correspondem!",Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+                                });
+
+                                //FIM ADICIONAR O ALUNO
+                            }else{
+                                //Toast.makeText(Project_prof.this,"Não foi possível atualizar o seu cadastro. Tente novamente.",Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+    }
 
 
 
+    private boolean deleteProfCad(String idProf, String idAceProf){
+        DatabaseReference dR = FirebaseDatabase.getInstance().getReference("Professor").child(idProf);
+        dR.removeValue();
+        DatabaseReference dRr = FirebaseDatabase.getInstance().getReference("Acesso").child(idAceProf);
+        dRr.removeValue();
+
+        DatabaseReference drTracks = FirebaseDatabase.getInstance().getReference("Projeto").child(idProf);
+        drTracks.removeValue();
+
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        user.delete();
+
+        Toast.makeText(getApplicationContext(), "Conta deletada", Toast.LENGTH_LONG).show();
+        return true;
+    }
 
     @Override
     public void onBackPressed() {
@@ -354,13 +446,16 @@ public class Project_prof extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+            showUpdateProf();
         } else if (id == R.id.nav_gallery) {
+            //solicitaçoes
             abrirSolicitacao();
         } else if (id == R.id.nav_slideshow) {
+            //aluno alocado
             listarAlocado();
         } else if (id == R.id.nav_manage) {
 
+            //deletar conta
         } else if (id == R.id.nav_share) {
             info();
 
@@ -383,9 +478,9 @@ public class Project_prof extends AppCompatActivity
 
     public void abrirTelaProjeto(){
         Intent intent = new Intent(Project_prof.this, cadastroProjeto.class);
-        System.out.println("entrei");
+        //System.out.println("entrei");
         startActivity(intent);
-        System.out.println("entrei2");
+       // System.out.println("entrei2");
     }
     public void abrirSolicitacao(){
         Intent intent = new Intent(Project_prof.this, SolicitacaoProfessor.class);

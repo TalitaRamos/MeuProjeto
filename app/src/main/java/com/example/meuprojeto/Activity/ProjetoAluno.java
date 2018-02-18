@@ -186,14 +186,16 @@ public class ProjetoAluno extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+            //alterar cadastro
         } else if (id == R.id.nav_gallery) {
+            //deletar cadastro
 
         } else if (id == R.id.nav_slideshow) {
-           // System.out.println("entrei");
+           // solicitaçoes
             alunoSoli();
         } else if (id == R.id.nav_manage) {
 
+            //share
         } else if (id == R.id.nav_share) {
             info();
 

@@ -22,6 +22,13 @@ public class Acesso {
     public Acesso() {
     }
 
+    public Acesso(String idAcesso, String login, String senha, int tipo) {
+        this.idAcesso = idAcesso;
+        this.login = login;
+        this.senha = senha;
+        this.tipo = tipo;
+    }
+
     public String getIdAcesso() {
         return idAcesso;
     }

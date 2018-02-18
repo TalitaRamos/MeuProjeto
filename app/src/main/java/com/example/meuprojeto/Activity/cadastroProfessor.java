@@ -90,58 +90,58 @@ public class cadastroProfessor extends AppCompatActivity {
     private void cadastrarProfessor(){
         autenticacao= ConfiguracaoFirebase.getFirebaseAutenticacao();
         autenticacao.createUserWithEmailAndPassword(acesso.getLogin(), acesso.getSenha()).addOnCompleteListener(cadastroProfessor.this, new OnCompleteListener<AuthResult>(){
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
-                    Toast.makeText(cadastroProfessor.this,"Cadastro efetuado com sucesso!",Toast.LENGTH_SHORT).show();
-                    //---SALVAR ACESSO---///
-                    String identificadorUsuario = Base64custom.codificarBase64(acesso.getLogin());
-                    FirebaseUser usuarioFirebase = task.getResult().getUser();
-                    acesso.setIdAcesso(identificadorUsuario);
-                    professor.setIdAcessoProf(identificadorUsuario);
-                    acesso.salvar();
+        @Override
+        public void onComplete(@NonNull Task<AuthResult> task) {
+            if(task.isSuccessful()){
+                Toast.makeText(cadastroProfessor.this,"Cadastro efetuado com sucesso!",Toast.LENGTH_SHORT).show();
+                //---SALVAR ACESSO---///
+                String identificadorUsuario = Base64custom.codificarBase64(acesso.getLogin());
+                FirebaseUser usuarioFirebase = task.getResult().getUser();
+                acesso.setIdAcesso(identificadorUsuario);
+                professor.setIdAcessoProf(identificadorUsuario);
+                acesso.salvar();
 
-                    //---SALVAR PROFESSOR---///
-                    String identificadorProfessor= Base64custom.codificarBase64(professor.getEmailProf());
-                    FirebaseUser usuarioFire = task.getResult().getUser();
-                    professor.setIdProfessor(identificadorProfessor);
-                    professor.salvar();
+                //---SALVAR PROFESSOR---///
+                String identificadorProfessor= Base64custom.codificarBase64(professor.getEmailProf());
+                FirebaseUser usuarioFire = task.getResult().getUser();
+                professor.setIdProfessor(identificadorProfessor);
+                professor.salvar();
 
-                    //SALVAR USUARIO LOGADO
-                    Preferencias preferencias = new Preferencias(cadastroProfessor.this);
+                //SALVAR USUARIO LOGADO
+                Preferencias preferencias = new Preferencias(cadastroProfessor.this);
 
-                    preferencias.salvarUsuarioPreferencias(identificadorUsuario, professor.getNomeProf());
-                    abrirTelaProfessor();
-                    //VERIFICANDO SE O USUÁRIO ESTÁ LOGADO
-                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                    if (user != null) {
-                        String email = user.getEmail();
-                        System.out.println("logado"+email);
-                    } else {
-                        // No user is signed in
-                             System.out.println("nao logado");
-                    }
-                    //FIM VERIFICANDO SE O USUUÁRIO ESTÁ LOGADO
-                }else{
-                    String error = "";
-                    try {
-                        throw  task.getException();
-                    }catch (FirebaseAuthWeakPasswordException e){
-                        error = "Digite uma senha mais forte com no mínimo 6 caracteres de letras e números";
-                    }catch (FirebaseAuthInvalidCredentialsException e){
-                        error = "O email digitado é inválido";
-                    }catch (FirebaseAuthUserCollisionException e){
-                        error = "Email já cadastrado";
-                    }catch (Exception e){
-                        error = "Error ao efetuar o cadastro";
-                        e.printStackTrace();
-                    }
-
-                    Toast.makeText(cadastroProfessor.this,"Erro = "+error,Toast.LENGTH_SHORT).show();
+                preferencias.salvarUsuarioPreferencias(identificadorUsuario, professor.getNomeProf());
+                abrirTelaProfessor();
+                //VERIFICANDO SE O USUÁRIO ESTÁ LOGADO
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                if (user != null) {
+                    String email = user.getEmail();
+                    System.out.println("logado"+email);
+                } else {
+                    // No user is signed in
+                    System.out.println("nao logado");
                 }
+                //FIM VERIFICANDO SE O USUUÁRIO ESTÁ LOGADO
+            }else{
+                String error = "";
+                try {
+                    throw  task.getException();
+                }catch (FirebaseAuthWeakPasswordException e){
+                    error = "Digite uma senha mais forte com no mínimo 6 caracteres de letras e números";
+                }catch (FirebaseAuthInvalidCredentialsException e){
+                    error = "O email digitado é inválido";
+                }catch (FirebaseAuthUserCollisionException e){
+                    error = "Email já cadastrado";
+                }catch (Exception e){
+                    error = "Error ao efetuar o cadastro";
+                    e.printStackTrace();
+                }
+
+                Toast.makeText(cadastroProfessor.this,"Erro = "+error,Toast.LENGTH_SHORT).show();
             }
-        });
-    }
+        }
+    });
+}
 
     public void abrirTelaProfessor(){
         Intent intentabrirTelaProfessor = new Intent(cadastroProfessor.this, cadastroProjeto.class);

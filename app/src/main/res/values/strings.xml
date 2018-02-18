@@ -63,4 +63,6 @@
     <string name="candidatar_se">Candidatar-se</string>
     <string name="matr_cula">Matrícula</string>
     <string name="matr_culaprof">Matrícula</string>
+    <string name="alterar_cadastro_prof">Alterar cadastro</string>
+    <string name="alterar_cad_prof">Alterar</string>
 </resources>

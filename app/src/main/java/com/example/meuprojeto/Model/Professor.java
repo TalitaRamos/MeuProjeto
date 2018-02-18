@@ -24,6 +24,15 @@ public class Professor {
     public Professor() {
     }
 
+    public Professor(String idProfessor, String nomeProf, String emailProf, String areaProf, String idAcessoProf, String matricula) {
+        this.IdProfessor = idProfessor;
+        this.NomeProf = nomeProf;
+        this.EmailProf = emailProf;
+        this.AreaProf = areaProf;
+        this.IdAcessoProf = idAcessoProf;
+        this.matricula = matricula;
+    }
+
     public String getIdProfessor() {
         return IdProfessor;
     }
