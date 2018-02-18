@@ -5,34 +5,36 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.0.1"
-    timestamp="1518925716676"
+    timestamp="1518979255848"
     token="5690208375837323669"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="560" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="30" />
     <task
         name="verifier"
-        duration="0" />
+        duration="6" />
+
+    <artifact
+        location="C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1518925567193"
+        timestamp="1518974578651"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
-        <artifact
-            location="C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\build\outputs\apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
         <artifact
             location="C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
@@ -63,10 +65,18 @@
         <artifact
             location="C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
+        <artifact
+            location="C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\build\outputs\apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1518925716676"
-        verifier="COLD_SWAP_REQUESTED" />
+        ir-eligibility="COMPATIBLE"
+        timestamp="1518979255848"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+    </build>
 
 </instant-run>

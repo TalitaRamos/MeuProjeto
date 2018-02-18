@@ -1,6 +1,7 @@
 package com.example.meuprojeto.Activity;
 
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -196,6 +197,7 @@ public class Project_prof extends AppCompatActivity
 
     }
 
+    //ALTERAR PROJETO
     private boolean updateProjeto(String id, String name, String descr, String status, String idProf) {
         //pegando a referncia de projeto
         DatabaseReference dR = FirebaseDatabase.getInstance().getReference("Projeto").child(idProf).child(id);
@@ -207,6 +209,7 @@ public class Project_prof extends AppCompatActivity
         return true;
     }
 
+    //DELETAR PROJETO
     private boolean deleteProj(String id, String name, String descr, String status, String idProf) {
         //Pegando a referencia de projeto
         DatabaseReference dR = FirebaseDatabase.getInstance().getReference("Projeto").child(idProf).child(id);
@@ -224,6 +227,7 @@ public class Project_prof extends AppCompatActivity
         return true;
     }
 
+    //EXIBE TELA E CHAMA AS FUNÇÕES DE UPDATE E DELETE DE PROJETO
     private void showUpdateDeleteDialog(final String projetoId, String projetoName, final String isProfessor,String status, String descricao) {
 
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
@@ -286,6 +290,7 @@ public class Project_prof extends AppCompatActivity
         });
     }
 
+    //ATUALIZAR CADASTRO DO PROFESSOR
     private boolean updateProfCad(String idProfessor, String nomeProf, String emailProf, String areaProf, String idAcessoProf, String matricula, String senha){
         DatabaseReference database= FirebaseDatabase.getInstance().getReference("Professor").child(idProfessor);
         Professor prof = new Professor(idProfessor, nomeProf,emailProf,areaProf,idAcessoProf,matricula);
@@ -304,7 +309,7 @@ public class Project_prof extends AppCompatActivity
         return true;
     }
 
-
+    //EXIBE E CHAMA A FUNÇÃO DE ATUALIZAÇÃO DE CADASTRO
     private void showUpdateProf(){
         final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         LayoutInflater inflater = getLayoutInflater();
@@ -390,7 +395,7 @@ public class Project_prof extends AppCompatActivity
     }
 
 
-
+    //DELETAR CADASTRO DO PROFESSOR
     private boolean deleteProfCad(String idProf, String idAceProf){
         DatabaseReference dR = FirebaseDatabase.getInstance().getReference("Professor").child(idProf);
         dR.removeValue();
@@ -400,11 +405,76 @@ public class Project_prof extends AppCompatActivity
         DatabaseReference drTracks = FirebaseDatabase.getInstance().getReference("Projeto").child(idProf);
         drTracks.removeValue();
 
+        DatabaseReference aloc = FirebaseDatabase.getInstance().getReference("Alocacao").child(idProf);
+        aloc.removeValue();
+
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         user.delete();
 
         Toast.makeText(getApplicationContext(), "Conta deletada", Toast.LENGTH_LONG).show();
         return true;
+    }
+
+    //mostras as opções de deletar ou não deletar a conta e chama a função de deletar
+    private void showDeleteProf(){
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+        dialogBuilder.setTitle("Deletar conta");
+        dialogBuilder.setMessage("Clicando em Sim todas as suas informações serão deletadas.");
+
+        dialogBuilder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+                final List<Professor> profLista = new ArrayList<>();
+                FirebaseDatabase.getInstance().getReference().child("Professor")
+                        .addListenerForSingleValueEvent(new ValueEventListener(){
+                            @Override
+                            public void onDataChange(DataSnapshot dataSnapshot) {
+                                String email="f";
+
+                                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                                if(user!=null){
+                                    email=user.getEmail();
+                                    System.out.println("email"+email);
+
+                                }
+
+                                for(DataSnapshot snapshot : dataSnapshot.getChildren()){
+                                    Professor prof = snapshot.getValue(Professor.class);
+                                    profLista.add(prof);
+                                }
+
+                                for(int i=0; i<profLista.size();i++){
+                                    //System.out.println("emails--"+profLista.get(i).getEmailProf()+"--email--"+email);
+                                    if(profLista.get(i).getEmailProf().equals(email)){
+                                        String idp= profLista.get(i).getIdProfessor();
+                                        String idacss= profLista.get(i).getIdAcessoProf();
+                                        deleteProfCad(idp, idacss);
+                                    }else{
+                                        //Toast.makeText(Project_prof.this,"Não foi possível atualizar o seu cadastro. Tente novamente.",Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+                            }
+
+                            @Override
+                            public void onCancelled(DatabaseError databaseError) {
+
+                            }
+                        });
+                Toast.makeText(getApplicationContext(), "Sim! Deletar", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        dialogBuilder.setNegativeButton("Não", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Toast.makeText(getApplicationContext(), "Nãooo!", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        final AlertDialog b = dialogBuilder.create();
+        b.show();
+
     }
 
     @Override
@@ -446,6 +516,7 @@ public class Project_prof extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
+            //atualizar cadastro
             showUpdateProf();
         } else if (id == R.id.nav_gallery) {
             //solicitaçoes
@@ -454,8 +525,8 @@ public class Project_prof extends AppCompatActivity
             //aluno alocado
             listarAlocado();
         } else if (id == R.id.nav_manage) {
-
             //deletar conta
+            showDeleteProf();
         } else if (id == R.id.nav_share) {
             info();
 
