@@ -28,6 +28,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.meuprojeto.Model.Acesso;
+import com.example.meuprojeto.Model.Alocacao;
 import com.example.meuprojeto.Model.Professor;
 import com.example.meuprojeto.Model.Projeto;
 import com.example.meuprojeto.ProfessorAdapter;
@@ -396,7 +397,7 @@ public class Project_prof extends AppCompatActivity
 
 
     //DELETAR CADASTRO DO PROFESSOR
-    private boolean deleteProfCad(String idProf, String idAceProf){
+    private boolean deleteProfCad(final String idProf, String idAceProf){
         DatabaseReference dR = FirebaseDatabase.getInstance().getReference("Professor").child(idProf);
         dR.removeValue();
         DatabaseReference dRr = FirebaseDatabase.getInstance().getReference("Acesso").child(idAceProf);
@@ -405,11 +406,48 @@ public class Project_prof extends AppCompatActivity
         DatabaseReference drTracks = FirebaseDatabase.getInstance().getReference("Projeto").child(idProf);
         drTracks.removeValue();
 
-        DatabaseReference aloc = FirebaseDatabase.getInstance().getReference("Alocacao").child(idProf);
-        aloc.removeValue();
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         user.delete();
+
+        //LISTA PARA LOCALIZAR O ALUNO ALOCADO NO PROJETO DO PROFESSOR
+        final List<Alocacao> aloLista = new ArrayList<>();
+        FirebaseDatabase.getInstance().getReference().child("Alocacao")
+                .addListenerForSingleValueEvent(new ValueEventListener(){
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        /*String email="f";
+
+                        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                        if(user!=null){
+                            email=user.getEmail();
+                            System.out.println("email"+email);
+
+                        }*/
+
+                        for(DataSnapshot snapshot : dataSnapshot.getChildren()){
+                            Alocacao alocado = snapshot.getValue(Alocacao.class);
+                            aloLista.add(alocado);
+                        }
+
+                        for(int i=0; i<aloLista.size();i++){
+                            //System.out.println("emails--"+profLista.get(i).getEmailProf()+"--email--"+email);
+                            if(aloLista.get(i).getIdProfessor().equals(idProf)){
+                                //DELETAR ALOCACAO
+                                String idAloc = aloLista.get(i).getIdAlocacao();
+                                DatabaseReference aloc = FirebaseDatabase.getInstance().getReference("Alocacao").child(idAloc);
+                                aloc.removeValue();
+                            }else{
+                                //Toast.makeText(Project_prof.this,"Não foi possível atualizar o seu cadastro. Tente novamente.",Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
 
         Toast.makeText(getApplicationContext(), "Conta deletada", Toast.LENGTH_LONG).show();
         return true;
@@ -425,6 +463,7 @@ public class Project_prof extends AppCompatActivity
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
 
+                //LISTA PARA PEGAR O ID DO PROFESSOR E DO ID DO ACESSO
                 final List<Professor> profLista = new ArrayList<>();
                 FirebaseDatabase.getInstance().getReference().child("Professor")
                         .addListenerForSingleValueEvent(new ValueEventListener(){
@@ -450,6 +489,7 @@ public class Project_prof extends AppCompatActivity
                                         String idp= profLista.get(i).getIdProfessor();
                                         String idacss= profLista.get(i).getIdAcessoProf();
                                         deleteProfCad(idp, idacss);
+                                        login();
                                     }else{
                                         //Toast.makeText(Project_prof.this,"Não foi possível atualizar o seu cadastro. Tente novamente.",Toast.LENGTH_SHORT).show();
                                     }
@@ -461,14 +501,14 @@ public class Project_prof extends AppCompatActivity
 
                             }
                         });
-                Toast.makeText(getApplicationContext(), "Sim! Deletar", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), "Sim! Deletar", Toast.LENGTH_LONG).show();
             }
         });
 
         dialogBuilder.setNegativeButton("Não", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Toast.makeText(getApplicationContext(), "Nãooo!", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Exclusão cancelada", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -552,6 +592,10 @@ public class Project_prof extends AppCompatActivity
         //System.out.println("entrei");
         startActivity(intent);
        // System.out.println("entrei2");
+    }
+    public void login(){
+        Intent intent = new Intent(Project_prof.this, MainActivity.class);
+        startActivity(intent);
     }
     public void abrirSolicitacao(){
         Intent intent = new Intent(Project_prof.this, SolicitacaoProfessor.class);

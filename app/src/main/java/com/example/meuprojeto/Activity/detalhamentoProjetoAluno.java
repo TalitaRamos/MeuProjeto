@@ -114,7 +114,7 @@ public class detalhamentoProjetoAluno extends AppCompatActivity {
 
                                             //FIM ADICIONAR O ALUNO
                                         }else{
-                                            Toast.makeText(detalhamentoProjetoAluno.this,"Email inválido",Toast.LENGTH_SHORT).show();
+                                           // Toast.makeText(detalhamentoProjetoAluno.this,"Email inválido",Toast.LENGTH_SHORT).show();
                                         }
                                     }
                                 }
