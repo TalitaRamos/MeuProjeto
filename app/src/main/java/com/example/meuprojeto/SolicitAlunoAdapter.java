@@ -54,13 +54,21 @@ public class SolicitAlunoAdapter extends ArrayAdapter<Candidato>{
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         for(DataSnapshot snapshot:dataSnapshot.getChildren()){
                             Projeto j = snapshot.getValue(Projeto.class);
-                            projList.add(j);
+                            if(j.getIdProjeto().equals(candidato.getIdProjeto())){
+                                projList.add(j);
+                            }
+
                         }
 
                         for(int i=0;i<projList.size();i++){
                             if(projList.get(i).getIdProjeto().equals(candidato.getIdProjeto())){
                                // System.out.println("info"+projList.get(i).getNome());
                                 identifica=projList.get(i).getNome();
+                                //System.out.println("Nome projeto--"+projList.get(i).getNome());
+                                if(identifica.equals("tina")){
+                                    //System.out.println("vazio");
+                                    identifica = "O projeto não existe mais";
+                                }
                                 textViewNameProjeto.setText(identifica);
                             }
                         }
@@ -71,7 +79,7 @@ public class SolicitAlunoAdapter extends ArrayAdapter<Candidato>{
 
                     }
                 });
-        System.out.println("retorna"+identifica+"proj"+idProj);
+        //System.out.println("retorna"+identifica+"proj"+idProj);
         //=======================================================
         textStatusSoli.setText(candidato.getSituacao());
 

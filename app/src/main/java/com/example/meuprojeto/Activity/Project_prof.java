@@ -56,11 +56,10 @@ public class Project_prof extends AppCompatActivity
     DatabaseReference database;
     // para acessar nossa nova ListView
     ListView listViewProf;
-//para atualizar proj
+    //para atualizar proj
     // ListView listViewProjetos;
 
     // lista para armazenar os objetos "Professor" que leremos do banco de dados
-
     List<Projeto>projetoList;
     String iden="e";
 
@@ -95,10 +94,6 @@ public class Project_prof extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         databaseProjetos = FirebaseDatabase.getInstance().getReference("Projeto");
-
-
-
-
 
         //apontando para o nó projeto
         //databaseProjetos= FirebaseDatabase.getInstance().getReference("Projeto").child(id);
@@ -324,20 +319,57 @@ public class Project_prof extends AppCompatActivity
     }
 
     //ATUALIZAR CADASTRO DO PROFESSOR
-    private boolean updateProfCad(String idProfessor, String nomeProf, String emailProf, String areaProf, String idAcessoProf, String matricula, String senha){
+    private boolean updateProfCad(final String idProfessor, String nomeProf, final String emailProf, String areaProf, final String idAcessoProf, String matricula, String senha){
         DatabaseReference database= FirebaseDatabase.getInstance().getReference("Professor").child(idProfessor);
         Professor prof = new Professor(idProfessor, nomeProf,emailProf,areaProf,idAcessoProf,matricula);
         database.setValue(prof);
-
-        DatabaseReference data= FirebaseDatabase.getInstance().getReference("Acesso").child(idAcessoProf);
-        Acesso acesso = new Acesso(idAcessoProf, emailProf,senha, 1);
-        data.setValue(acesso);
 
         //FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         user.updateEmail(emailProf);
         user.sendEmailVerification();
-        user.updatePassword(senha);
+
+
+        if(TextUtils.isEmpty(senha)) {
+            System.out.println("campo vazio");
+
+            final List<Acesso> acesList = new ArrayList<>();
+            FirebaseDatabase.getInstance().getReference().child("Acesso").addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    for(DataSnapshot snapshot:dataSnapshot.getChildren()){
+                        Acesso acs = snapshot.getValue(Acesso.class);
+                        acesList.add(acs);
+                    }
+
+                    for(int i=0;i<acesList.size();i++){
+                        if(acesList.get(i).getIdAcesso().equals(idProfessor)){
+                            // System.out.println("info"+projList.get(i).getNome());
+                            String sen = acesList.get(i).getSenha();
+                            System.out.println("senha-"+sen);
+                            final DatabaseReference data= FirebaseDatabase.getInstance().getReference("Acesso").child(idAcessoProf);
+                            Acesso acesso = new Acesso(idAcessoProf, emailProf,sen, 1);
+                            data.setValue(acesso);
+                            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                            user.updatePassword(sen);
+                        }
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                }
+            });
+
+        }else{
+            System.out.println("campo preenchido");
+            DatabaseReference data= FirebaseDatabase.getInstance().getReference("Acesso").child(idAcessoProf);
+            Acesso acesso = new Acesso(idAcessoProf, emailProf,senha, 1);
+            data.setValue(acesso);
+            FirebaseUser use = FirebaseAuth.getInstance().getCurrentUser();
+            use.updatePassword(senha);
+        }
 
         return true;
     }

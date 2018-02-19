@@ -24,6 +24,15 @@ public class Aluno {
     public Aluno() {
     }
 
+    public Aluno(String idAluno, String nomeAluno, String emailAluno, String cursoAluno, String fkAcessoAluno, String matricula) {
+        IdAluno = idAluno;
+        NomeAluno = nomeAluno;
+        EmailAluno = emailAluno;
+        CursoAluno = cursoAluno;
+        this.fkAcessoAluno = fkAcessoAluno;
+        this.matricula = matricula;
+    }
+
     public String getIdAluno() {
         return IdAluno;
     }

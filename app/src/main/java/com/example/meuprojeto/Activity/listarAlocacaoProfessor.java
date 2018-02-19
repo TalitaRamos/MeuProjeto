@@ -13,7 +13,10 @@ import android.widget.Toast;
 import com.example.meuprojeto.AlocacaoAdapter;
 import com.example.meuprojeto.Model.Alocacao;
 import com.example.meuprojeto.Model.Candidato;
+import com.example.meuprojeto.Model.Professor;
 import com.example.meuprojeto.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -80,11 +83,42 @@ public class listarAlocacaoProfessor extends AppCompatActivity {
         database.removeValue();
         final String candifato=idCandi;
         final String projeto=idProj;
+        String idprofe="nadinha";
 
 
         //======================================================================
+        //PEGAR ID DO PROFESSOR LOGADO
+        final List<Professor> profList = new ArrayList<>();
+        FirebaseDatabase.getInstance().getReference().child("Professor").addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        String email="nada";
+                        for(DataSnapshot snapshot:dataSnapshot.getChildren()){
+                            Professor j = snapshot.getValue(Professor.class);
+                            profList.add(j);
+                        }
 
+                        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                        if (user != null) {
+                            email = user.getEmail();
+                            //System.out.println("logado"+email);
+                        }
 
+                        for(int i=0;i<profList.size();i++){
+                            if(profList.get(i).getEmailProf().equals(email)){
+                                // System.out.println("info"+projList.get(i).getNome());
+                               // idprofe=profList.get(i).getIdProfessor();
+                            }
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+        //======================================================================
+        //ADD CANDIDATO NA LISTA
         final List<Candidato> candList = new ArrayList<>();
         ///System.out.println("idcandi2"+idCandi);
         FirebaseDatabase.getInstance().getReference().child("Candidato").addListenerForSingleValueEvent(new ValueEventListener() {

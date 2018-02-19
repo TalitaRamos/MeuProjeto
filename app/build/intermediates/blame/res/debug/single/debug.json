@@ -1260,6 +1260,10 @@
         "source": "C:\\Users\\Talit\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\198cfcf4aa36abc4cfb3fdf55d00510f\\res\\layout\\design_navigation_item.xml"
     },
     {
+        "merged": "C:\\Users\\Talit\\AndroidStudioProjects\\teste\\MeuProjeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_update_cad_aluno.xml.flat",
+        "source": "C:\\Users\\Talit\\AndroidStudioProjects\\teste\\MeuProjeto\\app\\src\\main\\res\\layout\\update_cad_aluno.xml"
+    },
+    {
         "merged": "C:\\Users\\Talit\\AndroidStudioProjects\\teste\\MeuProjeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "C:\\Users\\Talit\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\f587c597bb805bc8c53fa1b70ae8ad8d\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
     },

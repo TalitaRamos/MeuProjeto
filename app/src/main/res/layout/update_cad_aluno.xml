@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp"
+            android:layout_marginTop="50dp">
+
+
+            <!--<TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/cadastro_dos_alunos"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#184B6C"/>-->
+
+            <EditText
+                android:id="@+id/nome_Alun_alt"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="@string/nome"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/email_Alun_alt"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/matric_Alun_alt"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/matr_cula"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/curso_Alun_alt"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/curso"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/senha_Alun_alt"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/senha"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/repete_Alun_alt"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/repetir_senha"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/button_up_alun_alt"
+                style="@style/Button_style"
+                android:layout_width="207dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/alterar_alun" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

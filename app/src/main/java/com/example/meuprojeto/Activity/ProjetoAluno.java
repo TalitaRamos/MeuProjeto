@@ -1,9 +1,12 @@
 package com.example.meuprojeto.Activity;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.text.TextUtils;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,10 +17,16 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.meuprojeto.AlunoAdapter;
+import com.example.meuprojeto.Model.Acesso;
+import com.example.meuprojeto.Model.Aluno;
+import com.example.meuprojeto.Model.Candidato;
 import com.example.meuprojeto.Model.Professor;
 import com.example.meuprojeto.Model.Projeto;
 import com.example.meuprojeto.R;
@@ -77,7 +86,6 @@ public class ProjetoAluno extends AppCompatActivity
         }
         TextView textView = (TextView) findViewById(R.id.textView);
         textView.setText(email);*/
-
         //apontando para o nó projeto
         databaseProjetos= FirebaseDatabase.getInstance().getReference("Professor");
         //acessando a nova LiestView no arquivo de layout
@@ -89,13 +97,9 @@ public class ProjetoAluno extends AppCompatActivity
         // definindo um listener para chamar a activity dos projetos, quando
         // for clicado um Professor na lista de Professores
 
-
         listViewProf.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                // a lista foi clicada, na posição indicada pelo parâmetro i
-                // vamos então pegar o objeto professor correspndente a esta posição
-                // na lista de professores
                 Professor professor = profList.get(i);
                 // vamos chamar a nova activity, para trabalhar com os projetos
                 Intent intent = new Intent(getApplicationContext(),ListAlunoProjeto.class);
@@ -119,15 +123,12 @@ public class ProjetoAluno extends AppCompatActivity
         // criando um tratador de eventos relacionado com nosso
         // banco de dados Firebase
         databaseProjetos.addValueEventListener(new ValueEventListener() {
-
             // método chamado automaticamente quando houver mudança nos dados
             // armazenados no firebase
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                // se entrou aqui, é porque mudou alguma coisa nos professores do banco
                 // vamos limpar a lista
-                //  para recuperar esses dados
-                // novamente
+                //  para recuperar esses dados novamente
                 profList.clear();
 
                 // Vamos então "varrer" esse objeto, pegando os dados lá dentro
@@ -145,6 +146,177 @@ public class ProjetoAluno extends AppCompatActivity
 
             }
         });
+    }
+
+
+    //ALTERAR CADASTRO DE ALUNO
+    private boolean updateProjeto(final String idAluno, String nomeAluno, final String emailAluno, String cursoAluno, final String fkAcessoAluno, String matricula, String senha){
+        DatabaseReference database= FirebaseDatabase.getInstance().getReference("Aluno").child(idAluno);
+        Aluno alun = new Aluno(idAluno,nomeAluno,emailAluno,cursoAluno,fkAcessoAluno,matricula);
+        database.setValue(alun);
+
+        if(TextUtils.isEmpty(senha)){
+            System.out.println("campo vazio");
+
+            final List<Acesso> acesList = new ArrayList<>();
+            FirebaseDatabase.getInstance().getReference().child("Acesso").addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(DataSnapshot dataSnapshot) {
+                            for(DataSnapshot snapshot:dataSnapshot.getChildren()){
+                                Acesso acs = snapshot.getValue(Acesso.class);
+                                acesList.add(acs);
+                            }
+
+                            for(int i=0;i<acesList.size();i++){
+                                if(acesList.get(i).getIdAcesso().equals(idAluno)){
+                                    // System.out.println("info"+projList.get(i).getNome());
+                                    String sen = acesList.get(i).getSenha();
+                                    System.out.println("senha-"+sen);
+                                    final DatabaseReference data= FirebaseDatabase.getInstance().getReference("Acesso").child(fkAcessoAluno);
+                                    Acesso acesso = new Acesso(fkAcessoAluno, emailAluno,sen, 2);
+                                    data.setValue(acesso);
+                                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                                    user.updatePassword(sen);
+                                }
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+
+                        }
+                    });
+        }else{
+            System.out.println("campo preenchido");
+            final DatabaseReference data= FirebaseDatabase.getInstance().getReference("Acesso").child(fkAcessoAluno);
+            Acesso acesso = new Acesso(fkAcessoAluno, emailAluno,senha, 2);
+            data.setValue(acesso);
+            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+            user.updatePassword(senha);
+        }
+
+
+        //FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        user.updateEmail(emailAluno);
+        user.sendEmailVerification();
+
+
+        //ALTERAR O EMAIL DO CANDIDATO LOGADO
+        final List<Candidato> candList = new ArrayList<>();
+        FirebaseDatabase.getInstance().getReference().child("Candidato").addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        for(DataSnapshot snapshot:dataSnapshot.getChildren()){
+                            Candidato cand = snapshot.getValue(Candidato.class);
+                            candList.add(cand);
+                        }
+
+                        for(int i=0;i<candList.size();i++){
+                            if(candList.get(i).getIdAluno().equals(idAluno)){
+                                DatabaseReference dase= FirebaseDatabase.getInstance().getReference("Candidato").child(candList.get(i).getIdCandidato());
+                                Candidato cad = new Candidato(candList.get(i).getIdCandidato(), candList.get(i).getData(), candList.get(i).getSituacao(),
+                                        candList.get(i).getIdProjeto(), candList.get(i).getIdAluno(), emailAluno, candList.get(i).getIdProfessor());
+                                dase.setValue(cad);
+                            }
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+
+        return true;
+    }
+    //EXIBE E CHAMA A FUNÇÃO DE ATUALIZAÇÃO DO CADASTRO
+    private void showUpdateAluno(){
+        final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+        LayoutInflater inflater = getLayoutInflater();
+        final View dialogView = inflater.inflate(R.layout.update_cad_aluno,null);
+        dialogBuilder.setView(dialogView);
+
+        final EditText nome_Alun_alt= (EditText)dialogView.findViewById(R.id.nome_Alun_alt);
+        final EditText email_Alun_alt = (EditText) dialogView.findViewById(R.id.email_Alun_alt);
+        final EditText matric_Alun_alt = (EditText) dialogView.findViewById(R.id.matric_Alun_alt);
+        final EditText curso_Alun_alt = (EditText) dialogView.findViewById(R.id.curso_Alun_alt);
+        final EditText senha_Alun_alt = (EditText) dialogView.findViewById(R.id.senha_Alun_alt);
+        final EditText repete_Alun_alt = (EditText)dialogView.findViewById(R.id.repete_Alun_alt);
+        final Button button_up_alun_alt = (Button) dialogView.findViewById(R.id.button_up_alun_alt);
+
+        final List<Aluno>aluLista = new ArrayList<>();
+        FirebaseDatabase.getInstance().getReference().child("Aluno")
+                .addListenerForSingleValueEvent(new ValueEventListener(){
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        String email="f";
+
+                        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                        if(user!=null){
+                            email=user.getEmail();
+                            System.out.println("email"+email);
+
+                        }
+
+                        for(DataSnapshot snapshot : dataSnapshot.getChildren()){
+                            Aluno alu = snapshot.getValue(Aluno.class);
+                            aluLista.add(alu);
+                        }
+
+                        for(int i=0; i<aluLista.size();i++){
+                            //
+                            //System.out.println("emails--"+profLista.get(i).getEmailProf()+"--email--"+email);
+                            if(aluLista.get(i).getEmailAluno().equals(email)){
+                                // System.out.println("entrei if");
+                                nome_Alun_alt.setText(aluLista.get(i).getNomeAluno());
+                                email_Alun_alt.setText(email);
+                                matric_Alun_alt.setText(aluLista.get(i).getMatricula());
+                                curso_Alun_alt.setText(aluLista.get(i).getCursoAluno());
+
+                                final String idalun = aluLista.get(i).getIdAluno();
+                                final String idAces = aluLista.get(i).getFkAcessoAluno();
+
+                                dialogBuilder.setTitle("Alterar cadastro");
+                                final AlertDialog b = dialogBuilder.create();
+                                b.show();
+
+                                button_up_alun_alt.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+
+                                        String name = nome_Alun_alt.getText().toString().trim();
+                                        String ema = email_Alun_alt.getText().toString().trim();
+                                        String mat = matric_Alun_alt.getText().toString().trim();
+                                        String cur = curso_Alun_alt.getText().toString().trim();
+                                        String senh = senha_Alun_alt.getText().toString().trim();
+                                        String repete = repete_Alun_alt.getText().toString().trim();
+                                        //if(TextUtils.isEmpty(senh)||TextUtils.isEmpty(repete)){
+
+
+                                        //}
+                                        if (senh.equals(repete)) {
+                                            updateProjeto(idalun, name, ema, cur, idAces, mat, senh);
+                                            b.dismiss();
+                                            Toast.makeText(ProjetoAluno.this,"Cadastro atualizado",Toast.LENGTH_SHORT).show();
+                                        }else{
+                                            Toast.makeText(ProjetoAluno.this,"As senhas não correspondem!",Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+                                });
+
+                                //FIM ADICIONAR O ALUNO
+                            }else{
+                                //Toast.makeText(Project_prof.this,"Não foi possível atualizar o seu cadastro. Tente novamente.",Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
     }
 
     @Override
@@ -187,6 +359,7 @@ public class ProjetoAluno extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
             //alterar cadastro
+            showUpdateAluno();
         } else if (id == R.id.nav_gallery) {
             //deletar cadastro
 
