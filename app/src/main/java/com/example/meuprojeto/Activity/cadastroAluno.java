@@ -24,6 +24,8 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class cadastroAluno extends AppCompatActivity {
 
@@ -59,6 +61,17 @@ public class cadastroAluno extends AppCompatActivity {
 
         //AÇÃO DO BUTTON
 
+        /*String id=database.push().getKey();
+        String situacao = "Solicitado";
+
+        long date = System.currentTimeMillis();
+        SimpleDateFormat sdf = new SimpleDateFormat("d/MM/yyyy");
+        String data = sdf.format(date);
+        //System.out.println("testanto"+data +"projeto"+idProj);
+
+        Candidato candidato = new Candidato(id,data,situacao,idProj,identiAlun,email,idProf);
+        database.child(id).setValue(candidato);*/
+
         button_cad_alun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -91,21 +104,31 @@ public class cadastroAluno extends AppCompatActivity {
                 if(task.isSuccessful()){
                     Toast.makeText(cadastroAluno.this,"Cadastro efetuado com sucesso!",Toast.LENGTH_SHORT).show();
                     //----SALVAR ACESSO-----//
-                    String identificadorUsuario = Base64custom.codificarBase64(acesso.getLogin());
-                    FirebaseUser usuarioFirebase = task.getResult().getUser();
-                    acesso.setIdAcesso(identificadorUsuario);
-                    aluno.setFkAcessoAluno(identificadorUsuario);
-                    acesso.salvar();
+                   // String identificadorUsuario = Base64custom.codificarBase64(acesso.getLogin());
+                   /// FirebaseUser usuarioFirebase = task.getResult().getUser();
+                    //acesso.setIdAcesso(identificadorUsuario);
+                    //aluno.setFkAcessoAluno(identificadorUsuario);
+                    //acesso.salvar();
+
+                    DatabaseReference database;
+                    database = FirebaseDatabase.getInstance().getReference("Acesso");
+                    String id = database.push().getKey();
+                    acesso.setIdAcesso(id);
+                    aluno.setFkAcessoAluno(id);
+                    database.child(id).setValue(acesso);
 
                     //---SALVAR ALUNO---//
-                    String identificadorAluno= Base64custom.codificarBase64(aluno.getEmailAluno());
-                    FirebaseUser usuariofire = task.getResult().getUser();
-                    aluno.setIdAluno(identificadorAluno);
-                    aluno.salvar();
+                    //String identificadorAluno= Base64custom.codificarBase64(aluno.getEmailAluno());
+                    //FirebaseUser usuariofire = task.getResult().getUser();
+                    DatabaseReference data;
+                    data = FirebaseDatabase.getInstance().getReference("Aluno");
+                    aluno.setIdAluno(id);
+                    data.child(id).setValue(aluno);
+                    //aluno.salvar();
 
                     //SALVAR USUARIO LOGADO
-                    Preferencias preferenciaAlun = new Preferencias(cadastroAluno.this);
-                    preferenciaAlun.salvarUsuarioPreferencias(identificadorUsuario, aluno.getNomeAluno());
+                    //Preferencias preferenciaAlun = new Preferencias(cadastroAluno.this);
+                    //preferenciaAlun.salvarUsuarioPreferencias(identificadorUsuario, aluno.getNomeAluno());
                     abrirTelaAluno();
 
                     //VERIFICANDO SE O USUÁRIO ESTÁ LOGADO

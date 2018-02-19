@@ -42,7 +42,6 @@ public class AlocacaoAdapter extends ArrayAdapter<Alocacao>{
         View listViewItem = inflater.inflate(R.layout.layout_list_alocado,null,true);
 
         final TextView tprojeto = (TextView)listViewItem.findViewById(R.id.tprojeto);
-        //ImageView imageView2 = (ImageView)listViewItem.findViewById(R.id.imageView2);
         final TextView taluno = (TextView)listViewItem.findViewById(R.id.taluno);
         TextView data = (TextView)listViewItem.findViewById(R.id.data);
 

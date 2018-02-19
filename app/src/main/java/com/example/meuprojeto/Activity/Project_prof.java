@@ -211,7 +211,7 @@ public class Project_prof extends AppCompatActivity
     }
 
     //DELETAR PROJETO
-    private boolean deleteProj(String id, String name, String descr, String status, String idProf) {
+    private boolean deleteProj(String id, String name, String descr, String status, final String idProf) {
         //Pegando a referencia de projeto
         DatabaseReference dR = FirebaseDatabase.getInstance().getReference("Projeto").child(idProf).child(id);
 
@@ -223,6 +223,38 @@ public class Project_prof extends AppCompatActivity
 
         //removing all tracks
         drTracks.removeValue();
+
+        //PROCURAR ALOCADOS AO PROFESSOR E DELETAR
+        //LISTA PARA LOCALIZAR O ALUNO ALOCADO NO PROJETO DO PROFESSOR
+        final List<Alocacao> aloLista = new ArrayList<>();
+        FirebaseDatabase.getInstance().getReference().child("Alocacao")
+                .addListenerForSingleValueEvent(new ValueEventListener(){
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+
+                        for(DataSnapshot snapshot : dataSnapshot.getChildren()){
+                            Alocacao alocado = snapshot.getValue(Alocacao.class);
+                            aloLista.add(alocado);
+                        }
+
+                        for(int i=0; i<aloLista.size();i++){
+                            //System.out.println("emails--"+profLista.get(i).getEmailProf()+"--email--"+email);
+                            if(aloLista.get(i).getIdProfessor().equals(idProf)){
+                                //DELETAR ALOCACAO
+                                String idAloc = aloLista.get(i).getIdAlocacao();
+                                DatabaseReference aloc = FirebaseDatabase.getInstance().getReference("Alocacao").child(idAloc);
+                                aloc.removeValue();
+                            }else{
+                                //Toast.makeText(Project_prof.this,"Não foi possível atualizar o seu cadastro. Tente novamente.",Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
         Toast.makeText(getApplicationContext(), "Projeto Deletado!", Toast.LENGTH_LONG).show();
 
         return true;

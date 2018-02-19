@@ -95,22 +95,33 @@ public class cadastroProfessor extends AppCompatActivity {
             if(task.isSuccessful()){
                 Toast.makeText(cadastroProfessor.this,"Cadastro efetuado com sucesso!",Toast.LENGTH_SHORT).show();
                 //---SALVAR ACESSO---///
-                String identificadorUsuario = Base64custom.codificarBase64(acesso.getLogin());
-                FirebaseUser usuarioFirebase = task.getResult().getUser();
-                acesso.setIdAcesso(identificadorUsuario);
-                professor.setIdAcessoProf(identificadorUsuario);
-                acesso.salvar();
+               // String identificadorUsuario = Base64custom.codificarBase64(acesso.getLogin());
+                //FirebaseUser usuarioFirebase = task.getResult().getUser();
+                //acesso.setIdAcesso(identificadorUsuario);
+               // professor.setIdAcessoProf(identificadorUsuario);
+                //acesso.salvar();
+
+                DatabaseReference database;
+                database = FirebaseDatabase.getInstance().getReference("Acesso");
+                String id = database.push().getKey();
+                acesso.setIdAcesso(id);
+                professor.setIdAcessoProf(id);
+                database.child(id).setValue(acesso);
 
                 //---SALVAR PROFESSOR---///
-                String identificadorProfessor= Base64custom.codificarBase64(professor.getEmailProf());
-                FirebaseUser usuarioFire = task.getResult().getUser();
-                professor.setIdProfessor(identificadorProfessor);
-                professor.salvar();
+                //String identificadorProfessor= Base64custom.codificarBase64(professor.getEmailProf());
+                //FirebaseUser usuarioFire = task.getResult().getUser();
+
+                DatabaseReference data;
+                data = FirebaseDatabase.getInstance().getReference("Professor");
+                professor.setIdProfessor(id);
+                data.child(id).setValue(professor);
+                //professor.salvar();
 
                 //SALVAR USUARIO LOGADO
-                Preferencias preferencias = new Preferencias(cadastroProfessor.this);
+                //Preferencias preferencias = new Preferencias(cadastroProfessor.this);
 
-                preferencias.salvarUsuarioPreferencias(identificadorUsuario, professor.getNomeProf());
+                //preferencias.salvarUsuarioPreferencias(identificadorUsuario, professor.getNomeProf());
                 abrirTelaProfessor();
                 //VERIFICANDO SE O USUÁRIO ESTÁ LOGADO
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
