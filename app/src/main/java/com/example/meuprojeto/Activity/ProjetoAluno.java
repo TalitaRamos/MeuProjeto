@@ -1,6 +1,7 @@
 package com.example.meuprojeto.Activity;
 
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -150,7 +151,7 @@ public class ProjetoAluno extends AppCompatActivity
 
 
     //ALTERAR CADASTRO DE ALUNO
-    private boolean updateProjeto(final String idAluno, String nomeAluno, final String emailAluno, String cursoAluno, final String fkAcessoAluno, String matricula, String senha){
+    private boolean updateCadastro(final String idAluno, String nomeAluno, final String emailAluno, String cursoAluno, final String fkAcessoAluno, String matricula, String senha){
         DatabaseReference database= FirebaseDatabase.getInstance().getReference("Aluno").child(idAluno);
         Aluno alun = new Aluno(idAluno,nomeAluno,emailAluno,cursoAluno,fkAcessoAluno,matricula);
         database.setValue(alun);
@@ -296,7 +297,7 @@ public class ProjetoAluno extends AppCompatActivity
 
                                         //}
                                         if (senh.equals(repete)) {
-                                            updateProjeto(idalun, name, ema, cur, idAces, mat, senh);
+                                            updateCadastro(idalun, name, ema, cur, idAces, mat, senh);
                                             b.dismiss();
                                             Toast.makeText(ProjetoAluno.this,"Cadastro atualizado",Toast.LENGTH_SHORT).show();
                                         }else{
@@ -319,6 +320,118 @@ public class ProjetoAluno extends AppCompatActivity
                 });
     }
 
+    //DELETAR CADASTRO DE ALUNO
+    private boolean deleteCadastro(final String idAluno, String idAcessoAl){
+        DatabaseReference dR = FirebaseDatabase.getInstance().getReference("Aluno").child(idAluno);
+        dR.removeValue();
+        DatabaseReference dRr = FirebaseDatabase.getInstance().getReference("Acesso").child(idAcessoAl);
+        dRr.removeValue();
+
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        user.delete();
+
+        //LISTA PARA LOCALIZAR O CANDIDATO
+        final List<Candidato> cLista = new ArrayList<>();
+        FirebaseDatabase.getInstance().getReference().child("Candidato")
+                .addListenerForSingleValueEvent(new ValueEventListener(){
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        /*String email="f";
+
+                        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                        if(user!=null){
+                            email=user.getEmail();
+                            System.out.println("email"+email);
+
+                        }*/
+                        for(DataSnapshot snapshot : dataSnapshot.getChildren()){
+                            Candidato candi = snapshot.getValue(Candidato.class);
+                            cLista.add(candi);
+                        }
+
+                        for(int i=0; i<cLista.size();i++){
+                            //System.out.println("emails--"+profLista.get(i).getEmailProf()+"--email--"+email);
+                            if(cLista.get(i).getIdAluno().equals(idAluno)){
+                                //DELETAR ALOCACAO
+                                String idcandi = cLista.get(i).getIdCandidato();
+                                DatabaseReference cad = FirebaseDatabase.getInstance().getReference("Candidato").child(idcandi);
+                                cad.removeValue();
+                            }else{
+                                //Toast.makeText(Project_prof.this,"Não foi possível atualizar o seu cadastro. Tente novamente.",Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+
+        Toast.makeText(getApplicationContext(), "Conta deletada", Toast.LENGTH_LONG).show();
+        return true;
+    }
+
+    //EXIBE E CHAMA A FUNÇÃO DE EXCLUSÃO DO CADASTRO
+    private void showDeleteAluno(){
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+        dialogBuilder.setTitle("Deletar conta");
+        dialogBuilder.setMessage("Clicando em Sim todas as suas informações serão deletadas.");
+
+        dialogBuilder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+                //LISTA PARA PEGAR O ID DO ALUNO E DO ID DO ACESSO
+                final List<Aluno> alunLista = new ArrayList<>();
+                FirebaseDatabase.getInstance().getReference().child("Aluno")
+                        .addListenerForSingleValueEvent(new ValueEventListener(){
+                            @Override
+                            public void onDataChange(DataSnapshot dataSnapshot) {
+                                String email="f";
+
+                                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                                if(user!=null){
+                                    email=user.getEmail();
+                                    System.out.println("email"+email);
+                                }
+
+                                for(DataSnapshot snapshot : dataSnapshot.getChildren()){
+                                    Aluno alun = snapshot.getValue(Aluno.class);
+                                    alunLista.add(alun);
+                                }
+
+                                for(int i=0; i<alunLista.size();i++){
+                                    //System.out.println("emails--"+profLista.get(i).getEmailProf()+"--email--"+email);
+                                    if(alunLista.get(i).getEmailAluno().equals(email)){
+                                        String idAl= alunLista.get(i).getIdAluno();
+                                        String idacss= alunLista.get(i).getFkAcessoAluno();
+                                        deleteCadastro(idAl, idacss);
+                                        login();
+                                    }else{
+                                        //Toast.makeText(Project_prof.this,"Não foi possível atualizar o seu cadastro. Tente novamente.",Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+                            }
+
+                            @Override
+                            public void onCancelled(DatabaseError databaseError) {
+
+                            }
+                        });
+            }
+        });
+
+        dialogBuilder.setNegativeButton("Não", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Toast.makeText(getApplicationContext(), "Exclusão cancelada", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        final AlertDialog b = dialogBuilder.create();
+        b.show();
+    }
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -362,7 +475,7 @@ public class ProjetoAluno extends AppCompatActivity
             showUpdateAluno();
         } else if (id == R.id.nav_gallery) {
             //deletar cadastro
-
+            showDeleteAluno();
         } else if (id == R.id.nav_slideshow) {
            // solicitaçoes
             alunoSoli();
@@ -402,5 +515,10 @@ public class ProjetoAluno extends AppCompatActivity
         //System.out.println("entrei");
         startActivity(intent);
         //System.out.println("entrei2");
+    }
+
+    public void login(){
+        Intent intent = new Intent(ProjetoAluno.this, MainActivity.class);
+        startActivity(intent);
     }
 }
