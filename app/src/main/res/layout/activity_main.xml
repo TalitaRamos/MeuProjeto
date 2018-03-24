@@ -4,85 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.meuprojeto.Activity.MainActivity">
 
     <!--//TELA DE LOGIN-->
-
-    <LinearLayout
-        android:layout_width="359dp"
-        android:layout_height="653dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        tools:ignore="MissingConstraints"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteY="6dp"
+        tools:ignore="MissingConstraints">
 
-        <ImageView
-            android:layout_width="95dp"
-            android:layout_height="143dp"
-            android:layout_gravity="center"
-            android:contentDescription="@string/todo"
-            android:src="@drawable/lamp" />
-
-        <TextView
-            android:id="@+id/acesse"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:text="@string/acesse_j_sua_conta"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#184B6C"/>
-
-        <EditText
-            android:id="@+id/login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:ems="13"
-            android:hint="@string/email_log"
-            android:inputType="textEmailAddress"
-            tools:layout_editor_absoluteX="109dp"
-            tools:layout_editor_absoluteY="239dp" />
-
-        <EditText
-            android:id="@+id/senha"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:ems="13"
-            android:hint="@string/senhas"
-            android:inputType="textPassword"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="239dp" />
+            tools:layout_editor_absoluteY="0dp">
 
-        <Button
-            android:id="@+id/button"
-            style="@style/Button_style"
-            android:layout_width="207dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="5dp"
-            android:text="@string/login" />
+            <ImageView
+                android:layout_width="95dp"
+                android:layout_height="143dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/lamp" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:text="@string/ainda_n_o_cadastrado"
-            tools:layout_editor_absoluteX="185dp"
-            tools:layout_editor_absoluteY="372dp" />
+            <TextView
+                android:id="@+id/acesse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/acesse_j_sua_conta"
+                android:textColor="#184B6C"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="startActivity"
-            android:text="@string/cadastre_se"
-            tools:layout_editor_absoluteX="163dp"
-            tools:layout_editor_absoluteY="368dp" />
-    </LinearLayout>
+            <EditText
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:ems="13"
+                android:hint="@string/email_log"
+                android:inputType="textEmailAddress"
+                tools:layout_editor_absoluteX="109dp"
+                tools:layout_editor_absoluteY="239dp" />
 
+            <EditText
+                android:id="@+id/senha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="13"
+                android:hint="@string/senhas"
+                android:inputType="textPassword"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="239dp" />
+
+            <Button
+                android:id="@+id/button"
+                style="@style/Button_style"
+                android:layout_width="207dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/login" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="@string/ainda_n_o_cadastrado"
+                tools:layout_editor_absoluteX="185dp"
+                tools:layout_editor_absoluteY="372dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startActivity"
+                android:text="@string/cadastre_se"
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="368dp" />
+        </LinearLayout>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

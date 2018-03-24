@@ -8,12 +8,12 @@
 
     <TextView
         android:id="@+id/textViewName"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nome Projeto"
+        android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"/>
+        android:text="Nome do Projeto"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
     <TextView
         android:id="@+id/textStatus"

@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Deletando a alocação o status do aluno irá mudar para indeferido na lista de candidatos."
+        android:text="@string/deletando_a_aloca_o_o_status_do_aluno_ir_mudar_para_indeferido_na_lista_de_candidatos"
         android:textSize="17sp"
         android:textStyle="bold"
         android:layout_marginTop="30dp"

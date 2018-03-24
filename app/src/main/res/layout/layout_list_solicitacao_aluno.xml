@@ -7,15 +7,17 @@
 
     <TextView
         android:id="@+id/textViewNameProjeto"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nome Projeto"
-        android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:focusableInTouchMode="false"
+        android:layout_marginStart="16dp"
+        android:clickable="false"
         android:focusable="false"
-        android:clickable="false"/>
+        android:focusableInTouchMode="false"
+        android:hint="Projeto Deletado!"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:gravity="start" />
 
     <TextView
         android:id="@+id/textStatusSoli"

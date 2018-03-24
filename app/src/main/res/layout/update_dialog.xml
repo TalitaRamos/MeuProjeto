@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textMultiLine"
-        android:hint="Descrição" />
+        android:hint="@string/descri_o" />
 
     <Spinner
         android:id="@+id/Status_spinner"

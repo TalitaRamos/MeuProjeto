@@ -4,108 +4,118 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.meuprojeto.Activity.cadastro">
 
     <!--TELA DE ESCOLHA ENTRE OS TIPOS DE CADASTRO
     //CADASTRO DE PROFESSOR OU CADASTRO DE ALUNO-->
 
-    <LinearLayout
-        android:layout_width="344dp"
-        android:layout_height="551dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp"
-        android:gravity="center"
-        tools:ignore="MissingConstraints">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="6dp">
 
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="100dp"
-            android:layout_height="116dp"
-            android:contentDescription="@string/todo"
-            app:srcCompat="@drawable/lamp" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:text="@string/no_meu_projeto_alunos_e_professores"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#184B6C"/>
-
-        <TextView
-            android:id="@+id/textView4"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/podem_interagir_na_escolha_de"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#184B6C"/>
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/projetos_academicos"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#184B6C"/>
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:gravity="center"
-            android:text="@string/os_professores_adicionam_seus_projetos"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#184B6C"/>
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="94dp"
+                android:layout_height="107dp"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/lamp" />
 
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/os_alunos_solicitam_a_participa_o"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#184B6C"/>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/no_meu_projeto_alunos_e_professores"
+                android:textColor="#184B6C"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:text="@string/e_assim_todos_ganham"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#184B6C"/>
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/podem_interagir_na_escolha_de"
+                android:textColor="#184B6C"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/button_prof"
-            style="@style/Button_style"
-            android:layout_width="207dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="30dp"
-            android:onClick="cadProf"
-            android:text="@string/professores" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/projetos_academicos"
+                android:textColor="#184B6C"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/button_aluno"
-            style="@style/Button_style"
-            android:layout_width="207dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="30dp"
-            android:onClick="cadAlun"
-            android:text="@string/alunos" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="@string/os_professores_adicionam_seus_projetos"
+                android:textColor="#184B6C"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/os_alunos_solicitam_a_participa_o"
+                android:textColor="#184B6C"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/e_assim_todos_ganham"
+                android:textColor="#184B6C"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_prof"
+                style="@style/Button_style"
+                android:layout_width="207dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:onClick="cadProf"
+                android:text="@string/professores" />
+
+            <Button
+                android:id="@+id/button_aluno"
+                style="@style/Button_style"
+                android:layout_width="207dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:onClick="cadAlun"
+                android:text="@string/alunos" />
+        </LinearLayout>
+    </ScrollView>
+
+
 </android.support.constraint.ConstraintLayout>

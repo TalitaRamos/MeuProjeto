@@ -1,461 +1,461 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-44:12
-MERGED from [com.google.firebase:firebase-database:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-database-11.0.4.aar\ecc73575b0de428113e0f80b59f01df0\AndroidManifest.xml:2:1-4:12
-MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\a29461cada491f229dd13ba064c17436\AndroidManifest.xml:16:1-21:12
-MERGED from [com.android.support:design:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\198cfcf4aa36abc4cfb3fdf55d00510f\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\c3c1c36a47674fc5d3a6985e6f0ae20a\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\3d663de6c8b5c30761b1f192a634d6d2\AndroidManifest.xml:17:1-28:12
-MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\73043f15dcc900fe7e440187cceac853\AndroidManifest.xml:2:1-6:12
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\999d98cf13ba35768c34737b2c5051ea\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3a9c68fb59ab64366676ac3ee6012c74\AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.firebase:firebase-database-connection:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.0.4.aar\cece88b060a2bc4f6680119707cd6ff4\AndroidManifest.xml:2:1-4:12
-MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:16:1-35:12
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\cfab25e302d744e3d43fb4b7ea3ae84c\AndroidManifest.xml:16:1-29:12
-MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:16:1-50:12
-MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\1b282973373053622aaf850c2fc48b90\AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\d572dcfc817602641e915074bf9dcc42\AndroidManifest.xml:16:1-21:12
-MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\3697089a71413489e1f1f7249f17eeac\AndroidManifest.xml:2:1-5:12
-MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\41513d57a17d86738172f8a03c09133f\AndroidManifest.xml:16:1-23:12
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\e7bd20fc6f25e3890c58eec7775fece6\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:transition:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\04c38aa610c77858ba3e85c43ce51e23\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\7a5c4c016559d47425377e233f6747de\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0502101c8367e4b7b51d012a531c3f88\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\1a589b64bb4c05358b2639c68b8ac8a7\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\56c5503715761430a8ea5fb4cf6cb540\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\31e3ddafd6ea7fcc3a1a423174ff5ec4\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\19402eea6b47050744dccf083940bd4d\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\f587c597bb805bc8c53fa1b70ae8ad8d\AndroidManifest.xml:17:1-31:12
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\b7d52f52fa7819e47a8eafa2fcee4c94\AndroidManifest.xml:17:1-30:12
-INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-44:12
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-44:12
+MERGED from [com.google.firebase:firebase-database:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-database-11.0.4.aar\a1059779dc8bc44437ed80090e54fbcd\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\28c37dda901c1cd184a978fb374ae845\AndroidManifest.xml:16:1-21:12
+MERGED from [com.android.support:design:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\7eff4231e5cadff14851272cf651c0f4\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\29a214c8af35dc72476d93090658177d\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\36b44d7a77667f5290172c510f39f9aa\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\56c32f9e73d3df0179510833571d0655\AndroidManifest.xml:2:1-6:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\3f4b424ef79a097af131a786895b0007\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\546b184646882064d1ea9b62501256d8\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:firebase-database-connection:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.0.4.aar\8b7f0eaf00f535f207dcdac5f852a416\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:16:1-35:12
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\73bd524cefcc824e124bcb1d93a25f6c\AndroidManifest.xml:16:1-29:12
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:16:1-50:12
+MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\7b5275e6dd947b2345e786590ed74c13\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\9de07776735d04c3d393f46dc44106ed\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\fa0eb87f4665fbf69f038181019ca714\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\e84cc1b4688c9e09454ec09870740e11\AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\1e28a9ff9999b0315072d461c07a3dfa\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\fcef1b37ac9abd1b6f4ac910f9d042a2\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\65a976855a5d1544f8c6174c3f65bee8\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\d7f8f87c15b302099463e70814a15721\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\c338b34b9f18d276965a0ddcfcecae7d\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\505b5a2495c116f50a4fe8d425c23ea7\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\3496f55019e9669b276c4d0941dbf521\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\b86780de1cd0262f38d780388351e4ae\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\6cf6abc67f398532fbf8550100ed0924\AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\401a14ce6fbbab8695630fee82796e7c\AndroidManifest.xml:17:1-30:12
+INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-44:12
 	package
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:3:5-37
-		INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:3:5-37
+		INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-44:12
-		INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-44:12
+		INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-44:12
-		INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:1-44:12
+		INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:5:5-67
-MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\cfab25e302d744e3d43fb4b7ea3ae84c\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\cfab25e302d744e3d43fb4b7ea3ae84c\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:20:5-66
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\73bd524cefcc824e124bcb1d93a25f6c\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\73bd524cefcc824e124bcb1d93a25f6c\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:7:5-42:19
-MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\a29461cada491f229dd13ba064c17436\AndroidManifest.xml:19:5-20:19
-MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\a29461cada491f229dd13ba064c17436\AndroidManifest.xml:19:5-20:19
-MERGED from [com.android.support:design:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\198cfcf4aa36abc4cfb3fdf55d00510f\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:design:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\198cfcf4aa36abc4cfb3fdf55d00510f\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\c3c1c36a47674fc5d3a6985e6f0ae20a\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\c3c1c36a47674fc5d3a6985e6f0ae20a\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\3d663de6c8b5c30761b1f192a634d6d2\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\3d663de6c8b5c30761b1f192a634d6d2\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\73043f15dcc900fe7e440187cceac853\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\73043f15dcc900fe7e440187cceac853\AndroidManifest.xml:5:5-20
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\999d98cf13ba35768c34737b2c5051ea\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\999d98cf13ba35768c34737b2c5051ea\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3a9c68fb59ab64366676ac3ee6012c74\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3a9c68fb59ab64366676ac3ee6012c74\AndroidManifest.xml:9:5-20
-MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:24:5-34:19
-MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:24:5-34:19
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\cfab25e302d744e3d43fb4b7ea3ae84c\AndroidManifest.xml:24:5-28:19
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\cfab25e302d744e3d43fb4b7ea3ae84c\AndroidManifest.xml:24:5-28:19
-MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:28:5-49:19
-MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:28:5-49:19
-MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\1b282973373053622aaf850c2fc48b90\AndroidManifest.xml:4:5-7:19
-MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\1b282973373053622aaf850c2fc48b90\AndroidManifest.xml:4:5-7:19
-MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\d572dcfc817602641e915074bf9dcc42\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\d572dcfc817602641e915074bf9dcc42\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\3697089a71413489e1f1f7249f17eeac\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\3697089a71413489e1f1f7249f17eeac\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\41513d57a17d86738172f8a03c09133f\AndroidManifest.xml:19:5-21:19
-MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\41513d57a17d86738172f8a03c09133f\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\e7bd20fc6f25e3890c58eec7775fece6\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\e7bd20fc6f25e3890c58eec7775fece6\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:transition:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\04c38aa610c77858ba3e85c43ce51e23\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:transition:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\04c38aa610c77858ba3e85c43ce51e23\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\7a5c4c016559d47425377e233f6747de\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\7a5c4c016559d47425377e233f6747de\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0502101c8367e4b7b51d012a531c3f88\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0502101c8367e4b7b51d012a531c3f88\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\1a589b64bb4c05358b2639c68b8ac8a7\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\1a589b64bb4c05358b2639c68b8ac8a7\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\56c5503715761430a8ea5fb4cf6cb540\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\56c5503715761430a8ea5fb4cf6cb540\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\31e3ddafd6ea7fcc3a1a423174ff5ec4\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\31e3ddafd6ea7fcc3a1a423174ff5ec4\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\19402eea6b47050744dccf083940bd4d\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\19402eea6b47050744dccf083940bd4d\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\f587c597bb805bc8c53fa1b70ae8ad8d\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\f587c597bb805bc8c53fa1b70ae8ad8d\AndroidManifest.xml:25:5-29:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\b7d52f52fa7819e47a8eafa2fcee4c94\AndroidManifest.xml:24:5-28:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\b7d52f52fa7819e47a8eafa2fcee4c94\AndroidManifest.xml:24:5-28:19
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:7:5-42:19
+MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\28c37dda901c1cd184a978fb374ae845\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\28c37dda901c1cd184a978fb374ae845\AndroidManifest.xml:19:5-20:19
+MERGED from [com.android.support:design:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\7eff4231e5cadff14851272cf651c0f4\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\7eff4231e5cadff14851272cf651c0f4\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\29a214c8af35dc72476d93090658177d\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\29a214c8af35dc72476d93090658177d\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\36b44d7a77667f5290172c510f39f9aa\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\36b44d7a77667f5290172c510f39f9aa\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\56c32f9e73d3df0179510833571d0655\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\56c32f9e73d3df0179510833571d0655\AndroidManifest.xml:5:5-20
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\3f4b424ef79a097af131a786895b0007\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\3f4b424ef79a097af131a786895b0007\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\546b184646882064d1ea9b62501256d8\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\546b184646882064d1ea9b62501256d8\AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\73bd524cefcc824e124bcb1d93a25f6c\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\73bd524cefcc824e124bcb1d93a25f6c\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:28:5-49:19
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:28:5-49:19
+MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\7b5275e6dd947b2345e786590ed74c13\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\7b5275e6dd947b2345e786590ed74c13\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\9de07776735d04c3d393f46dc44106ed\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\9de07776735d04c3d393f46dc44106ed\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\fa0eb87f4665fbf69f038181019ca714\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\fa0eb87f4665fbf69f038181019ca714\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\e84cc1b4688c9e09454ec09870740e11\AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\e84cc1b4688c9e09454ec09870740e11\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\1e28a9ff9999b0315072d461c07a3dfa\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\1e28a9ff9999b0315072d461c07a3dfa\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\fcef1b37ac9abd1b6f4ac910f9d042a2\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\fcef1b37ac9abd1b6f4ac910f9d042a2\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\65a976855a5d1544f8c6174c3f65bee8\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\65a976855a5d1544f8c6174c3f65bee8\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\d7f8f87c15b302099463e70814a15721\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\d7f8f87c15b302099463e70814a15721\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\c338b34b9f18d276965a0ddcfcecae7d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\c338b34b9f18d276965a0ddcfcecae7d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\505b5a2495c116f50a4fe8d425c23ea7\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\505b5a2495c116f50a4fe8d425c23ea7\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\3496f55019e9669b276c4d0941dbf521\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\3496f55019e9669b276c4d0941dbf521\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\b86780de1cd0262f38d780388351e4ae\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\b86780de1cd0262f38d780388351e4ae\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\6cf6abc67f398532fbf8550100ed0924\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\6cf6abc67f398532fbf8550100ed0924\AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\401a14ce6fbbab8695630fee82796e7c\AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\401a14ce6fbbab8695630fee82796e7c\AndroidManifest.xml:24:5-28:19
 	android:supportsRtl
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:13:9-40
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:13:9-40
 activity#com.example.meuprojeto.Activity.cadastro$Splash
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:14:9-20:20
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:14:9-20:20
 	android:name
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:14:19-59
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:14:19-59
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:18:27-74
 activity#com.example.meuprojeto.Activity.MainActivity
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:21:9-59
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:21:9-59
 	android:name
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:21:19-56
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:21:19-56
 activity#com.example.meuprojeto.Activity.cadastro
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:22:9-55
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:22:9-55
 	android:name
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:22:19-52
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:22:19-52
 activity#com.example.meuprojeto.Activity.cadastroAluno
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:23:9-60
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:23:9-60
 	android:name
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:23:19-57
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:23:19-57
 activity#com.example.meuprojeto.Activity.cadastroProfessor
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:24:9-64
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:24:9-64
 	android:name
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:24:19-61
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:24:19-61
 activity#com.example.meuprojeto.Activity.cadastroProjeto
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:25:9-62
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:25:9-62
 	android:name
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:25:19-59
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:25:19-59
 activity#com.example.meuprojeto.Activity.Project_prof
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:26:9-29:47
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:26:9-29:47
 	android:label
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:28:13-64
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:28:13-64
 	android:theme
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:29:13-44
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:29:13-44
 	android:name
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:27:13-50
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:27:13-50
 activity#com.example.meuprojeto.Activity.ProjetoAluno
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:30:9-33:47
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:30:9-33:47
 	android:label
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:32:13-65
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:32:13-65
 	android:theme
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:33:13-44
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:33:13-44
 	android:name
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:31:13-50
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:31:13-50
 activity#com.example.meuprojeto.Activity.Info
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:34:9-51
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:34:9-51
 	android:name
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:34:19-48
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:34:19-48
 activity#com.example.meuprojeto.Activity.ListAlunoProjeto
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:35:9-63
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:35:9-63
 	android:name
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:35:19-60
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:35:19-60
 activity#com.example.meuprojeto.Activity.detalhamentoProjetoAluno
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:36:9-71
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:36:9-71
 	android:name
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:36:19-68
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:36:19-68
 activity#com.example.meuprojeto.Activity.SolicitacaoAluno
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:37:9-63
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:37:9-63
 	android:name
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:37:19-60
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:37:19-60
 activity#com.example.meuprojeto.Activity.SolicitacaoProfessor
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:38:9-67
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:38:9-67
 	android:name
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:38:19-64
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:38:19-64
 activity#com.example.meuprojeto.Activity.detalhamentoSolicitacaoProf
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:39:9-74
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:39:9-74
 	android:name
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:39:19-71
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:39:19-71
 activity#com.example.meuprojeto.Activity.listarAlocacaoProfessor
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:40:9-70
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:40:9-70
 	android:name
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:40:19-67
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:40:19-67
 activity#com.example.meuprojeto.Activity.InfoAluno
-ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:41:9-65
+ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:41:9-65
 	android:name
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml:41:19-53
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml:41:19-53
 uses-sdk
-INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml
-MERGED from [com.google.firebase:firebase-database:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-database-11.0.4.aar\ecc73575b0de428113e0f80b59f01df0\AndroidManifest.xml:3:5-43
-MERGED from [com.google.firebase:firebase-database:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-database-11.0.4.aar\ecc73575b0de428113e0f80b59f01df0\AndroidManifest.xml:3:5-43
-MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\a29461cada491f229dd13ba064c17436\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\a29461cada491f229dd13ba064c17436\AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:design:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\198cfcf4aa36abc4cfb3fdf55d00510f\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:design:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\198cfcf4aa36abc4cfb3fdf55d00510f\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\c3c1c36a47674fc5d3a6985e6f0ae20a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\c3c1c36a47674fc5d3a6985e6f0ae20a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\3d663de6c8b5c30761b1f192a634d6d2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\3d663de6c8b5c30761b1f192a634d6d2\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\73043f15dcc900fe7e440187cceac853\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\73043f15dcc900fe7e440187cceac853\AndroidManifest.xml:4:5-43
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\999d98cf13ba35768c34737b2c5051ea\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\999d98cf13ba35768c34737b2c5051ea\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3a9c68fb59ab64366676ac3ee6012c74\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3a9c68fb59ab64366676ac3ee6012c74\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-database-connection:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.0.4.aar\cece88b060a2bc4f6680119707cd6ff4\AndroidManifest.xml:3:5-43
-MERGED from [com.google.firebase:firebase-database-connection:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.0.4.aar\cece88b060a2bc4f6680119707cd6ff4\AndroidManifest.xml:3:5-43
-MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\cfab25e302d744e3d43fb4b7ea3ae84c\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\cfab25e302d744e3d43fb4b7ea3ae84c\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\1b282973373053622aaf850c2fc48b90\AndroidManifest.xml:3:5-43
-MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\1b282973373053622aaf850c2fc48b90\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\d572dcfc817602641e915074bf9dcc42\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\d572dcfc817602641e915074bf9dcc42\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\3697089a71413489e1f1f7249f17eeac\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\3697089a71413489e1f1f7249f17eeac\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\41513d57a17d86738172f8a03c09133f\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\41513d57a17d86738172f8a03c09133f\AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\e7bd20fc6f25e3890c58eec7775fece6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\e7bd20fc6f25e3890c58eec7775fece6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\04c38aa610c77858ba3e85c43ce51e23\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\04c38aa610c77858ba3e85c43ce51e23\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\7a5c4c016559d47425377e233f6747de\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\7a5c4c016559d47425377e233f6747de\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0502101c8367e4b7b51d012a531c3f88\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0502101c8367e4b7b51d012a531c3f88\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\1a589b64bb4c05358b2639c68b8ac8a7\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\1a589b64bb4c05358b2639c68b8ac8a7\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\56c5503715761430a8ea5fb4cf6cb540\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\56c5503715761430a8ea5fb4cf6cb540\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\31e3ddafd6ea7fcc3a1a423174ff5ec4\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\31e3ddafd6ea7fcc3a1a423174ff5ec4\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\19402eea6b47050744dccf083940bd4d\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\19402eea6b47050744dccf083940bd4d\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\f587c597bb805bc8c53fa1b70ae8ad8d\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\f587c597bb805bc8c53fa1b70ae8ad8d\AndroidManifest.xml:21:5-23:58
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\b7d52f52fa7819e47a8eafa2fcee4c94\AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\b7d52f52fa7819e47a8eafa2fcee4c94\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
+MERGED from [com.google.firebase:firebase-database:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-database-11.0.4.aar\a1059779dc8bc44437ed80090e54fbcd\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-database-11.0.4.aar\a1059779dc8bc44437ed80090e54fbcd\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\28c37dda901c1cd184a978fb374ae845\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\28c37dda901c1cd184a978fb374ae845\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:design:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\7eff4231e5cadff14851272cf651c0f4\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\7eff4231e5cadff14851272cf651c0f4\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\29a214c8af35dc72476d93090658177d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\29a214c8af35dc72476d93090658177d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\36b44d7a77667f5290172c510f39f9aa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\36b44d7a77667f5290172c510f39f9aa\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\56c32f9e73d3df0179510833571d0655\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\56c32f9e73d3df0179510833571d0655\AndroidManifest.xml:4:5-43
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\3f4b424ef79a097af131a786895b0007\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\3f4b424ef79a097af131a786895b0007\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\546b184646882064d1ea9b62501256d8\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\546b184646882064d1ea9b62501256d8\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-connection:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.0.4.aar\8b7f0eaf00f535f207dcdac5f852a416\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.0.4.aar\8b7f0eaf00f535f207dcdac5f852a416\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\73bd524cefcc824e124bcb1d93a25f6c\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\73bd524cefcc824e124bcb1d93a25f6c\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\7b5275e6dd947b2345e786590ed74c13\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\7b5275e6dd947b2345e786590ed74c13\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\9de07776735d04c3d393f46dc44106ed\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\9de07776735d04c3d393f46dc44106ed\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\fa0eb87f4665fbf69f038181019ca714\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\fa0eb87f4665fbf69f038181019ca714\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\e84cc1b4688c9e09454ec09870740e11\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\e84cc1b4688c9e09454ec09870740e11\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\1e28a9ff9999b0315072d461c07a3dfa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\1e28a9ff9999b0315072d461c07a3dfa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\fcef1b37ac9abd1b6f4ac910f9d042a2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\fcef1b37ac9abd1b6f4ac910f9d042a2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\65a976855a5d1544f8c6174c3f65bee8\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\65a976855a5d1544f8c6174c3f65bee8\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\d7f8f87c15b302099463e70814a15721\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\d7f8f87c15b302099463e70814a15721\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\c338b34b9f18d276965a0ddcfcecae7d\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\c338b34b9f18d276965a0ddcfcecae7d\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\505b5a2495c116f50a4fe8d425c23ea7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\505b5a2495c116f50a4fe8d425c23ea7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\3496f55019e9669b276c4d0941dbf521\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\3496f55019e9669b276c4d0941dbf521\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\b86780de1cd0262f38d780388351e4ae\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\b86780de1cd0262f38d780388351e4ae\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\6cf6abc67f398532fbf8550100ed0924\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\6cf6abc67f398532fbf8550100ed0924\AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\401a14ce6fbbab8695630fee82796e7c\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\401a14ce6fbbab8695630fee82796e7c\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\198cfcf4aa36abc4cfb3fdf55d00510f\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\7eff4231e5cadff14851272cf651c0f4\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Talit\AndroidStudioProjects\teste\MeuProjeto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Talita Ramos\AndroidStudioProjects\MeuProjeto\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\198cfcf4aa36abc4cfb3fdf55d00510f\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\c3c1c36a47674fc5d3a6985e6f0ae20a\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\c3c1c36a47674fc5d3a6985e6f0ae20a\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\3d663de6c8b5c30761b1f192a634d6d2\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\3d663de6c8b5c30761b1f192a634d6d2\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\999d98cf13ba35768c34737b2c5051ea\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\999d98cf13ba35768c34737b2c5051ea\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\e7bd20fc6f25e3890c58eec7775fece6\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\e7bd20fc6f25e3890c58eec7775fece6\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:transition:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\04c38aa610c77858ba3e85c43ce51e23\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:transition:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\04c38aa610c77858ba3e85c43ce51e23\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\7a5c4c016559d47425377e233f6747de\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\7a5c4c016559d47425377e233f6747de\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0502101c8367e4b7b51d012a531c3f88\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0502101c8367e4b7b51d012a531c3f88\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\1a589b64bb4c05358b2639c68b8ac8a7\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\1a589b64bb4c05358b2639c68b8ac8a7\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\56c5503715761430a8ea5fb4cf6cb540\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\56c5503715761430a8ea5fb4cf6cb540\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\31e3ddafd6ea7fcc3a1a423174ff5ec4\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\31e3ddafd6ea7fcc3a1a423174ff5ec4\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\19402eea6b47050744dccf083940bd4d\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\19402eea6b47050744dccf083940bd4d\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\f587c597bb805bc8c53fa1b70ae8ad8d\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\f587c597bb805bc8c53fa1b70ae8ad8d\AndroidManifest.xml:26:9-28:38
+ADDED from [com.android.support:design:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\7eff4231e5cadff14851272cf651c0f4\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\29a214c8af35dc72476d93090658177d\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\29a214c8af35dc72476d93090658177d\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\36b44d7a77667f5290172c510f39f9aa\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\36b44d7a77667f5290172c510f39f9aa\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\3f4b424ef79a097af131a786895b0007\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\3f4b424ef79a097af131a786895b0007\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\1e28a9ff9999b0315072d461c07a3dfa\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\1e28a9ff9999b0315072d461c07a3dfa\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\fcef1b37ac9abd1b6f4ac910f9d042a2\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\fcef1b37ac9abd1b6f4ac910f9d042a2\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\65a976855a5d1544f8c6174c3f65bee8\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\65a976855a5d1544f8c6174c3f65bee8\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\d7f8f87c15b302099463e70814a15721\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\d7f8f87c15b302099463e70814a15721\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\c338b34b9f18d276965a0ddcfcecae7d\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\c338b34b9f18d276965a0ddcfcecae7d\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\505b5a2495c116f50a4fe8d425c23ea7\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\505b5a2495c116f50a4fe8d425c23ea7\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\3496f55019e9669b276c4d0941dbf521\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\3496f55019e9669b276c4d0941dbf521\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\b86780de1cd0262f38d780388351e4ae\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\b86780de1cd0262f38d780388351e4ae\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\6cf6abc67f398532fbf8550100ed0924\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\6cf6abc67f398532fbf8550100ed0924\AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:design:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\198cfcf4aa36abc4cfb3fdf55d00510f\AndroidManifest.xml:28:13-35
+		ADDED from [com.android.support:design:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\7eff4231e5cadff14851272cf651c0f4\AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:design:26.1.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\198cfcf4aa36abc4cfb3fdf55d00510f\AndroidManifest.xml:27:13-51
+		ADDED from [com.android.support:design:26.1.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\7eff4231e5cadff14851272cf651c0f4\AndroidManifest.xml:27:13-51
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\cfab25e302d744e3d43fb4b7ea3ae84c\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\cfab25e302d744e3d43fb4b7ea3ae84c\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:19:5-78
-MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:19:5-78
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\73bd524cefcc824e124bcb1d93a25f6c\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\73bd524cefcc824e124bcb1d93a25f6c\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:19:5-78
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:21:22-76
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:21:22-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\cfab25e302d744e3d43fb4b7ea3ae84c\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\cfab25e302d744e3d43fb4b7ea3ae84c\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:21:5-67
-MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:21:5-67
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\73bd524cefcc824e124bcb1d93a25f6c\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\73bd524cefcc824e124bcb1d93a25f6c\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:21:5-67
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:22:22-65
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:22:22-65
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:25:7-26:18
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\cfab25e302d744e3d43fb4b7ea3ae84c\AndroidManifest.xml:25:7-26:18
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\cfab25e302d744e3d43fb4b7ea3ae84c\AndroidManifest.xml:25:7-26:18
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\73bd524cefcc824e124bcb1d93a25f6c\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\73bd524cefcc824e124bcb1d93a25f6c\AndroidManifest.xml:25:7-26:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:25:90-112
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:25:90-112
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:25:113-137
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:25:113-137
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:25:17-89
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:25:17-89
 receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
-ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:27:7-31:18
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:27:7-31:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:27:162-184
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:27:162-184
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:27:185-208
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:27:185-208
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:27:105-161
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:27:105-161
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:27:17-104
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:27:17-104
 intent-filter#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:28:11-30:27
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:28:11-30:27
 action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:29:15-76
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:29:15-76
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:29:23-74
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:29:23-74
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:32:7-137
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\cfab25e302d744e3d43fb4b7ea3ae84c\AndroidManifest.xml:27:7-137
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\cfab25e302d744e3d43fb4b7ea3ae84c\AndroidManifest.xml:27:7-137
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\73bd524cefcc824e124bcb1d93a25f6c\AndroidManifest.xml:27:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\73bd524cefcc824e124bcb1d93a25f6c\AndroidManifest.xml:27:7-137
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:32:88-110
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:32:88-110
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:32:111-135
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:32:111-135
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:32:16-87
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:32:16-87
 service#com.google.android.gms.measurement.AppMeasurementJobService
-ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:33:7-197
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:33:7-197
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:33:148-170
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:33:148-170
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:33:171-195
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:33:171-195
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:33:91-147
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:33:91-147
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5b752618c0e50cf5305781961aef3cb7\AndroidManifest.xml:33:16-90
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\5f7e9b96394be1d186b09e845a34a43b\AndroidManifest.xml:33:16-90
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:22:5-81
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:22:5-81
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:22:22-79
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:22:22-79
 permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:24:5-109
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:24:5-109
 	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:24:72-107
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:24:72-107
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:24:17-71
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:24:17-71
 permission#com.example.meuprojeto.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:24:5-109
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:24:5-109
 	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:24:72-107
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:24:72-107
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:24:17-71
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:24:17-71
 uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:26:5-78
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:26:5-78
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:26:22-76
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:26:22-76
 uses-permission#com.example.meuprojeto.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:26:5-78
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:26:5-78
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:26:22-76
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:26:22-76
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:30:9-35:20
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:30:9-35:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:30:85-108
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:30:85-108
 	android:permission
-		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:30:109-169
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:30:109-169
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:30:19-84
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:30:19-84
 intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:31:13-34:29
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:31:13-34:29
 intent-filter#com.example.meuprojeto+com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:31:13-34:29
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:31:13-34:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:32:17-80
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:32:17-80
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:32:25-78
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:32:25-78
 category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:33:17-60
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:33:17-60
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:33:27-58
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:33:27-58
 category#com.example.meuprojeto
-ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:33:17-60
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:33:17-60
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:33:27-58
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:33:27-58
 receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
-ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:39:9-119
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:39:9-119
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:39:93-117
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:39:93-117
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:39:19-92
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:39:19-92
 service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:43:9-47:19
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:43:9-47:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:43:83-106
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:43:83-106
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:43:18-82
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:43:18-82
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:44:13-46:29
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:44:13-46:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:44:28-51
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:44:28-51
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:45:17-79
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:45:17-79
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\639bd55c9ca1c48e3155f0f0783e3944\AndroidManifest.xml:45:25-77
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\ba55c161beb44facc1555101fa660213\AndroidManifest.xml:45:25-77
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\1b282973373053622aaf850c2fc48b90\AndroidManifest.xml:6:9-194
+ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\7b5275e6dd947b2345e786590ed74c13\AndroidManifest.xml:6:9-194
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\1b282973373053622aaf850c2fc48b90\AndroidManifest.xml:6:19-78
+		ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\7b5275e6dd947b2345e786590ed74c13\AndroidManifest.xml:6:19-78
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\1b282973373053622aaf850c2fc48b90\AndroidManifest.xml:6:144-168
+		ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\7b5275e6dd947b2345e786590ed74c13\AndroidManifest.xml:6:144-168
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\1b282973373053622aaf850c2fc48b90\AndroidManifest.xml:6:169-192
+		ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\7b5275e6dd947b2345e786590ed74c13\AndroidManifest.xml:6:169-192
 	android:name
-		ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\1b282973373053622aaf850c2fc48b90\AndroidManifest.xml:6:79-143
+		ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\7b5275e6dd947b2345e786590ed74c13\AndroidManifest.xml:6:79-143
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\d572dcfc817602641e915074bf9dcc42\AndroidManifest.xml:19:9-172
+ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\9de07776735d04c3d393f46dc44106ed\AndroidManifest.xml:19:9-172
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\d572dcfc817602641e915074bf9dcc42\AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\9de07776735d04c3d393f46dc44106ed\AndroidManifest.xml:19:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\d572dcfc817602641e915074bf9dcc42\AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\9de07776735d04c3d393f46dc44106ed\AndroidManifest.xml:19:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\d572dcfc817602641e915074bf9dcc42\AndroidManifest.xml:19:19-85
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\9de07776735d04c3d393f46dc44106ed\AndroidManifest.xml:19:19-85
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\41513d57a17d86738172f8a03c09133f\AndroidManifest.xml:20:9-121
+ADDED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\e84cc1b4688c9e09454ec09870740e11\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\41513d57a17d86738172f8a03c09133f\AndroidManifest.xml:20:66-119
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\e84cc1b4688c9e09454ec09870740e11\AndroidManifest.xml:20:66-119
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\41513d57a17d86738172f8a03c09133f\AndroidManifest.xml:20:20-65
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\e84cc1b4688c9e09454ec09870740e11\AndroidManifest.xml:20:20-65
 meta-data#android.arch.lifecycle.VERSION
-ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\b7d52f52fa7819e47a8eafa2fcee4c94\AndroidManifest.xml:25:9-27:47
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\401a14ce6fbbab8695630fee82796e7c\AndroidManifest.xml:25:9-27:47
 	android:value
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\b7d52f52fa7819e47a8eafa2fcee4c94\AndroidManifest.xml:27:13-44
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\401a14ce6fbbab8695630fee82796e7c\AndroidManifest.xml:27:13-44
 	android:name
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Talit\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\b7d52f52fa7819e47a8eafa2fcee4c94\AndroidManifest.xml:26:13-58
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Talita Ramos\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\401a14ce6fbbab8695630fee82796e7c\AndroidManifest.xml:26:13-58

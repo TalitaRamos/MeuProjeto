@@ -7,15 +7,13 @@
     android:orientation="vertical"
     tools:context="com.example.meuprojeto.Activity.detalhamentoProjetoAluno">
 
-    <!--Mostra os detalhes do projeto quando o aluno seleciona um
-    //atraves dessa tela o aluno também pode enviar uma solicitação para o professor-->
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/name_proje"
-        tools:text="Nome Projeto"
+        tools:text="@string/name_projeto"
         android:gravity="center"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:layout_marginStart="16dp"
@@ -25,19 +23,11 @@
         android:textColor="#184B6C"
        />
 
-    <!--android:gravity="center"
-    android:orientation="vertical"
-    tools:ignore="MissingConstraints"
-    tools:layout_editor_absoluteX="8dp"
-    tools:layout_editor_absoluteY="8dp
-    android:textSize="20sp"
-    android:textStyle="bold"-->
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/desc_proje"
-        tools:text="Descrição"
+        tools:text="@string/descr"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="50dp"
@@ -48,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/status_proje"
-        tools:text="Status:"
+        tools:text="@string/statuss"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="50dp"

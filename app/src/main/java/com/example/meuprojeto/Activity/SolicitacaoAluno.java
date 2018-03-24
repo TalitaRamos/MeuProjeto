@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.example.meuprojeto.Model.Alocacao;
 import com.example.meuprojeto.Model.Candidato;
+import com.example.meuprojeto.Model.Projeto;
 import com.example.meuprojeto.R;
 import com.example.meuprojeto.SolicitAlunoAdapter;
 import com.google.firebase.auth.FirebaseAuth;
@@ -28,7 +29,7 @@ import java.util.List;
 
 public class SolicitacaoAluno extends AppCompatActivity {
 
-    DatabaseReference database;
+    DatabaseReference database,projeto;
     List<Candidato> canditList;
     TextView name_proje;
     final String identifica ="tina";
@@ -41,11 +42,15 @@ public class SolicitacaoAluno extends AppCompatActivity {
         setContentView(R.layout.activity_solicitacao_aluno);
 
         name_proje = (TextView) findViewById(R.id.name_proje);
+
+
+
         database= FirebaseDatabase.getInstance().getReference("Candidato");
                 //.child("-L3aRT3ciz6oL_UJZrLZ");
         listViewSolicitacao=(ListView)findViewById(R.id.listViewSolicitacao);
 
         canditList=new ArrayList<>();
+
         name_proje.setText("Solicitações");
 
         listViewSolicitacao.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -53,6 +58,7 @@ public class SolicitacaoAluno extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Candidato candi = canditList.get(i);
                 showDeleteSolicitacao(candi.getIdCandidato());
+
             }
         });
     }
@@ -89,7 +95,13 @@ public class SolicitacaoAluno extends AppCompatActivity {
             }
         });
     }
+//para projetos deletados
+private void projDeletado(){
 
+    if(projeto==null)
+        name_proje.setText("Projeto ta deletado");
+     //  setNome("Projeto deletado");
+}
     //DELETAR SOLICITAÇÃO
     private boolean deleteCandidato(String idCandidato){
         DatabaseReference dR = FirebaseDatabase.getInstance().getReference("Candidato").child(idCandidato);
@@ -122,5 +134,7 @@ public class SolicitacaoAluno extends AppCompatActivity {
         alerta = builder.create();
         alerta.show();
     }
+
+
 
 }

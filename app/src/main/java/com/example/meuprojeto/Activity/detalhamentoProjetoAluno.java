@@ -128,4 +128,12 @@ public class detalhamentoProjetoAluno extends AppCompatActivity {
             }
         });
     }
+
+    private void verificaDel(){
+
+
+        if( name_proje == null)
+            name_proje.setText("Projeto Deletado");
+
+    }
 }

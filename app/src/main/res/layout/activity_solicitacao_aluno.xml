@@ -7,7 +7,7 @@
     tools:context="com.example.meuprojeto.Activity.SolicitacaoAluno"
     android:orientation="vertical">
 
-    <!--COMPONENTE DA //TELA PRINCIPAL DO ALUNO-->
+    <!--COMPONENTE DA TELA PRINCIPAL DO ALUNO-->
     <TextView
         android:id="@+id/name_proje"
         android:layout_width="328dp"
@@ -17,7 +17,7 @@
         android:layout_marginTop="30dp"
         android:gravity="center"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        tools:text="Solicitações"
+        tools:text="@string/solicitacoes_"
         android:textColor="#184B6C"
         android:textStyle="bold"/>
 

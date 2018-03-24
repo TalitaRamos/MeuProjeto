@@ -8,9 +8,6 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-    <!--// FAZ PARTE DO CONJUNTO DE TELAS NAVIGATION DRAWE ACTIVITY (PROJECT_PROF) QUE EXIBE OS PROJETOS DO PROFESSOR
-    //PERMITE ALTERAR O CADASTRO, DELETAR A CONTA E SAIR DA CONTA
-    //ESSE ESPECIFICAMENTE É O GERAL QUE JUNTA TODAS AS TELAS DO CONJUNTO-->
 
     <include
         layout="@layout/app_bar_project_prof"

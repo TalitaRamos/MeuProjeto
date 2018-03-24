@@ -7,7 +7,6 @@
     tools:context="com.example.meuprojeto.Activity.Info"
     android:orientation="vertical">
 
-    <!--TELA COM INFORMAÇÕES SOBRE O APLICATIVO CHAMADO PELA BARRA DE OPÇOES DAS TELAS NAVIGATION DRAWER-->
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -19,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="87dp"
             android:gravity="center"
-            android:text="No MeuProjeto você, Professor, pode cadastrar seus projetos para que os alunos possam se associar."
+            android:text="@string/no_meuprojeto_voc_professor_pode_cadastrar_seus_projetos_para_que_os_alunos_possam_se_associar"
             android:textColor="#184B6C"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -29,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="87dp"
             android:gravity="center"
-            android:text="Como fazer isso?! É muito fácil!"
+            android:text="@string/como_fazer_isso_muito_f_cil"
             android:textColor="#184B6C"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -40,7 +39,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal"
             android:layout_marginTop="5dp"
-            android:text="1: Na tela inicial estão todos seus projetos cadastrados e clicando + você pode cadastrar um novo projeto."
+            android:text="@string/_1_na_tela_inicial_est_o_todos_seus_projetos_cadastrados_e_clicando_voc_pode_cadastrar_um_novo_projeto"
             android:textSize="17sp"
             android:textColor="#184B6C"/>
 
@@ -50,7 +49,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal"
             android:layout_marginTop="3dp"
-            android:text="2: Ao fazer o cadastro no sistema você também pode fazer o cadastro de projetos, mas, se desejar fazer mais tarde basta clicar em NÃO QUERO CADASTRAR PROJETOS AGORA"
+            android:text="@string/_2_ao_fazer_o_cadastro_no_sistema_voc_tamb_m_pode_fazer_o_cadastro_de_projetos_mas_se_desejar_fazer_mais_tarde_basta_clicar_em_n_o_quero_cadastrar_projetos_agora"
             android:textSize="17sp"
             android:textColor="#184B6C"/>
 
@@ -59,7 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="87dp"
             android:gravity="center"
-            android:text="Solicitações dos Alunos"
+            android:text="@string/solicita_es_dos_alunos"
             android:textColor="#184B6C"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -70,7 +69,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal"
             android:layout_marginTop="3dp"
-            android:text="1: Os alunos que solicitarem a participação no projeto apareceram em SOLICITAÇÕES"
+            android:text="@string/_1_os_alunos_que_solicitarem_a_participa_o_no_projeto_apareceram_em_solicita_es"
             android:textSize="17sp"
             android:textColor="#184B6C"/>
 
@@ -80,7 +79,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal"
             android:layout_marginTop="3dp"
-            android:text="2: E em ALUNOS ALOCADOS você verá os alunos que estão participando dos seus projetos"
+            android:text="@string/_2_e_em_alunos_alocados_voc_ver_os_alunos_que_est_o_participando_dos_seus_projetos"
             android:textSize="17sp"
             android:textColor="#184B6C"/>
 
@@ -89,7 +88,7 @@
             android:layout_width="match_parent"
             android:layout_height="87dp"
             android:gravity="center"
-            android:text="Alocar Alunos"
+            android:text="@string/alocar_alunos"
             android:textColor="#184B6C"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -100,7 +99,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal"
             android:layout_marginTop="3dp"
-            android:text="1: Quando os alunos que irão participar do projeto forem escolhidos por você, em SOLICITAÇÕES deverá ser mudado status do Candidato para REQUERIDO, assim, o aluno saberá que foi aprovado."
+            android:text="@string/_1_quando_os_alunos_que_ir_o_participar_do_projeto_forem_escolhidos_por_voc_em_solicita_es_dever_ser_mudado_status_do_candidato_para_requerido_assim_o_aluno_saber_que_foi_aprovado"
             android:textSize="17sp"
             android:textColor="#184B6C"/>
 
@@ -110,7 +109,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal"
             android:layout_marginTop="3dp"
-            android:text="2: Se o aluno não foi aprovado o status deverá ser mudado para INDEFERIDO"
+            android:text="@string/_2_se_o_aluno_n_o_foi_aprovado_o_status_dever_ser_mudado_para_indeferido"
             android:textSize="17sp"
             android:textColor="#184B6C"/>
 
@@ -119,7 +118,7 @@
             android:layout_width="match_parent"
             android:layout_height="87dp"
             android:gravity="center"
-            android:text="Retirando Alunos do projeto"
+            android:text="@string/retirando_alunos_do_projeto"
             android:textColor="#184B6C"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -129,7 +128,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal"
             android:layout_marginTop="3dp"
-            android:text="1: Um aluno alocado ao projeto pode deixar de participar ao deletar o aluno do projeto em ALUNOS ALOCADOS"
+            android:text="@string/_1_um_aluno_alocado_ao_projeto_pode_deixar_de_participar_ao_deletar_o_aluno_do_projeto_em_alunos_alocados"
             android:textSize="17sp"
             android:textColor="#184B6C"/>
 
@@ -138,7 +137,7 @@
             android:layout_width="match_parent"
             android:layout_height="87dp"
             android:gravity="center"
-            android:text="Fechar incrições em um projeto"
+            android:text="@string/fechar_incri_es_em_um_projeto"
             android:textColor="#184B6C"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -148,7 +147,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal"
             android:layout_marginTop="3dp"
-            android:text="1: Quando as vagas para o projeto estiverem completas você deverá mudar o status do projeto para NÃO ALOCADO"
+            android:text="@string/_1_quando_as_vagas_para_o_projeto_estiverem_completas_voc_dever_mudar_o_status_do_projeto_para_n_o_alocado"
             android:textSize="17sp"
             android:textColor="#184B6C"/>
 
@@ -158,7 +157,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal"
             android:layout_marginTop="3dp"
-            android:text="2: Para isso basta clicar no projeto desejado e modificar o status, assim como as demais informações se desejar"
+            android:text="@string/_2_para_isso_basta_clicar_no_projeto_desejado_e_modificar_o_status_assim_como_as_demais_informa_es_se_desejar"
             android:textSize="17sp"
             android:textColor="#184B6C"/>
 
@@ -168,7 +167,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal"
             android:layout_marginTop="3dp"
-            android:text="3: Assim o aluno saberá que as inscrições para aquele projeto já estão canceladas"
+            android:text="@string/_3_assim_o_aluno_saber_que_as_inscri_es_para_aquele_projeto_j_est_o_canceladas"
             android:textSize="17sp"
             android:textColor="#184B6C"/>
 
@@ -178,7 +177,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:gravity="center"
-            android:text="Isso é tudo!"
+            android:text="@string/isso_tudo"
             android:textSize="17sp"
             android:textStyle="bold"
             android:textColor="#184B6C"/>
@@ -193,7 +192,7 @@
             android:layout_width="match_parent"
             android:layout_height="87dp"
             android:gravity="center"
-            android:text="Esse aplicativo foi feito pelos jovens cientistas do projeto de Iniciação Cientifíca - MDD(UNEB) sobre a monitoria da professora Ana Patrícia."
+            android:text="@string/esse_aplicativo_foi_feito_pelos_jovens_cientistas_do_projeto_de_inicia_o_cientif_ca_mdd_uneb_sobre_a_monitoria_da_professora_ana_patr_cia"
             android:textColor="#184B6C"
             android:textSize="12sp"
             android:textStyle="bold" />

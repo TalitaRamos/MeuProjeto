@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="87dp"
             android:gravity="center"
-            android:text="No MeuProjeto você, Aluno, pode solicitar a participação em um projeto"
+            android:text="@string/no_meuprojeto_voc_aluno_pode_solicitar_a_participa_o_em_um_projeto"
             android:textColor="#184B6C"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="87dp"
             android:gravity="center"
-            android:text="Como fazer isso?! É muito fácil!"
+            android:text="@string/como_fazer_isso_muito_f_cil"
             android:textColor="#184B6C"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal"
             android:layout_marginTop="5dp"
-            android:text="1: Na tela inicial estão todos os professoresw cadastrados no sistema."
+            android:text="@string/_1_na_tela_inicial_est_o_todos_os_professoresw_cadastrados_no_sistema"
             android:textSize="17sp"
             android:textColor="#184B6C"/>
 
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal"
             android:layout_marginTop="5dp"
-            android:text="2: Para ver os projetos cadastrados por esse professor basta clicar no professor da sua preferência."
+            android:text="@string/_2_para_ver_os_projetos_cadastrados_por_esse_professor_basta_clicar_no_professor_da_sua_prefer_ncia"
             android:textSize="17sp"
             android:textColor="#184B6C"/>
 
@@ -56,7 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="87dp"
             android:gravity="center"
-            android:text="Solicitando a participação em um projeto"
+            android:text="@string/solicitando_a_participa_o_em_um_projeto"
             android:textColor="#184B6C"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal"
             android:layout_marginTop="5dp"
-            android:text="1: Ao clicar em um projeto todos os detalhes do mesmo serão listados"
+            android:text="@string/_1_ao_clicar_em_um_projeto_todos_os_detalhes_do_mesmo_ser_o_listados"
             android:textSize="17sp"
             android:textColor="#184B6C"/>
 
@@ -77,7 +77,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal"
             android:layout_marginTop="5dp"
-            android:text="2: Quando o projeto estiver com o status ALOCADO, significa que o professor já encerrou as inscrições para aquele projeto."
+            android:text="@string/_2_quando_o_projeto_estiver_com_o_status_alocado_significa_que_o_professor_j_encerrou_as_inscri_es_para_aquele_projeto"
             android:textSize="17sp"
             android:textColor="#184B6C"/>
 
@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal"
             android:layout_marginTop="5dp"
-            android:text="3: Se for do seu desejo se candidatar basta clicar em CANDIDATAR-SE"
+            android:text="@string/_3_se_for_do_seu_desejo_se_candidatar_basta_clicar_em_candidatar_se"
             android:textSize="17sp"
             android:textColor="#184B6C"/>
 
@@ -97,7 +97,7 @@
             android:layout_width="match_parent"
             android:layout_height="87dp"
             android:gravity="center"
-            android:text="Resultados"
+            android:text="@string/resultados"
             android:textColor="#184B6C"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -109,7 +109,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal"
             android:layout_marginTop="5dp"
-            android:text="1: Em SOLICITAÇÕES todos os projetos que você solicitou a participação serão listados"
+            android:text="@string/_1_em_solicita_es_todos_os_projetos_que_voc_solicitou_a_participa_o_ser_o_listados"
             android:textSize="17sp"
             android:textColor="#184B6C"/>
 
@@ -119,7 +119,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal"
             android:layout_marginTop="5dp"
-            android:text="2: O resultado estará logo abaixo do nome do projeto"
+            android:text="@string/_2_o_resultado_estar_logo_abaixo_do_nome_do_projeto"
             android:textSize="17sp"
             android:textColor="#184B6C"/>
 
@@ -139,7 +139,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal"
             android:layout_marginTop="5dp"
-            android:text="1: O status de uma solicitação será SOLICITADO quando o professor ainda não analisou"
+            android:text="@string/_1_o_status_de_uma_solicita_o_ser_solicitado_quando_o_professor_ainda_n_o_analisou"
             android:textSize="17sp"
             android:textColor="#184B6C"/>
 
@@ -149,7 +149,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal"
             android:layout_marginTop="5dp"
-            android:text="2: REQUERIDO se você foi aceito no projeto"
+            android:text="@string/_2_requerido_se_voc_foi_aceito_no_projeto"
             android:textSize="17sp"
             android:textColor="#184B6C"/>
 
@@ -159,7 +159,7 @@
             android:layout_height="wrap_content"
             android:gravity="clip_horizontal"
             android:layout_marginTop="5dp"
-            android:text="3: INDEFERIDO se você não passou :("
+            android:text="@string/_3_indeferido_se_voc_n_o_passou"
             android:textSize="17sp"
             android:textColor="#184B6C"/>
 
@@ -169,7 +169,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:gravity="center"
-            android:text="Isso é tudo!"
+            android:text="@string/isso_tudo"
             android:textSize="17sp"
             android:textStyle="bold"
             android:textColor="#184B6C"/>
@@ -184,7 +184,7 @@
             android:layout_width="match_parent"
             android:layout_height="87dp"
             android:gravity="center"
-            android:text="Esse aplicativo foi feito pelos jovens cientistas do projeto de Iniciação Cientifíca - MDD(UNEB) sobre a monitoria da professora Ana Patrícia."
+            android:text="@string/esse_aplicativo_foi_feito_pelos_jovens_cientistas_do_projeto_de_inicia_o_cientif_ca_mdd_uneb_sobre_a_monitoria_da_professora_ana_patr_cia"
             android:textColor="#184B6C"
             android:textSize="12sp"
             android:textStyle="bold" />

@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.meuprojeto.Activity.SolicitacaoProfessor"
-    >
+    tools:context="com.example.meuprojeto.Activity.SolicitacaoProfessor">
 
     <TextView
         android:id="@+id/titlePag"
@@ -17,7 +16,7 @@
         android:layout_marginTop="30dp"
         android:gravity="center"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        tools:text="Solicitações"
+        tools:text="@string/soli_tacoes"
         android:textColor="#184B6C"
         android:textStyle="bold"/>
 
